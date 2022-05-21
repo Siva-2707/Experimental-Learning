@@ -35,5 +35,7 @@ Account Types
 
 4) Elastic Block Storage(EBS)
 
+4) Elastic File Storage(EFS)
+
 
 

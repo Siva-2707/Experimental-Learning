@@ -122,3 +122,41 @@ Books for Life
 
 1) 97 Things Every Programmer Should Know
 2) Teach Yourselves programming in 10 Years
+
+
+-----------------------------------------------------------------
+T5
+Cloud
+	-AWS essensials
+	-Azure essensials
+Application Lifecycle Management
+	-JIRA
+	-MasterCraft DevPlus
+Devops
+	Code
+		-Git
+		-BitBucket(Optional)
+	Buid 
+		-Continous Integration
+		-Maven 
+		-Gradle
+		-Jenkins(Build Automation)
+		-Installing Jenkins on AWS
+	Test
+		-MSTEST
+		-JUnit
+		-Pytest
+		-SonarQube(Code quality)
+	Deploy
+		-Continous Deployment
+		-Infrastructure as Code
+		-Ansible
+		-Dockers 
+		-Kubernetes
+		-Amazon EKS Engines
+		-Azure containers
+	-Monitor
+		-Nagious
+		-AWS Monitoring
+		
+		
