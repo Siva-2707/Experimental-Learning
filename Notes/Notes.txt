@@ -1,0 +1,124 @@
+
+Java/Python/PHP
+HTML
+CSS
+JS
+DBMS
+Server Applications - Tomcat, Jboss 
+Cloud
+
+Problem Solving Skill
+1) Dynamic Programming
+2) Data structure and Algorithims
+3) Standard Template Libraries
+
+Books- Cracking the Coding Interview , The Pragmatic Programmer
+Websites- LeetCode, HackerRank, GeeksForGeeks, InterviewBit 
+
+Update GitHub and Linkedin Profile 
+
+Connect with People with Message in it
+Look up skills in Linkedin for the role.
+
+
+#Java 8
+
+- Lambda Functions
+- Collection API
+- 
+
+#Java 9
+- Modularity
+- JShell -->REPL (Read Evaluate Print Loop)
+- 
+ 
+Software Developer road map: (JAVA)
+===================================
+1)FrontEnd: ReactJs/ Angular/ View 
+	Bootstrap, JQuery
+2)BackEnd: SpringBoot, SpringMVC and SpringREST
+	ORM- Hibernate
+3)Databases: (Any 1 or 2 from each type)
+	SQL: OracleSQL, MicrosoftSQL, MySQL, PostgreSQL
+	NoSQL: MongoDB, neo4j, cassandra, ApacheHBASE
+4)VCS: Git, CVS, MicrosoftTFS (Any one)
+
+5)Mobile App frameworks: AndroidStudio, XCode, ReactNative, Iconic (Optionl) 
+
+6) Devops and Agile methodology.
+
+Spring Developer Roadpath:
+==========================
+Threads
+Exceptional Handelling
+Collection API
+After this --> Spring Core
+
+Serverlets
+JSP
+After this --> Spring MVC
+
+RestAPI After this --> Spring Rest
+
+JDBC
+Hibernet
+After that --> Spring ORM
+
+
+Website --> spring.io
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Software Developer Skillset
+===========================
+1) Cloud (AWS/GCP/Azure)
+2) DS and Algorithims
+3) Git and GitHub
+4) Container (Docker/Kubernetes)
+5) TextEditers (VIM/Notepad++, Sublime, Atom)
+6) IDEs
+7) Databases (SQL/NoSQL)
+8) Linux(Unix)
+9) OOPs (Java, JS, C++)
+10)Basic Networking (Client-Server Architecture)
+11)Scripting (Python,JS)
+12)Software Development Lifecycle
+13)Basic Testing
+
+
+To Learn
+String API
+Wrapper Classes
+Advanced Java - (Threads, Collection API)
+PL/SQL
+XML -> DTD , XSD
+JSON
+
+
+Topics knows:
+============
+Core Java
+Advanced Java - Exceptional Handelling
+HTML, CSS, JS
+MYSQL
+VCS - Git
+BuildTool - Maven
+CI - Jenkins
+
+Short Circuit Operators
+Primitive and Reference Type variables
+Shallow Copy, Deep Copy, Cloning of Objects
+Tight and Loose Coupling
+Design Pattern
+File Handelling
+
+JDBC, Servlet, JSP
+
+Spring Core
+Spring Batch
+
+
+----------------------------------------------------------------
+Books for Life
+
+1) 97 Things Every Programmer Should Know
+2) Teach Yourselves programming in 10 Years

@@ -1,0 +1,21 @@
+Rest API - Representational State Transfer
+
+Object from Servlet can be transfered into JSON/XML data. 
+
+			HTTP METHODS
+C - Create -> POST
+R - Read   -> GET
+U - Update -> PUT
+D - Delete -> DELETE
+
+Implemented using 
+1) Jersey
+2) Spring API
+
+Resources
+
+
+
+
+
+

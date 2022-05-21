@@ -1,0 +1,56 @@
+Spring Used as a Developer
+- Dependency Injection
+- Enable to build applications from POJOs
+- Enable to apply enterprise services to POJOs
+
+Spring Modules
+
+-Test
+-Core Container
+-Data access or Integration
+-Web
+-Other
+
+
+Spring Tool Suite
+
+Dependancy Injection -> Acheive Loose coupling
+	Acheived by 
+		-Constructor injection
+		-Setter injection
+		-Fields
+
+Instansiation of Spring IOC container (Inversion of Control)
+
+	Acheived by below of the both.
+		-BeanFactory
+		-Application Context
+
+Bean - Classes that is managed by the Spring framework.
+
+Bean Configurations
+1. XML based config
+2. Java based config
+
+Application Context or BeanFactory implementation
+1- ClassPathXmlApplicationContext  -> Used to load xml config file
+2- AnnotationConfigApplicationContext -> Used to load java config files
+
+Constructor Injection: (uses constructor-arg tag)
+1- name,value attributes
+2- index,value attributes
+3- type,value attributes
+
+Setter Injection: (uses property tag)       
+
+
+Annotations:
+
+1) @Component
+2) @Autowired
+3) @ComponentScan
+4) @Primary
+5) 
+
+
+

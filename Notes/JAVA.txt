@@ -1,0 +1,147 @@
+Java 
+
+Variables -> Primitive type, Reference type 
+Operators
+Conditional Statements
+Looping statements
+Methods
+OOPS 
+ - Encapsulation
+ - Inheritance 
+ - Abstraction
+ - Polimorphisam
+ 
+Class and Objects
+	- Interface
+	- InnerClass
+		- DefaultInnerClass (Need the instance of the OuterClass to access it)
+		- StaticInnerClass (No need the instance of the OuterClass to access it)
+	- Abstract Class
+	- Annonimous Class
+ 
+Arrays and ArrayList
+Variable Argument
+
+Collection APIs
+	- List
+		- ArrayList
+		- LinkedList
+		- Vector
+	- Set
+		- HashSet
+		- LinkedHashSet		
+		- TreeSet
+	- Queue
+		-PriorityQueue
+	- Map
+		- HashMap
+		- HashTable
+		- LinkedHashMap
+		- TreeMap
+
+Generics
+	- AutoBoxing 
+	- UnBoxing
+	
+Comparator class and Comparable Interface
+
+Java Packages
+
+Access Modifiers
+	- Public                   --> Available everywhere
+	- Default (unmentioned)    --> Available only inside the package and not available even if the class is extended outside the package.
+	- Protected				   --> Available inside the same package and the subclasses of even different package.
+	- Private				   --> Available only inside the defined class
+	
+	A class can only be public or default
+	
+
+Scope and Visibility
+Final keyword
+	- Final class cannot be extended
+	- Final method cannot be overridden
+
+Static keyword
+	- Only one instance is created and shared among all the instance.
+	- Static method cannot have a non-static member.
+	
+
+Functional Programming (Stream API) and Functional Interface
+	- Predicate
+Threds and Multithreads
+	
+	-Ways of enabling Thread
+		-Extending the thread class
+		-Implementing the runnable Interface
+		-Implementing the callable Interface (Returns a value)
+		
+	
+	-States of a thread 
+		- New 
+		- Runnable 
+		- Blocked
+		- Waiting
+		- Timed Waiting / 
+		- Terminated/ Dead
+	
+	-Executor Service(API)
+	-Future Class
+	
+	-Concurrency
+		- syncronized keyword
+		- locks
+		- Automic classes -> java.util.concurrent.atomic (Thread safe class)
+
+Exceptional Handeling
+	- Try Catch Finally
+	- Checked and Unchecked exceptions
+	- Exception Hierarchy
+
+Files Concept 
+	- Old method
+	- Functional programming
+	
+Logger
+
+Misselanious Concepts
+- Static imports
+- InnerClass
+- Enum
+	- Ordinal
+	- Constructors
+- Comparator class and Comparable Interface
+- GarbageCollector
+
+After Java 8
+- Modularity 
+- Predicate not method
+- Set/ Map/ List - copyOf method 
+- String API
+- Type Inferences
+- Switch Expressions
+- TextBlock
+- Records (Similar to Java Beans)
+
+	
+
+
+
+
+
+
+
+Concepts to refresh
+
+Java APIs
+BigDecimal
+String
+Wrapper Class
+Java Dates
+Arrays 
+Diff btw Abstract Class and Interface
+Hashing
+Logger
+Predicate
+ 
+
+

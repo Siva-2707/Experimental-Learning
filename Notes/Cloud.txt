@@ -1,0 +1,39 @@
+Cloud 
+
+Azure
+
+Virtual Machine Components
+Os
+Disks - Image, Disks
+Virtual Network
+Availabilty Sets
+
+Infrastructure As A Service (IAAS)
+	- All physical components are provided by the cloud. (RAM,ROM, CPU, etc.,.)
+	
+	
+
+AWS Services
+
+
+Account Types
+	1. Root account 
+	2. IAM account (Identity and access management)
+
+1)Cloud Watch - Watches the cloud for the settings set
+
+2) Elastic compute cloud(EC2) / Virtual Machine(Azure)
+	- Security groups (Allows only to use specific data by the user)
+		-All traffic is blocked by default and a security group rule allows external traffic.
+		-A security group with no rules by default means all traffic is being blocked.
+	- Auto scaling
+		-Vertical scaling     Vertical scaling is increasing the physical hardware to a single server. 
+		-Horizontal scaling   Horizontal scaling spreads traffic across several identical servers.
+	
+
+3) Simple Storage Service(S3)
+
+4) Elastic Block Storage(EBS)
+
+
+

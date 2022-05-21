@@ -1,0 +1,29 @@
+Reference - https://youtu.be/vJ-Zn4fo0MQ 	
+
+Steps
+1.Import package -> import java.sql.*;
+2.Register Driver and open connection 
+		-> Class.forName("org.mysql.jdbc.Driver")
+		-> DriverManager.registerDriver()
+		-> DB URL Infomatinon ( connecting with DB) requires getConnection() method.  (jdbc:mysql://localhost/jdbcdb) jdbcdb - db Name
+3.Execute a query 
+4.Extract data from ResultSet 
+5.Clean the env. (Close all resources used)
+
+JDBC Driver Types
+----------------
+JDBC ODBC Bridge
+JDBC Native API
+JDBC NOT Pure
+100% Pure JAVA
+
+JDBC Statements
+---------------
+Statements
+Prepared Statement
+Callable Statement
+
+
+
+
+

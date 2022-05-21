@@ -1,0 +1,74 @@
+DevOps Process:
+1. Code
+2. Build 
+3. Test 
+4. Release
+5. Deploy
+6. Operate 
+7. Monitor
+8. 
+
+Version Control System - GIT
+Build Tool - Maven
+
+CI - Continous Integration - Jenkins, Travis CI, Bamboo, Buildbot
+
+Jenkins- Written in JAVA - Early reference (Hudson) 
+
+Steps followed in Jenkins
+------------------------
+Compile and Build Code
+Runs scripts
+Starts integrated tests
+Monitor execution of tasks
+Stops build in case of failure
+Notify user about the status of Build
+Deploys in test env
+
+http://localhost:8080/
+Pass -f1dba616ddde434987c60e16cb254cd1 
+
+Testing
+========
+Tools - JUnit, Pytest, Selenium
+Automated and Manual Testing
+
+Automated Testing
+- Unit Test 		-> Tests the application without external dependencies (Fast execution)
+- Integrated Test	-> Tests the application with external dependencies	(Slow execution)
+- End-to-End Test	-> Test the Whole application(Tool - Selenium) 	(Very slow execution)
+
+Testing Frameworks
+- NUnit
+- MSTest
+- xUnit
+- reSharper
+-JUnit
+
+JUnit - Jave Framework for unit testing
+
+Annotations used:-
+@Test - specify it as a test case
+@Before -  Executed before every test
+@After - Executed after every test
+@BeforeClass - Executed before every class (And method should be of static)
+@AfterClass - Executed after every class (And method should be of static)
+
+assertEquals();
+
+JUnit Test suit - Used to run a set of JUnit tests
+
+Continous Deployment (CD)
+=========================
+Continous delivery is done for the client after a series of operations peromed. (Deployment is done manually)
+Continous Deployement is same as Continous Delivery, But Deployement is also automated in this case.
+
+Three things that results in CD
+1. Configuration Management
+2. Continous Integration
+3. Continous Testing
+
+
+
+
+
