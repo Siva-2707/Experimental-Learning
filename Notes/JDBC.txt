@@ -1,5 +1,31 @@
 Reference - https://youtu.be/vJ-Zn4fo0MQ 	
 
+
+Flow of JDBC:
+Mount Driver --> Create Connection --> Execute SQL --> Commit/Rollback --> Close Connection
+
+Terminologies and Classes related:
+
+-Connections
+	-DriverManager
+	-DataSource
+	-Connection
+
+-Executions
+	-Statement
+	-ResultSet
+	-PreparedStatement
+	-CallableStatement
+
+-Transactions
+	-AutoCommit
+	-Transaction
+	-Rollback
+	
+DAO -DataAccessObject
+DTO -DataTransferObject
+	
+	
 Steps
 1.Import package -> import java.sql.*;
 2.Register Driver and open connection 
@@ -22,6 +48,11 @@ JDBC Statements
 Statements
 Prepared Statement
 Callable Statement
+
+Concepts
+-Paging
+-Connection Pooling
+
 
 
 

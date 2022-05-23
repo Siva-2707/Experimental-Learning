@@ -1,8 +1,0 @@
-Desktop
-Port: 3306
-Username: root
-Password: root
-Server Name: MySQL80
-
-Laptop
-

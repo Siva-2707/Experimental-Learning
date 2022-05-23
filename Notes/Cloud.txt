@@ -20,9 +20,9 @@ Account Types
 	1. Root account 
 	2. IAM account (Identity and access management)
 
-1)Cloud Watch - Watches the cloud for the settings set
+-Cloud Watch - Watches the cloud for the settings set
 
-2) Elastic compute cloud(EC2) / Virtual Machine(Azure)
+-Elastic compute cloud(EC2) / Virtual Machine(Azure)
 	- Security groups (Allows only to use specific data by the user)
 		-All traffic is blocked by default and a security group rule allows external traffic.
 		-A security group with no rules by default means all traffic is being blocked.
@@ -31,11 +31,78 @@ Account Types
 		-Horizontal scaling   Horizontal scaling spreads traffic across several identical servers.
 	
 
-3) Simple Storage Service(S3)
 
-4) Elastic Block Storage(EBS)
 
-4) Elastic File Storage(EFS)
+-Elastic Block Storage(EBS) (Fastest storage access)
+	-Primary storage for EC2 instances
+	-Hardrives for VM
+	-EBS cannot be shrared among multiple EC2
+	-Can be cloned and shrared to other EC2 instance but cannot be synced
+	
+-Elastic File Storage(EFS) (Slower than EBS)
+	-EFS can be shrared and synced among multiple EC2s
+
+-Simple Storage Service(S3) (Slower than EFS and EBS)
+	-Don't need server to configure like EBS and EFS
+	-Similar to DropBox
+	-Can store all formats of file (txt, img, video, etc)
+	-Can restict the access as Public or Private
+	
+-S3 Glacier
+	-Cheaper version of S3
+	-Takes time to access files
+	
+-Cloud Front (CDN -Continous Delevering Network)
+	-Shares the copy of S3 instance all across the world for faster access
+
+-Virtual Private Cloud (VPC)
+	-Creates a virtual network so that servers/EC2 instances can talk to one another
+	
+	-Gateways
+		-Internet Gateway
+		-NAT Gateway
+		
+		A NAT gateway will not allow public originating internet traffic to pass to a server, but an Internet gateway will allow it.
+
+	-Elastic IP
+		-Constant Public IP provided by amazon
+		-Will be charged when not used
+	
+	-AWS Client VPN
+		-Connects to VPC
+		-Enable local machine to connect to VPC 
+	
+-Elastic Load Balancer (ELB)
+	-Network Load Balancer
+	-Application Load Balancer
+	
+	An ALB is used for HTTP traffic, and an NLB is used for traffic that requires speed, like low-latency streaming services.
+	
+-Database Migration Service
+	-Enable smooth migration of Database to the cloud
+
+-Relational Database Service(RDS)  	
+-Dynamo DB (Used for NoSQL DBs)
+
+-ElastiCache
+
+-DataLake
+	-Large amount of unorganised data
+	-Stored in S3
+-DataWarehouse
+	-Large amount of organised data
+	-Usually stored in a RDB
+	-Amazon uses Redshift for managing data of this type
+	
+BigData services:-
+	-Redshift
+	-Athena
+	-EMR
+	
+	
+	
+	
+
 
 
 
