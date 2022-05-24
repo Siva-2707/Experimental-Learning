@@ -5,7 +5,7 @@ Flow of JDBC:
 Mount Driver --> Create Connection --> Execute SQL --> Commit/Rollback --> Close Connection
 
 Terminologies and Classes related:
-
+==================================
 -Connections
 	-DriverManager
 	-DataSource
@@ -24,24 +24,87 @@ Terminologies and Classes related:
 	
 DAO -DataAccessObject
 DTO -DataTransferObject
-	
+
+Architecture of JDBC:
+=====================
+1) Java Application
+2) JDBC API
+3) Driver Manager
+4) Different Driver Softwares -> Depends upon the Database
+5) Different Databases 
+
 	
 Steps
 1.Import package -> import java.sql.*;
-2.Register Driver and open connection 
-		-> Class.forName("org.mysql.jdbc.Driver")
-		-> DriverManager.registerDriver()
-		-> DB URL Infomatinon ( connecting with DB) requires getConnection() method.  (jdbc:mysql://localhost/jdbcdb) jdbcdb - db Name
+2.Load and Register Driver, and open connection 
+	-> Class.forName("org.mysql.jdbc.Driver")
+	-> DriverManager.registerDriver()
+	-> DB URL Infomatinon ( connecting with DB) requires getConnection() method.  (jdbc:mysql://localhost/jdbcdb) jdbcdb - db Name
+	-> Connection con = DriverManager.getConnection(url, username, password);
 3.Execute a query 
+	-> Statement stmt = con.createStatement();
+	-> ResultSet rs = stmt.executeQuery("SELECT * FROM tableName");
+	-> int rowsAffected = stmt.executeUpdate("UPDATE tableName SET columnName = value WHERE columnName = value");
 4.Extract data from ResultSet 
+	-> while(rs.next()){
+			System.out.println(rs.getString("columnName"));
+			System.out.println(rs.getInt(1));
+		}
 5.Clean the env. (Close all resources used)
+	->  rs.close();
+		stmt.close();
+		con.close();
+		
+
+ODBC Driver
+	-ODBC - Open Database Connectivity
+	-Can be used only on Windows OS
+	-Can be used only for any programming language
+	-Most drivers were Developed in C language
+JDBC Driver
+	-Developed in Java 
+	-Can be used on any OS
+	-Drivers are developed in JAVA
+	-Can be used only for Java language
+
 
 JDBC Driver Types
 ----------------
-JDBC ODBC Bridge
-JDBC Native API
-JDBC NOT Pure
-100% Pure JAVA
+Type 1: JDBC ODBC Bridge -> Java Application -> Type 1 Driver -> ODBC Driver -> DB
+	-JDBC calls are converted to ODBC calls which are then converted into Database calls
+	-Slowest Driver
+	-Platform Dependent (Windows)
+	-Database Independent 
+	-Easy to use
+	
+Type 2: JDBC Native API (Partly Java) -> Java Application -> Type 2 Driver -> DB specific Native Libraries -> DB
+	-Faster than Type 1 driver
+	-ODBC driver not required
+	-Different drivers should be used for different OSs 
+	-Different Native libraries should be used for different databases
+	-It is Database and platform dependent
+	
+Type 3: JDBC NOT Pure -> Java Application -> Type 3 Driver -> Middleware Server -> DB
+	-Database independent
+	-Platform independent
+	-Cost is high
+	-Performance is not good
+Type 4: 100% Pure JAVA -> Java Application -> Type 4 Driver -> DB
+	-Performance is high
+	-Platform independent
+	-Thin Driver
+	-Database dependent 
+	-Most commenly used
+
+Driver used:
+Single DB Application -> Type 4
+Multiple DB Application -> Type 3
+Type 4 & Type 3 driver not available -> Type 2
+Type 4 & Type 3 driver & Type 2 not available -> Type 1
+	
+	
+	
+
 
 JDBC Statements
 ---------------

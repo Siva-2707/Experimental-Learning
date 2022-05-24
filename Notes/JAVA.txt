@@ -1,6 +1,8 @@
 Java 
 
-Variables -> Primitive type, Reference type 
+Variables
+	- Primitive type
+	- Reference type 
 Operators
 Conditional Statements
 Looping statements

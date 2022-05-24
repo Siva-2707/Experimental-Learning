@@ -12,7 +12,27 @@ Implemented using
 1) Jersey
 2) Spring API
 
-Resources
+Resources are the main for RestAPI (Content)
+URI is used ( /content/content1)
+
+Operations performed on the resources
+	-Create
+	-Update
+	-Read
+	-Delete
+
+HTTP Request Methods
+	-GET 	(Retrives resources)
+	-POST	(Creates new resources)
+	-PUT 	(Updates/ Replaces resources)
+	-PATCH	(Updates a part of a resources)
+	-DELETE	(Deletes a resources)
+Representation of resources:
+	-JSON
+	-XML
+	-Text/Video etc.,
+Server hosts the API 
+Used by Browser
 
 
 
