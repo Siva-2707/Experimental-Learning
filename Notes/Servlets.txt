@@ -1,0 +1,27 @@
+JSP - Java server Pages 
+
+JSP and Servlets are Java code that runs on server
+
+JSP Scripting Elements
+-Expressions
+	<%= %>
+	
+-Scriptless
+	Can add one to many lines of Code
+	<% 
+	
+	%>
+-Declaration
+	Declare methods in page
+	<%!
+	
+	%>
+	
+Built in Server objects
+	-request
+	-response
+	-out
+	-session
+	-application
+	
+
