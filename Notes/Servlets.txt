@@ -1,3 +1,39 @@
+Servlets
+- Is a java program that runs on a web container
+- Can capture request from the web browser and performs required operation and returns the output as response.
+- Servlets also acts as the middle man between the browser and the database.
+
+Steps to follow in a servlet
+
+1) Set content type
+2) Get printWriter 
+3) Generate HTML content
+
+
+Lifecycle of a servlet 
+
+1) Instantiate
+2) Initialize   -> init()
+3) Service		-> service()
+4) Destroy		-> destroy()
+
+Web Application Folder Structure
+
+WebApp (Application name)
+-index.html
+-home.jsp
+	WEB-INF
+	-web.xml
+	-classes
+	-lib
+Configration file for Servlets : web.xml
+	ServletContext object is used to access configrations of Servlets
+	
+Difference between doGet and doPost
+Difference between RequestDispacher and sendRedirect
+
+
+
 JSP - Java server Pages 
 
 JSP and Servlets are Java code that runs on server
@@ -24,4 +60,43 @@ Built in Server objects
 	-session
 	-application
 	
+Session API
+- Enables each session for each user
+- 
 
+PageContext
+
+
+
+Cookies 
+- Text data exchange between browser and server
+- Max 20 cookies can be used for a tab of a browser
+
+Custom JSP tags
+	-Minimizes the amount of code in JSP file 
+	-JSP page will be simple and clear
+	-Tag is reuseable
+JSTL (JSP Standard Tag Library) -> Created by oracle 
+
+JSTL Core
+
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix ="c" %>
+	for-each tag
+	Using object in forming table with for-each
+	
+	if tag
+	choose tag
+	
+JSTL Function
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix ="fn" %>
+	toUpperCase
+	toLowerCase
+	split
+	join
+	
+JSTL Formate
+<%@ taglib uri="http://java.sun.com/jsp/jstl/format" prefix ="fmt" %>
+	
+	
+	
+	

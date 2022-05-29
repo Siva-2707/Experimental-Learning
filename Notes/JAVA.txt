@@ -26,13 +26,13 @@ Variable Argument
 
 Collection APIs
 	- List
-		- ArrayList
-		- LinkedList
-		- Vector
-	- Set
-		- HashSet
+		- ArrayList (Good for searching and sorting)
+		- LinkedList (Good for manupulating the list) Inserting deleting elements
+		- Vector (It is syncronized) So thread safe
+	- Set (Duplicate elements are not allowed in Set)
+		- HashSet (Follows random order)
 		- LinkedHashSet		
-		- TreeSet
+		- TreeSet (Follows insertion order)
 	- Queue
 		-PriorityQueue
 	- Map

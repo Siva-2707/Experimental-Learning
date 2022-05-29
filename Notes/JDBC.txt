@@ -115,6 +115,10 @@ Callable Statement
 Concepts
 -Paging
 -Connection Pooling
+	-Its a pool of connection objects
+	-It can be setuped in META-INF/context.xml  (Server specific) This is for Tomcat
+	
+	
 
 
 
