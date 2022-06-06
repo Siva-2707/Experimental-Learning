@@ -1,3 +1,20 @@
+HTTP Request types
+
+GET - Gets information from the server
+	-To get or receive infomation from the server 
+	-It can be any form of data, pdf, audio, video, file, etc.,
+	-Data is sent in query format (Insecure)
+	
+POST - Process information on the server
+	-Perform db operations
+	-Query is hidden(secure)
+	
+PUT - Uploads infomation to the server
+DELETE - Deletes information in the server
+HEAD - Same as GET by returns only the Header 
+OPTION - 
+
+
 Servlets
 - Is a java program that runs on a web container
 - Can capture request from the web browser and performs required operation and returns the output as response.
