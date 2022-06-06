@@ -119,6 +119,36 @@ Concepts
 	-It can be setuped in META-INF/context.xml  (Server specific) This is for Tomcat
 	
 	
+Connection Pooling
+-Creates a pool of connection objects
+-Can be done in context.xml which is present in server configrations
+-For connection pooling we need DataSource object 
+ 
+ Context context = new InitialContext();
+ DataSource ds = context.loookup("jdbc/sequenceLink");
+ Connection con = ds.getConnection();
+ 
+-JDBC batch updates
+ -Used to execute multiple dml statements under a same block
+ 
+ stmt.addBatch(String dml);
+ int result[] = stmt.executeBatch();
+
+-ResultSetMetaData
+ Used to get all data from the result set 
+ Like no. of columns rows, etc.
+ ResultSetMetaData rsmd = rs.getMetaData();
+ 
+-Transactions in JDBC\
+	-Commit 
+	-Rollback
+	-Savepoint
+	
+	Connection object provides all the above Operations to be performed
+		con.setAutoCommit(false); --> by default autoCommit is true;
+		
+		con.commit(); -> Commits to the database
+
 
 
 
