@@ -4,14 +4,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
 
-	<form action="/GetStudentList">
-	Username: <input name="username" type="text">
+	<form action="ProcessLoginServlet" method="post">
+	User name: <input name="username" type="text">
 	Password: <input name="password" type="password">
 	<input name="Login" type="submit">
+	
 	</form>
 </body>
 </html>

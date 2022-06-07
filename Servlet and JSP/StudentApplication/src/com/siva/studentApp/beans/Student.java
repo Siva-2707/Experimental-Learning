@@ -13,6 +13,11 @@ public class Student {
 		this.lastName = lastName;
 		this.email = email;
 	}
+	public Student(String firstName, String lastName, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
 
 	public int getRollNumber() {
 		return rollNumber;
@@ -40,6 +45,12 @@ public class Student {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [rollNumber=" + rollNumber + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
+				+ email + "]";
 	}
 	
 	
