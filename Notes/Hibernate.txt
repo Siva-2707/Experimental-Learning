@@ -1,0 +1,6 @@
+It is a framework that simplifies data access from the DB
+Data is represented in Java objects
+It is a ORM (Object Relational Mapping) tool
+
+Mapping can be done by xml config or annotation config
+hibernate.cfg.xml
