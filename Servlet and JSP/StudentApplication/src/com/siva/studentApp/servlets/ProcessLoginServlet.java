@@ -19,7 +19,7 @@ import com.siva.studentApp.dao.DBUtil;
 @WebServlet("/ProcessLoginServlet")
 public class ProcessLoginServlet extends HttpServlet {
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
@@ -29,11 +29,13 @@ public class ProcessLoginServlet extends HttpServlet {
 		RequestDispatcher rd = null;
 		
 		if(validation) {
-			rd = request.getRequestDispatcher("/StudenControllerServlet");
+			rd = request.getRequestDispatcher("/HomeServlet");
 			rd.forward(request, response);
+		}else {
+			request.setAttribute("loginValidation", validation);
 		}
 		
-		request.getRequestDispatcher("/login.jsp").include(request, response);
+		request.getRequestDispatcher("login.jsp").include(request, response);
 	}
 
 	private boolean validate(String username, String password) {
@@ -41,6 +43,7 @@ public class ProcessLoginServlet extends HttpServlet {
 				Connection con = DBUtil.getConnection();
 				PreparedStatement pstmt = con.prepareStatement("SELECT * FROM admins WHERE username= ? AND password = ? ")
 						) {
+			pstmt.setString(1, username);
 			pstmt.setString(2, password);
 			 ResultSet rs = pstmt.executeQuery();
 			if(rs.next()) {

@@ -17,7 +17,7 @@ import com.siva.studentApp.dao.StudentDao;
 @WebServlet("/HomeServlet")
 public class HomeServlet extends HttpServlet {
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/home.jsp");
 		request.setAttribute("studentList", new StudentDao().getStudents());

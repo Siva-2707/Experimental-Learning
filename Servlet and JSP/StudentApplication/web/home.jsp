@@ -18,11 +18,11 @@
 		<h3>Create new student</h3>
 		<div id="createStudent">
 			<input id="addStudentButton" value="Add Student" type= "button" onclick="getElementById('studentForm').style.visibility='visible'"  />
-			<form id = "studentForm" action="AddStudent" method="get" name = "operation" value="addStudent">
+			<form id = "studentForm" action="StudentControllerServlet" method="get"  >
 				First name: <input name="first_name" type="text"> 
 				Last name:<input name="last_name" type="text"> 
 				Email: <input name="email" type="text"> 
-				<input value="Create" type="submit" >
+				<input name ="operation" value="ADD" type="submit" >
 			</form>
 		</div>
 	</div>
@@ -36,6 +36,7 @@
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
+					<th>Action</th>
 				</tr>
 				<c:forEach var="student" items="${studentList}">
 					<tr>
@@ -43,6 +44,7 @@
 						<td>${student.firstName}</td>
 						<td>${student.lastName}</td>
 						<td>${student.email}</td>
+						<td><a href="#">Update</a></td>
 					</tr>
 				</c:forEach>
 			</table>

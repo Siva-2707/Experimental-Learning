@@ -17,18 +17,20 @@ import com.siva.studentApp.dao.StudentDao;
 public class StudentControllerServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String operation = request.getParameter("operation");
+		String operation = "LIST";
+		operation = request.getParameter("operation");
 		
 		switch(operation) {
 		
-		case "add" : addStudent(request,response);
+		case "ADD" : addStudent(request,response);
 					 break;
-		case "list" : listStudents(request,response);
+		case "LIST" : listStudents(request,response);
 					 break;
 
 		default : listStudents(request,response);
 				  break;
 		}
+		
 	}
 
 	private void listStudents(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -50,7 +52,5 @@ public class StudentControllerServlet extends HttpServlet {
 		}
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	}
 
 }
