@@ -155,6 +155,9 @@ Servlet listeners:
 		-Context
 
 Servlet Filters:
+	-Filters are reserved for preprocessing and postprocessing of a request
+	-They are reusable across the application
+	-It can restict the request from reaching the servlet 
 	-Configured using web.xml and also using Annotation = @WebFilter
 	-Implementation is same as Servlet Listener
 	-It has a FilterChain parameter which is used to pass request and Response to any other filter if required.

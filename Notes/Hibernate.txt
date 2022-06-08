@@ -4,3 +4,26 @@ It is a ORM (Object Relational Mapping) tool
 
 Mapping can be done by xml config or annotation config
 hibernate.cfg.xml
+
+
+Why not tradtional JDBC ?
+
+Too many sql codes for a simple operation
+Db dependent
+Manually handeled associations of tables
+
+Why ORM? 
+Allows to use Java objects as a representation of Relational DB
+Mapping is done between POJO's and DB
+Configured through XML and JPA Annotations 
+Hides SQL and JDBC complex codes and queries and is handeled by the ORM framework
+
+
+Hibernate
+
+Session is used to connect to the Database (JDBC Connection)
+Configuration -> SessionFactory -> Session 
+	
+Pesistant Class
+
+-Just a POJO with getters and setters for the fields inside the class
