@@ -218,6 +218,7 @@ Life cycle of a servlet.
 .java is compiled by java compiler to .class
 
 JSP directives:
+===============
 import
 errorpage
 iserrorpage
@@ -305,7 +306,13 @@ JSTL Formate
 	fmt:parseDate
 Custom Tags can also be created in jsp
 .tld is the extention
-	
+
+JSP Expression language
+
+Syntax : ${objectType.objectValue}
+
+Expression language Inplicit objects
+
 	
 	
 	
