@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.siva.studentApp.dao.DBUtil;
 
@@ -29,13 +30,19 @@ public class ProcessLoginServlet extends HttpServlet {
 		RequestDispatcher rd = null;
 		
 		if(validation) {
+			HttpSession session = request.getSession();
+			session.setAttribute("username", username);
+			session.setMaxInactiveInterval(10000);
+			
 			rd = request.getRequestDispatcher("/HomeServlet");
 			rd.forward(request, response);
 		}else {
 			request.setAttribute("loginValidation", validation);
+			request.getRequestDispatcher("login.jsp").forward(request, response);
 		}
 		
-		request.getRequestDispatcher("login.jsp").include(request, response);
+		
+		
 	}
 
 	private boolean validate(String username, String password) {

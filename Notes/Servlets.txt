@@ -134,7 +134,8 @@ InterServlet Communication
 	-Redirects to webpage of different application
 	
 Initializing a Servlet
-	-Lazy Initialization
+========================
+	-Lazy Initialization 
 		-Default method of Initialization
 	-Pre Initialization
 		-Uses <load-on-startup> tag
@@ -142,7 +143,11 @@ Initializing a Servlet
 	-Pre Initialization using Annotations (loadOnStartup)
 	-Pre Initialization using web.xml
 
-Servlet listeners:
+Servlet listeners: (To be revised)
+==================
+
+Listeners get executed at the start and end of the deployment process
+
 	-Configured using Annotation = @WebListener
 	-Configured using web.xml
 		<listener>
@@ -155,6 +160,7 @@ Servlet listeners:
 		-Context
 
 Servlet Filters:
+================
 	-Filters are reserved for preprocessing and postprocessing of a request
 	-They are reusable across the application
 	-It can restict the request from reaching the servlet 
@@ -167,6 +173,9 @@ Servlet Filters:
 
  
 Http Session:
+=============
+
+
 	-HttpSession session = request.getSession();
 		Session:
 		-Session is active till user closes the browser
@@ -185,6 +194,7 @@ Http Session:
 			</session-config>
 
 HTTP Cookies:
+============
 Are name value paires
 
 	Cookie c = new Cookie("jsessionid","1234");
@@ -238,7 +248,7 @@ JSP Scripting Elements
 	
 	%>
 	
-Built in Server objects or Implecite Objects
+Built in Server objects or (Implecite Objects)
 	-request (HttpRequest)
 	-response (HttpResponse)
 	-out (PrintWriter)
@@ -260,10 +270,10 @@ Cookies
 - Text data exchange between browser and server
 - Max 20 cookies can be used for a tab of a browser
 
-Custom JSP tags
-	-Minimizes the amount of code in JSP file 
-	-JSP page will be simple and clear
-	-Tag is reuseable
+Custom JSP tags or JSP Standard Actions
+	-Standard tag library for jsp
+	
+	
 JSTL (JSP Standard Tag Library) -> Created by oracle 
 
 JSTL Core

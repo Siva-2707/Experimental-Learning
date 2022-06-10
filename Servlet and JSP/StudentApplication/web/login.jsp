@@ -10,8 +10,9 @@
 
 	<form action="ProcessLoginServlet" method="get">
 	<%
-		if(request.getAttribute("loginValidation") != null && (boolean)request.getAttribute("loginValidation") == true){
-			out.print("Invalid username or password");
+		if(request.getAttribute("loginValidation") != null && (boolean) request.getAttribute("loginValidation") == false){
+			out.print("<h3>Invalid username or password</h3> <br>");
+			
 		}
 	%>
 	User name: <input name="username" type="text">

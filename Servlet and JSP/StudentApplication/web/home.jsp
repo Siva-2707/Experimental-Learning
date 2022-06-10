@@ -22,7 +22,7 @@
 				First name: <input name="first_name" type="text"> 
 				Last name:<input name="last_name" type="text"> 
 				Email: <input name="email" type="text"> 
-				<input name ="operation" value="ADD" type="submit" >
+				<input name ="operation" value="ADD" type="submit">
 			</form>
 		</div>
 	</div>
