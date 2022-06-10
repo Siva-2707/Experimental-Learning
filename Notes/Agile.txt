@@ -1,0 +1,116 @@
+Traditional way of working versus Agile way of working
+Agile values and principle
+Agile roles
+Scrum events an artifacts
+Agile Engineering practice
+
+
+Traditional Method (Waterfall Method)
+
+Its a step by step process
+The customer gets the product only when it's fully completed.
+No ideas can be added in the middle 
+
+
+Agile Method
+- Goes through sprints
+- Piece of deliverable product is given to customer end of each sprint
+- New ideas can be added to the sprint 
+- Each sprint goes through All the process( Design -> Develop -> Test -> Deploy )
+
+Agile Frameworks
+================
+Scrum - Kanban
+
+
+Agile Values
+=============
+1) Individuals and Interactions  		over processes and tools 
+2) Working software 						over comprehensive documentation
+3) Customer collabration 				over contract negotiation
+4) Responding to change 					over following a plan
+
+Left values are more important than to that of the right 
+
+
+Principles of Agile 
+===================
+1) Continous delivery to customer
+2) Welcome changes even late at development 
+3) Delivery planned every 2-4 weeks 
+4) Developers and Business people should work togther
+5) Trust individuals
+6) Face-to-face convo increases understanding
+7) Should have the working software in hand all the time 
+8) Flow between business people and the team
+9) Continous attention to technical aspects and design of the application
+10)Simplicity 
+11)Self-organising team
+12)Have regural meeting with team to resolve any difficulties if faced by anyone
+
+
+Roles in Agile 
+
+1) Product owner
+	-Drives the product from business perspective
+	-Responsibilities
+		-To define requirements and prioritize to their values
+		-To determine release dates
+		-To be a active partner in iteration planning and 
+		-Represent the voice of the customers
+		-To ensure that team is working on the most valued requirement
+		-Define user stories
+
+2) Scrum Master (Lead)
+	-Facilates the team to follow agile practices
+	-Keeping track of the plan by:
+		-Daily Stand-ups
+		-Planned meeting
+		-Demo
+		-Review
+		-Retrospective meetings
+
+3) Team members (Developers, Testers, etc,.)
+	-Should to cross-functional
+	-Self organising
+
+Scrum Events
+
+1) Sprints
+	-Sprit plan is done
+	-Sprint backlogs are completed 
+	-(Timeboxing) Duration of sprint is usually 1-4 weeks -> Usually set by the Product Owner
+	-Sprint can be cancelled only by the Product Owner
+	
+	-Sprit Planning (Not more than 2 hours per week) (8 hours per month)
+	-Daily Scrums (15 Mins)
+		-Involves
+			-Facilitator (Scrum Master/ Lead)
+			-Observer (Product Owner)
+			-Participants (Developers)
+		-Questions asked 
+			-What is done yesterday
+			-What is done today
+			-Any issues or blockage
+			
+	-Sprint Review (1 hour per week) (4 hours per month)
+	
+	-Sprint Retrospective (45 minutes per week) (3 hours per month)
+		Questions asked 
+			-What went well ?
+			-What didn't go well ?
+			-Any suggesions for improvement
+			
+	-Backlog refinements
+		
+Artifacts
+
+Product backlogs
+Sprint backlogs
+Increment
+
+
+		
+
+
+
