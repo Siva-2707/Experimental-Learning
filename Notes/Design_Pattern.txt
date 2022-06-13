@@ -1,11 +1,45 @@
 Design Pattern - Introduced by Gang of Four
 
-1) Creational - Completed
+Common architectural apporach
+
+Single Responsibility Principle
+Open-Close Principle
+Lisvoc Substitution Principle
+Interface Segregation Principle
+Dependancy Inversion Principle
+
+
+1)Creational
+	-Builder
+	-Factory
+		-Abstract Factory
+		-Factory Method
+	-Prototype
+	-Singleton
 	
-2) Structural 
-
+2)Structural 
+	-Adapter
+	-Bridge
+	-Composite
+	-Decorator
+	-Facade
+	-Flyweight 
+	-Proxy
+	
 3) Behavioural
-
+	-Chain of responsibility
+	-Command
+	-Intrepreter
+	-Iterator
+	-Mediator
+	-Memento
+	-Null Object
+	-Observer
+	-State
+	-Startegy
+	-Template Method
+	-Visitor
+	
 Creational Design Pattern
 =========================
 -Factory Method Pattern
@@ -24,4 +58,5 @@ define a class that has only one instance and provides a global point of access 
 cloning of an existing object instead of creating new one and can also be customized as per the requirement.
 
  
+
 
