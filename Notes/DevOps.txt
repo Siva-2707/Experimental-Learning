@@ -173,6 +173,9 @@ docker start jenkinsContainer
 
 docker stop jenkinsContainer
 
+Going inside a container
+docker exec -it <container name> /bin/bash to get a bash shell in the container.
+
 
 
 
