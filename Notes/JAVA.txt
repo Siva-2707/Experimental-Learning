@@ -271,13 +271,6 @@ After Java 8
 - TextBlock
 - Records (Similar to Java Beans)
 
-	
-
-
-
-
-
-
 
 Concepts to refresh
 
