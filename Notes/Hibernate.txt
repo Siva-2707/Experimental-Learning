@@ -27,3 +27,27 @@ Configuration -> SessionFactory -> Session
 Pesistant Class
 
 -Just a POJO with getters and setters for the fields inside the class
+
+
+APIs used in Hibernate
+
+Configuration
+ServiceRegistry
+SessionFactory
+Session
+Transaction
+
+Basic Annotations
+@Entity
+@Id
+@Embedded
+@Table
+@Column
+
+Reationl Mapping Annotations
+@OneToOne
+@OneToMany
+@ManyToOne
+@ManyToMany
+
+
