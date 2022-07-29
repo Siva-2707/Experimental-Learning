@@ -2,7 +2,9 @@ Design Pattern - Introduced by Gang of Four
 
 Common architectural apporach
 
-Single Responsibility Principle
+Principles (Should be revised)
+==========
+Single Responsibility Principle 
 Open-Close Principle
 Lisvoc Substitution Principle
 Interface Segregation Principle
@@ -10,22 +12,60 @@ Dependancy Inversion Principle
 
 
 1)Creational
-	-Builder
-	-Factory
-		-Abstract Factory
-		-Factory Method
-	-Prototype
-	-Singleton
+	-Deals with creation of objects
+	-Has Explicite and Implicite 
+	-Has single line creation and step-by-step creation of object 
+	
+		-Builder
+			Example (StringBuilder) -> CodeBuilder tool(MasterCraft)
+			Build an object by the user using related functions
+		-Factory
+			Returns an object based upon the values passed as requested by the user.
+				-Abstract Factory
+				-Factory Method
+		-Prototype
+			All about coping an object. 
+			(Shallow copy, Deep copy and cloning an object)
+			Prototype pattern is acheived by 
+				Deepcopy( with the help of copy constructor)
+				Cloneing( with implementing clonable interface to the class and overriding clone() method of tht object class)	
+				Serialization and Deserialization of an object( with using SerilizationUtil.roundtrip(ObjectToBeCopiedOrCloned) )
+		-Singleton
+			Only one instance is created for that class and used.
+			It is achecived by:
+				Making the constructor private
+				Creating a private static final instance within the class
+				Creating public getter for the instance.
+			Problems faced because of using Singleton Pattern:
+				When serializing the object the Singleton property is broken and a new copy of the instance is created
+					To overcome this issue:
+						To add protected Object readResolve(){
+						return the instance of the singleton;
+						}
+						
+			TYPES OF ACHEIVING SINGLETON:
+			-Basic Singleton
+			-Static Block Singleton
+			-Lazy Initialization Singleton and Thread safety
+			-Inner Static Class Singleton	
+			-Enum based Singleton (It's not serializable)
+			-Monostate (All the variables are made static.)
+			-Multiton (Restrict the number of Instance that is to be created)
+			
+			
+					
 	
 2)Structural 
-	-Adapter
-	-Bridge
-	-Composite
-	-Decorator
-	-Facade
-	-Flyweight 
-	-Proxy
+	-Deals with the structure of the class (class members)
 	
+		-Adapter
+		-Bridge
+		-Composite
+		-Decorator
+		-Facade
+		-Flyweight 
+		-Proxy
+		
 3) Behavioural
 	-Chain of responsibility
 	-Command

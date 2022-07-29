@@ -71,14 +71,18 @@ Copying instance
 ================
 1) Copy constructor
 	Overloaded constructor which can accept an Instance and copy it to the current instance
-2) Manually coping the values from one instance to another
 	
-3)Shallow copy
+2)Shallow copy
 	Copies the first level of variable and insataces of a class.
 	Object within an Object is not copied in the shallow copy only the reference of the object is copied.
-4)Deep copy
+3)Deep copy
 	Copies at most inner level layer of a class 
 	(i.e) Object within an Object is also copied in the deep copy.
+4)Cloning
+	By implementing the clonable interface and overridding the clone method of the super class(Object)
+5)Serialization
+	Here the object is converted into byte stream and stored in memory which can be used in other JVMs by deserializing it.
+	Acheived by implementing Serializable or the Externalizable inferace and 
 	
 Static keyword
 ==============
@@ -109,6 +113,9 @@ Instance initializer block
 It is similar to static block, but is executed each time the class is instantiated
 The constructor block get executed after Instance initializer block only
 If there is a super class, the execution happens only after execution of parent constructor
+
+
+
 
 
 Operators
@@ -205,6 +212,20 @@ Functional Programming (Stream API) and Functional Interface
 	- Predicate
 Threds and Multithreads
 ========================
+
+Thread is a lightweight subprocess that executes the code in sequence
+Every program contains atleast one thread. (Main thread)
+Available under java.lang.Thread
+
+Lifecycle of a thread		  ,-> Waiting-> Runnable
+	New -> Runnable -> Running --> Terinated
+
+New state(Once the  thread is created)
+Runnable state (Once the thread is started)
+Running state (Once the run() method is executed)
+Waiting state (When it is not running ie, when it is waiting for other thread to complete or when it is blocked)
+Terinated stat (When thread is completed the task)
+
 	
 	-Ways of enabling Thread
 		-Extending the thread class
@@ -226,6 +247,23 @@ Threds and Multithreads
 		- syncronized keyword
 		- locks
 		- Automic classes -> java.util.concurrent.atomic (Thread safe class)
+		
+Syncronized keyword and Syncronized block
+=========================================
+syncronized keyword can be applied to a method so that only one thread is allowed to access that method.
+
+syncronized blocks are blocks locked for a single thread, 
+when the respective block execution is over by a single thread, then only next thread is allowed to enter the block.
+
+We need syncronization in Java when multiple threads are working on the same object
+
+Thread Pool
+===========
+Thread pool is where the Threads are maintained in a queue for execution.
+
+Methods used to handle a thread.
+================================
+
 
 Exceptional Handeling
 =====================
