@@ -1,3 +1,4 @@
+import java.util.HashMap;
 
 public class SingletonBasic {
 
@@ -21,12 +22,24 @@ public class SingletonBasic {
 //		System.out.println(obj2);
 		
 		
-		MonoState instance = new MonoState();
-		instance.setAge(29);
-		instance.setName("Siva");
-		System.out.println(instance);
-		MonoState instace2 = new MonoState();
-		System.out.println(instace2);
+		//Monostate
+		
+//		MonoState instance = new MonoState();
+//		instance.setAge(29);
+//		instance.setName("Siva");
+//		System.out.println(instance);
+//		MonoState instace2 = new MonoState();
+//		System.out.println(instace2);
+		
+		//Multiton
+		
+		Printer p1 = Printer.getInstance(Subsystem.PRIMARY);
+		Printer p2 = p1.getInstance(Subsystem.SECONDARY);
+		System.out.println(p2.getInstanceCount());
+		Printer p3 = Printer.getInstance(Subsystem.PRIMARY);
+		Printer p4 = Printer.getInstance(Subsystem.TERINARY);
+		System.out.println(Printer.getInstanceCount());
+		
 	}
 
 }
@@ -154,3 +167,33 @@ class MonoState{
 		return "[ Age : "+ age +" Name: " + name +" ]";
 	}
 }
+
+//Multiton 
+enum Subsystem{
+	PRIMARY,
+	SECONDARY,
+	TERINARY
+}
+
+//Only 3 instances of Printer Class can be created
+class Printer {
+	
+	private static int instanceCount = 0;
+	private Printer() {
+	}
+	private static HashMap<Subsystem, Printer> instances = new HashMap<>();
+	
+	public static Printer getInstance(Subsystem s) {
+	if(! instances.containsKey(s)) {
+		instances.put(s, new Printer ());
+		instanceCount++;
+	}
+	return instances.get(s);	
+	}
+	public static int  getInstanceCount() {
+		return instanceCount;
+	}
+}
+
+//Singleton with Dependency Injection
+

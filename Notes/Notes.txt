@@ -20,6 +20,18 @@ Update GitHub and Linkedin Profile
 Connect with People with Message in it
 Look up skills in Linkedin for the role.
 
+Important Concepts to be Learnt
+================================
+Data Structure and Algorithims
+Collection API in JAVA
+Lambda expression in JAVA
+Dynamic Progamming
+Java Genrics
+Java Threads
+Java File API
+Design Patterns
+
+
 
 #Java 8
 

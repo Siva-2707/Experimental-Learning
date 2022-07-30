@@ -51,14 +51,14 @@ Dependancy Inversion Principle
 			-Enum based Singleton (It's not serializable)
 			-Monostate (All the variables are made static.)
 			-Multiton (Restrict the number of Instance that is to be created)
+			-Singleton With Dependancy Injection
 			
-			
-					
-	
 2)Structural 
 	-Deals with the structure of the class (class members)
 	
 		-Adapter
+			Getting the interface you want from the interface you have
+			
 		-Bridge
 		-Composite
 		-Decorator
