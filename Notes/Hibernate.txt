@@ -50,4 +50,29 @@ Reationl Mapping Annotations
 @ManyToOne
 @ManyToMany
 
+Aggregation and Composition relationships
+=========================================
+Aggregation Relationship
+
+	Aggregation indicates the relationship between a whole and a part
+	A Band has an artist (Band is a whole and artist is a part)
+	In Aggregation if the whole is destroyed the parts is not destroyed.
+	Here part are shared and can be used with other whole (A artist can be a part of other band too)
+
+Composition Relationship
+
+	Composition is a strong aggregation
+	When the whole is destroyed and the parts are also destroyed along with it.
+	A House has a room (House is whole and room is a part)
+	Here part is shared with it's whole only. It cannot be shared with other whole.
+	The room can be a part of the particular house only.
+
+Entity and Value types
+======================
+An object of Entity type has it's own database identity (Primary Key)
+
+Value type objects are identified through the owning entity
+The lifecycle of the value type object is bound to that of it's owning entity object
+
+
 
