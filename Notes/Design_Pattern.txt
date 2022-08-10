@@ -1,5 +1,7 @@
 Design Pattern - Introduced by Gang of Four
 
+
+
 Common architectural apporach
 
 Principles (Should be revised)
@@ -58,8 +60,12 @@ Dependancy Inversion Principle
 	
 		-Adapter
 			Getting the interface you want from the interface you have
+			As the name suggests, this pattern uses the existing implementation with the help of a adapter class.
 			
 		-Bridge
+			Connecting components together through abstraction
+			A mechanism that decouples an interface(hierarchy) from an implementation (hierarchy)
+			
 		-Composite
 		-Decorator
 		-Facade
@@ -76,6 +82,9 @@ Dependancy Inversion Principle
 	-Null Object
 	-Observer
 	-State
+		Ablity to use different objects in place of one.
+		Ablity to add additional features to the program without affect the current functionality. (Open closed principle)
+		Acheived by using Polymorphisam
 	-Startegy
 	-Template Method
 	-Visitor

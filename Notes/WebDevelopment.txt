@@ -1,0 +1,21 @@
+Hosting
+
+Shared hosting 
+Virtual private hosting 
+Dedicated hosting 
+Cloud hosting
+
+
+HTTP Status Codes
+
+Information 	- 	(100-199)
+Success 		- 	(200-299)
+Redirection 	- 	(300-399)
+Client Error	- 	(400-499)
+Server Error	- 	(500-599)
+
+HTTP - Hyper Text Transfer Protocol
+HTTPS - Hyper Text Transfer Protocol Secure
+TCP - Transmission Control Protocol
+DHCP - Dynamic Host Configuration Protocol
+DNS - Domain Name System Protocol

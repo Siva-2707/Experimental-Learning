@@ -124,6 +124,8 @@ Looping statements
 Methods
 OOPS 
  - Encapsulation
+		Does not allows user to directly access the member of the class
+		Helps in validating data before assigning it to them
  - Inheritance 
    ===========
 		Why inheritance in java 
@@ -136,7 +138,12 @@ OOPS
 		Java doesn't support multiple inheritance
 	
  - Abstraction
- - Polimorphisam
+		Process is completly hidden, only the necessary process is shown
+		This is acheived by making the unnecessary methods as private
+ - Polymorphisam (Many Forms)
+		One object can take many forms
+		Acheived by Abstract class
+		
  
 
  
