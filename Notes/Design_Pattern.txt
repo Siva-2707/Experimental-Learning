@@ -76,8 +76,11 @@ Dependancy Inversion Principle
 			Helps in adding additional functionalities to an existing feature
 				Can be done by extending the existing class and adding the feature to it. (Cannot be done for final class)
 				
-		-Facade
+		-Facade (False appreance)
+			Helps in exposing several components through a single interface.
+			It helps in creating simple API's for complex API.
 		-Flyweight 
+			A space optimization technique that lets us use less data by storing externally the data associated with similar objects
 		-Proxy
 		
 3) Behavioural
