@@ -1,4 +1,5 @@
 Design Pattern - Introduced by Gang of Four
+https://github.com/etoitau/Design-Patterns
 
 
 
@@ -67,7 +68,14 @@ Dependancy Inversion Principle
 			A mechanism that decouples an interface(hierarchy) from an implementation (hierarchy)
 			
 		-Composite
+			A mechanism that treats a singular object and the components of the collection of that object in uniform manner.
+			Eg. Object 		-> Ball 
+				Component	-> List<Ball>
+		
 		-Decorator
+			Helps in adding additional functionalities to an existing feature
+				Can be done by extending the existing class and adding the feature to it. (Cannot be done for final class)
+				
 		-Facade
 		-Flyweight 
 		-Proxy
