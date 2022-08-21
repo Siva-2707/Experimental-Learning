@@ -73,16 +73,18 @@ Dependancy Inversion Principle
 				Component	-> List<Ball>
 		
 		-Decorator
-			Helps in adding additional functionalities to an existing feature
+			Helps in adding additional functionalities without changing the existing code. (Open closed principle)			
 				Can be done by extending the existing class and adding the feature to it. (Cannot be done for final class)
 				
 		-Facade (False appreance)
 			Helps in exposing several components through a single interface.
 			It helps in creating simple API's for complex API.
+		
 		-Flyweight 
 			A space optimization technique that lets us use less data by storing externally the data associated with similar objects
 		-Proxy
-		
+			It is a replacement for the existing functionality
+			A proxy with different functionality without affecting the original function
 3) Behavioural
 	-Chain of responsibility
 	-Command

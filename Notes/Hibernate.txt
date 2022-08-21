@@ -38,17 +38,32 @@ Session
 Transaction
 
 Basic Annotations
-@Entity
-@Id
-@Embedded
-@Embeddable
-@Table
-@Column
-@JoinColumn
-@MapsId
+@Entity 	-> To specify that it is a entity
+@Id 		-> To specify the primary key for the table
+@Embedded 	-> To specify that it is a embedded class (That it will be included in the parent class table)
+@Embeddable	-> To specify that the class is open to embedding (Sort of permission)
+@EmbeddedId -> This specifies the composite primary key.
+@Table 		-> To specify the field as table
+@Column		-> Mention it as a column
+@JoinColumn -> Join column to a existing table from an other table  
+@JoinColumns 
+@MapsId 	-> Maps one key from one table to another. Used to add forign keys to a table.
+
+@Enumurated(EnumType.STRING) ->In order to add Enumurated type of data into the column. 
+If EnumType attribute is not specified, Then it will show the position of data associated with the enum.
+@AttributeOverride -> Overrides the default name when embedding the class with it.
+
+
+Storing a collection into a database:
+@ElementCollection
+@CollectionTable
+
+
+
+
 
 Reationl Mapping Annotations
-@OneToOne
+@OneToOne 
 @OneToMany
 @ManyToOne
 @ManyToMany

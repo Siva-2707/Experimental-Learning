@@ -96,21 +96,9 @@ Software Developer Skillset
 12)Software Development Lifecycle
 13)Basic Testing
 
-
-To Learn
-String API
-Wrapper Classes
-Advanced Java - (Threads, Collection API)
-PL/SQL
-XML -> DTD , XSD
-JSON
-
-
 Topics knows:
 ============
-Core Java
-Advanced Java - Exceptional Handelling
-HTML, CSS, JS
+JAVA
 MYSQL
 VCS - Git
 BuildTool - Maven
@@ -127,6 +115,23 @@ JDBC, Servlet, JSP
 
 Spring Core
 Spring Batch
+
+Topics to be Covered: (JavaTpoint)
+=====================
+Data Structure and Algorithims
+Design Patterns
+DBMS
+Hibernate
+PL/SQL
+jQuery
+Spring Framework
+Computer Networking
+
+Javascript
+JSON
+
+
+
 
 
 ----------------------------------------------------------------
