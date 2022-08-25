@@ -58,8 +58,9 @@ Storing a collection into a database:
 @ElementCollection
 @CollectionTable
 
-
-
+@Cacheable
+@Cache
+@OrderBy
 
 
 Reationl Mapping Annotations
@@ -67,6 +68,80 @@ Reationl Mapping Annotations
 @OneToMany
 @ManyToOne
 @ManyToMany
+
+
+
+Fetching type (For relations)
+==============
+Lazy - When mentioning the sub entity the query is fired
+		Default type
+Eager- Query is fired for the subentity even when the base entity is called.
+		(Add attribute fetch= FetchType.EAGER)
+
+Hibernate Cache
+===============
+When the application request same data for multiple times from the database,
+The database is hit each time and the data is fetched
+This is a time consuming process, and hibernate cache helps in solving the problem
+Hibernate cache is a buffer memory present in the application server where previously processed query data are present.
+
+
+	-First level cache
+		-It is provided by default with hibernate.
+		-It is session specific.
+		-Each session will have a first level cache.
+		-The data is fetched from the PersistenceContext(First level cache). Even if the data is modified in the database by someother user,
+		 the data that is present in the firstLevelCache is only fetched.
+		-If you want to force fetch the data from the database, regarless of the date present in the PersistenceContext,
+		 use refresh() method of EntityManger.
+		-If you want to clear an object from the PersistenceContext you can use the detach() method.
+		-If you want to fully clear the PersistenceContext you can use the clear() method.
+		
+	-Second level cache
+		-When you want to have a common cache for the whole application independent of the session, Second level cache is used.
+		-It is not provided by default, it has to be configured.
+		-Like log4j, it's dependencies has to be downloaded/configured via maven.
+		-Configue in hibernate.cfg.xml that second level cache is used.
+		-Mention the entities as @Cachable or @Cache
+		
+	Query with second level cache.
+		-Configure hibernate.cfg.xml that Query cache is used.
+		-Create a query
+		-Set query object to cacheable to true.
+		-Execute query.
+
+Hibernate Query Language (HQL)
+==============================
+
+SQL query can be used in HQL using native queries
+
+Hibernate States
+================
+Transient
+	By default all the objects are in transient state
+Persistent
+	Once you use save() or persist() method, the object goes into Pesistant state
+	Any operation performed on the object will affect the database.
+	When we use the merge() method the detached object joins Persistent state with the values in it.
+Detached
+	Once you use detach() method, the object is detached from the session and further operation performed on the object will not be reflected in the database.
+Removed
+	remove() method is used to remove the object from the database, but will still be in java as an object.
+	
+Get and Load methods for fetching data
+=======================================
+
+Get
+		It fires the query even when the object is not used further.
+		It returns an Null object when it couldn't find the data for the primary key specified.
+Load
+		It fires the query only when the object is used.
+		It throws ObjectNotFound exception when it couldn't find the data for the primary key specified.
+		
+getReference() => This will only create a referece of a object (A proxy null object)
+				  When trying to access the data, query is fired and data is fetched.
+				 
+		
 
 Aggregation and Composition relationships
 =========================================
@@ -121,3 +196,18 @@ Hibernate Dependancies
 		</dependency>
 
 	</dependencies>
+	
+	
+JPA 
+===
+
+Classes involved
+	EntityManagerFactory
+	EntityManager
+
+Dirty Check
+===========
+It occurs during commit process of the transaction.
+If the retrived object is modified, it is identified by dirty check and persists the current state of the object.
+
+In order to force dirty check and persist the object flush() of the EntityManager can be used.

@@ -34,6 +34,26 @@ Representation of resources:
 Server hosts the API 
 Used by Browser
 
+Annotation used
+
+@GET
+@POST
+@Path
+@Produces(MediaType.TYPE)
+@Consumes(MediaType.TYPE)
+
+Dependencies used
+
+Jersey -> provides xml conversion of java objects by default.
+jersey-media-moxy -> json conversion of java objects
+
+
+Annotations for Spring Boot RestAPI
+@RestController
+@RequestMapping
+@GetMapping
+
+
 
 
 

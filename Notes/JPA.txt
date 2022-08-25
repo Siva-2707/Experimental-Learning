@@ -1,0 +1,11 @@
+Java Persistence API
+====================
+
+JPA is a java specification for accessing, persisting and managing data between Java object and a relational database.
+
+JPA provides guidelines for a framework so that that can be implemented and become JPA compatible.
+
+Hibernate is one of the JPA provider
+There are lot of JPA provider.
+
+If you follow JPA you can switch to any of the JPA providers without code change.

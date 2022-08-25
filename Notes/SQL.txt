@@ -59,8 +59,8 @@ SELECT * FROM table ORDERBY columnName DESC columnName, columnName ASC;
 Joints in SQL:
 
 Inner Joint - Selects data from both tables when conditions are met.
-Left Joint / Left Outer Joint- Selects data from left tables even when conditions are not met.
-Right Joint / Right Outer Joint- Selects data from right tables even when conditions are not met.
+Left Joint or Left Outer Joint- Select the left table fully and the right table data is fetched only if condition is met.
+Right Joint or Right Outer Joint- Select the right table fully and the left table data is fetched only if condition is met.
 Outer Joint - 
 
 String Functions
