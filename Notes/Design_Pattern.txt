@@ -87,6 +87,7 @@ Dependancy Inversion Principle
 			A proxy with different functionality without affecting the original function
 3) Behavioural
 	-Chain of responsibility
+		
 	-Command
 	-Intrepreter
 	-Iterator
