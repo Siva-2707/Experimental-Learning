@@ -2,6 +2,7 @@ Maven
 Html CSS JS
 Servlets
 JSP - Java Server Pages
+EJB - Enterprise Java Beans
 Java Annotations
 Spring Core
 Spring MVC
@@ -93,6 +94,32 @@ Functional
 Example:-
 Expression language : "{$name}"
 Tag : <c:out value="{$name}" var=> <
+
+EJB - Enterprise Java Beans
+
+EJBs are nothing but java classes that are used to process Bussiness Logic.
+
+Types:
+Stateless
+Stateful
+Singleton
+
+Stateless
+A simple class is created, with the variables and the bussiness logic.
+Here the state of the bean is not saved.
+The class is annotated as @Stateless
+
+Stateful
+Here the state of the bean is saved.
+Where an inteface is created, and a class implementing the interface is created.
+The interface is annotated as @Remote
+The class is annotated as @Stateful
+Configure Initial Context in jspInit() method of JSP using the lookup() method.
+
+JMS - Java Message Services
+
+
+
 
 
 

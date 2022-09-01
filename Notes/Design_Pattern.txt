@@ -84,10 +84,10 @@ Dependancy Inversion Principle
 			A space optimization technique that lets us use less data by storing externally the data associated with similar objects
 		-Proxy
 			It is a replacement for the existing functionality
-			A proxy with different functionality without affecting the original function
+			A proxy or a copy with different functionality without affecting the original version.
 3) Behavioural
 	-Chain of responsibility
-		
+		Chain of responsibility pattern is used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them. Later, the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
 	-Command
 	-Intrepreter
 	-Iterator

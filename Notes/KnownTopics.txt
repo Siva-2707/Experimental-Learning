@@ -1,0 +1,22 @@
+Core Java
+Advanced Java
+JDBC
+MySQL
+Oracle SQL
+J2EE
+	Servlets
+	JSP
+	EJB
+Design Patterns
+Agile
+DevOps
+Hibernate
+
+
+Topics to be Covered
+
+DS ALGO (Geeks for Geeks)
+API
+Spring Framework(LinkedIn learning)
+
+React JS

@@ -211,3 +211,7 @@ It occurs during commit process of the transaction.
 If the retrived object is modified, it is identified by dirty check and persists the current state of the object.
 
 In order to force dirty check and persist the object flush() of the EntityManager can be used.
+
+
+JPQL Queries
+ 

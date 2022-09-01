@@ -1,0 +1,26 @@
+Spring MVC - 
+
+Flow of Spring MVC
+
+Request is sent from the client to the server.
+The request is captured by the DispatcerServlet(Front Controller)
+The the request is passed to the corresponding Controller
+The controller processes info and returns the model and view back to the DispatcerServlet
+Then the DispatcerServlet fetches the corresponding view with the model passed
+And then that is passed back to the client as a text/html page.
+
+
+DispatcerServlet
+
+Annotations used
+@Controller
+@RequestMapping
+@RequestMapping
+
+
+@Configuration
+@ComponentScan
+@Bean
+
+
+Dependancies
