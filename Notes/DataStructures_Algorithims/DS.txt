@@ -1,0 +1,17 @@
+Arrays:
+
+1. Two Sum
+
+2. Maximum Subarray
+
+3. Move Zeroes
+
+4. Contains Duplicate
+
+5. Rotate Array
+
+Bonus:
+This question is the type of problems that can be done using what we know about arrays, or even regular expressions.
+
+
+Longest Word
