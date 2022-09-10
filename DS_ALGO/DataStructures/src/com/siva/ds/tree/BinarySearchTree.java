@@ -76,27 +76,27 @@ public class BinarySearchTree {
 		
 		
 		BinaryTreeNode refNode = rootNode;
-		BinaryTreeNode  previousNode = null;
+		BinaryTreeNode  parentNode = null;
 		while(refNode != null) {
 			if(val < refNode.data) {
 				//Go left
-				previousNode = refNode;
+				parentNode = refNode;
 				refNode = refNode.leftNode;
 			}
 			else if(val > refNode.data) {
 				//Go right
-				previousNode = refNode;
+				parentNode = refNode;
 				refNode = refNode.rightNode;
 			}
 			else if(val == refNode.data) {
 				
 				//For handling tail element.
 				if(refNode.leftNode == null && refNode.rightNode == null) {
-					if(previousNode.rightNode == refNode) {
-						previousNode.rightNode = null;
+					if(parentNode.rightNode == refNode) {
+						parentNode.rightNode = null;
 					}
 					else {
-						previousNode.leftNode = null;
+						parentNode.leftNode = null;
 					}
 					return;
 				}
@@ -104,11 +104,11 @@ public class BinarySearchTree {
 				//For handling element when right node is null
 				//(Where there is no greater element than the  current element)
 				else if(refNode.rightNode == null) {
-					if(previousNode.rightNode == refNode) {
-						previousNode.rightNode = refNode.leftNode;
+					if(parentNode.rightNode == refNode) {
+						parentNode.rightNode = refNode.leftNode;
 					}
 					else {
-						previousNode.leftNode = refNode.leftNode;
+						parentNode.leftNode = refNode.leftNode;
 					}
 					return;
 				}
@@ -132,11 +132,11 @@ public class BinarySearchTree {
 					//Once found, replacing the found element with the element that is to be removed.
 					innerLoopNode.rightNode = refNode.rightNode;
 					innerLoopNode.leftNode = refNode.leftNode;
-					if(previousNode.rightNode == refNode) {
-						previousNode.rightNode = innerLoopNode;
+					if(parentNode.rightNode == refNode) {
+						parentNode.rightNode = innerLoopNode;
 					}
 					else {
-						previousNode.leftNode = innerLoopNode;
+						parentNode.leftNode = innerLoopNode;
 					}
 					break;
 				}
