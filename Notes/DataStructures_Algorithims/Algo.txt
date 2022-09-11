@@ -1,0 +1,5 @@
+Recursive
+
+	-Identify base case for the recursion to break
+	-Identify the recursive case.
+	-Get closer and closer and return. Two returns are required, one for base case and one for recursive case.

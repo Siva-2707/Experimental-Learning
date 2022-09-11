@@ -15,3 +15,47 @@ This question is the type of problems that can be done using what we know about 
 
 
 Longest Word
+
+
+Arrays
+	Static 
+	Dynamic
+Linked List
+	Singly (Current node, next node) 
+	Doubly (Previous node, current node, next node)
+
+Stacks 
+	Arrays are linked list can be used. 
+	
+Queue
+	Linked list is prefered. Since we have to shift elements if we use a array.
+	Circular arrays are used if the size of the queue is static.
+
+Tree
+	Binary Tree
+		Balanced (The number of nodes in the last level == (sum of all the nodes present before it) +1
+		Unbalanced 
+		Best case O(log N) -> Balanced Binary tree
+		Worst case O(N) -> Unbalanced Binaray tree
+		
+Heap
+	Binary Heap
+		Trees are construcntor in ascending or descending order.
+		Used mostly when conditon is given based on increasing or decreaing order. (Like records for data greater than or less than the given value.)
+		
+		
+Graphs
+	Directed
+	Undirected
+	Weighted 
+	Un-weighted
+	Cyclic
+	Acyclic
+	
+		Ways of representing Graphs
+			-Edge List
+			-Adjacent List
+			-Adjacent Matrix
+		
+		Neo4j used for buiding Graph data structures
+		

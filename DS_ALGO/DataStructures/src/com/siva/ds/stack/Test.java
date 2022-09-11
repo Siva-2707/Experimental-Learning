@@ -1,7 +1,5 @@
 package com.siva.ds.stack;
-//import com.siva.ds.stack.Stack;
 
-import com.siva.ds.stack.Stack2;
 
 public class Test {
 	public static void main(String args[]) {

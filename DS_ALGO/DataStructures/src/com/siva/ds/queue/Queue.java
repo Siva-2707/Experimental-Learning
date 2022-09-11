@@ -1,4 +1,4 @@
-package com.siva.queue;
+package com.siva.ds.queue;
 
 import com.siva.ds.linkedList.Node;
 
