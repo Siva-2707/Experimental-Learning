@@ -3,3 +3,17 @@ Recursive
 	-Identify base case for the recursion to break
 	-Identify the recursive case.
 	-Get closer and closer and return. Two returns are required, one for base case and one for recursive case.
+	
+Sorting
+	Elemenary Sorts
+		-Bubble Sort O(N^2)
+			Simplest and Least effecient
+		-Insersion Sort
+		
+		-Selection Sort O(N^2)
+			Selecting the minimum or maximum element from the list and swaping it to the begining of the list
+	Complex Sorts
+		-Merge Sort 
+		-Quick Sort
+	
+	
