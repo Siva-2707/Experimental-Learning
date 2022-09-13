@@ -2,7 +2,7 @@ package com.siva.ds.tree;
 
 public class BinarySearchTree {
 
-	BinaryTreeNode rootNode = null;
+	public BinaryTreeNode rootNode = null;
 	
 	
 	public BinarySearchTree() {
@@ -18,25 +18,34 @@ public class BinarySearchTree {
 	}
 	
 	public void insert(int data) {
+		
+		//Checking if root node is null and seting the value for it.
 		if(rootNode == null) {
 			defineRoot(data);
 			return;
 		}	
 		else {
 			BinaryTreeNode refNode = rootNode;
+			//Looping through each node
 			while(refNode != null) {
+				//Checking if the data that is to be inserted is greater than the current node data.
 				if(data > refNode.data) {
+					//If it greater and the right node is null. Inserting data.
 					if(refNode.rightNode == null) {
 						refNode.rightNode = new BinaryTreeNode(data);
 						break;
 					}
+					//If right node is not null, moving to the right node.
 					refNode = refNode.rightNode;
 				}
+				//If the required data is less than the current node.
 				else {
+					//And if the left node is null, inserting data into it.
 					if(refNode.leftNode == null) {
 						refNode.leftNode = new BinaryTreeNode(data);
 						break;
 					}
+					//Else just moving to the left node.
 					refNode = refNode.leftNode;
 				}
 			}
@@ -90,7 +99,7 @@ public class BinarySearchTree {
 			}
 			else if(val == refNode.data) {
 				
-				//For handling tail element.
+				//Case 1: For handling tail element.
 				if(refNode.leftNode == null && refNode.rightNode == null) {
 					if(parentNode.rightNode == refNode) {
 						parentNode.rightNode = null;
@@ -101,7 +110,7 @@ public class BinarySearchTree {
 					return;
 				}
 				
-				//For handling element when right node is null
+				//Case 2: For handling element when right node is null
 				//(Where there is no greater element than the  current element)
 				else if(refNode.rightNode == null) {
 					if(parentNode.rightNode == refNode) {
@@ -113,7 +122,7 @@ public class BinarySearchTree {
 					return;
 				}
 				
-				//For handling element when right node is present and sub nodes are also present for right node.
+				//Case 3: For handling element when right node is present and sub nodes are also present for right node.
 				else{
 					
 					BinaryTreeNode innerLoopNode = refNode;

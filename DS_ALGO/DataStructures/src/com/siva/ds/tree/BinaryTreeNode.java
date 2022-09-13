@@ -2,9 +2,9 @@ package com.siva.ds.tree;
 
 public class BinaryTreeNode {
 
-	int data;
-	BinaryTreeNode leftNode;
-	BinaryTreeNode rightNode;
+	public int data;
+	public BinaryTreeNode leftNode;
+	public BinaryTreeNode rightNode;
 	
 	public BinaryTreeNode(int data) {
 		this.data = data;

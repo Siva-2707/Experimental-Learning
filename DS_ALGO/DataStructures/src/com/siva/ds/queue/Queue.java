@@ -6,6 +6,17 @@ public class Queue<T> {
 	
 	private Node<T> first;
 	private Node<T> last;
+	public int size = 0;
+	public Queue(){
+		
+	}
+	
+	public Queue(T data){
+		Node<T> newNode = new Node<T>(data);
+		this.last = newNode;
+		this.first = last;
+		size++;
+	}
 	
 	public void enqueue(T data) {
 		
@@ -18,14 +29,16 @@ public class Queue<T> {
 			last.nextNode = newNode;
 			last = newNode;
 		}
-		
+		size++;
 	}
 	
 	public T dequeue() {
 		if(first != null) {
 			T data = first.data;
 			first = first.nextNode;
+			size--;
 			return data;
+			
 		}
 		else {
 			System.out.println("Queue is empty");
@@ -38,6 +51,10 @@ public class Queue<T> {
 			return first.data;
 		}
 		return null;
+	}
+	
+	public boolean isEmpty() {
+		return size == 0;
 	}
 	
 	@Override
