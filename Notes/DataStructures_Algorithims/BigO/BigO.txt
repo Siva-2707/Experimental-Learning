@@ -1,0 +1,24 @@
+O(1) - Constant time
+O(n) - Linera time
+O(n^2) - Quadratic time
+O(n!) - Factorial time
+
+
+
+Rules to calculate BigO
+
+Worst case 
+Remove constants
+Different terms for inputs
+	O(a+b) or O(a*b) for different input
+Drop non dominants
+	In case of O(n + n^2), we can eleminate n and keep BigO as O(n^2) as it is the bigger 
+
+Time complexity:
+Calculated by BigO 
+Space complexity:
+Memory has two areas:
+	Heap -> Variables are stored here.
+	Stack -> Keeping track of function calls
+	
+	

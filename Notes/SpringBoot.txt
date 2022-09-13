@@ -1,8 +1,0 @@
-Spring Boot
-	
-Terminologies
-	- Spring Initializer
-	- AutoConfiguration
-	- StarterProjects
-	- Actuators 
-	- DeveloperTools

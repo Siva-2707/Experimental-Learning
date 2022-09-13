@@ -1,0 +1,92 @@
+Resume
+LinkedIn
+Portfolio
+Email
+
+
+Resume
+making resume - >resumemaker.online
+	Characteristics:
+		One page 
+		Relevent skills
+		Personalized
+		Online link (Github or a webpage or some sort of online link that attracts the interviewer)
+		
+		Cheat sheet:
+		✅ Use a pre-designed resume template
+		✅ Make the resume fit on 1 page
+		✅ Include words from job description
+		✅ Include company name you are applying to
+		✅ Does your first item on your resume reflect what they are looking for?
+		✅ Experience titles demonstrate value
+		✅ Do you have an online link?
+		✅ Remove the word “I”
+		✅ No buzzwords describing how great you are
+		✅ Are you using Action words?
+		✅ Measure everything in terms of impact, don’t just describe your responsibilities
+		✅ Technical Knowledge/Skills should include what they are looking for. Only show years if it is impressive
+		✅ Include only sections/items that are impressive: Experience, Projects, Education, Technical Skills
+		✅ No typos or bad grammar
+		
+Check if resume is suitable for the position you are applying:
+jobscan.co
+
+
+Not enough experience ?
+Github Profile
+Contribute to Opensource projects
+Website
+1-2 Big project
+Blog
+
+https://github.com/zero-to-mastery/ZtM-Job-Board
+
+Websites for Building websites
+https://cruip.com/
+http://www.mashup-template.com/templates.html
+https://mdbootstrap.com/freebies/
+https://www.creative-tim.com/bootstrap-themes/ui-kit?direction=asc&sort=price
+https://medium.freecodecamp.org/15-web-developer-portfolios-to-inspire-you-137fb1743cae
+
+
+Where to apply Jobs:
+
+LinkedIn 
+Hackemews
+Angelist (Startups)
+weworkremotely.com
+
+Websites for getting jobs via a Secondary company
+
+Hired.ca
+triplebyte.com
+whitetruffle.com
+relevel.com
+
+meetup.com
+
+
+Resources: Where To Find Jobs?
+Here is a list of my recommended resources for finding that dream job:
+
+My Favourites:
+LinkedIn Jobs
+HackerNews Who is Hiring (You will need to search for most recent month)
+AngelList
+
+Remote Jobs:
+https://designmodo.com/jobs/
+https://weworkremotely.com/
+https://remoteok.io/
+
+Others:
+Hired (FYI, this is my personal referral link)
+TripleByte
+Whitetruffle
+Zip Recruiter
+Meetup.com
+
+
+Google Coding Interview sample: 
+https://www.youtube.com/watch?v=XKu_SEDAykw
+

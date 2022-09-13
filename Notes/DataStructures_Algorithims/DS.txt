@@ -58,4 +58,3 @@ Graphs
 			-Adjacent Matrix
 		
 		Neo4j used for buiding Graph data structures
-		

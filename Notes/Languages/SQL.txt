@@ -1,0 +1,99 @@
+Desktop
+Port: 3306
+Username: root
+Password: root
+Server Name: MySQL80
+
+Laptop
+
+
+Notes
+
+CREATE TABLE tableName(
+columnName type constrain,
+columnName type
+);
+
+type - INTEGER, VARCHAR
+constrain - NOT NULL, DEFAULT, UNIQUE, PRIMARY KEY	
+
+ALTER TABLE tableName ADD columnName;  -Adds a column after table defenition
+
+
+
+DROP TABLE tableName;
+DROP TABLE IF EXISTS tableName;
+
+
+
+
+
+SELECT * FROM tableName WHERE logicalCondition ORDERBY columnName OFFSET = value;
+SELECT DISTINCT FROM tableName;
+
+INSERT INTO tableName VALUES (value, value);  // Should specify all column values
+INSERT INTO tableName (columnName, columnName) VALUES (value, value);
+INSERT INTO tableName (column, columnName) VALUES (value, value);
+INSERT INTO tableName DEFAULT VALUES;
+
+DELETE FROM tableName WHERE logicalCondition;
+
+To check for null and not null:
+SELECT * FROM tableName where columnName IS NULL;
+SELECT * FROM tableName where columnName IS NOT NULL;
+
+Filtering data using WHERE clause:
+
+SELECT * FROM table WHERE column like '%text%';
+SELECT * FROM table WHERE column like 'text%';
+SELECT * FROM table WHERE column like '%text';
+SELECT * FROM table WHERE column IN ('text', 'text2');
+
+Ordering data using ORDERBY clause:
+
+SELECT * FROM table ORDERBY columnName;
+SELECT * FROM table ORDERBY columnName ASC;
+SELECT * FROM table ORDERBY columnName DESC;
+SELECT * FROM table ORDERBY columnName DESC columnName, columnName ASC;
+
+Joints in SQL:
+
+Inner Joint - Selects data from both tables when conditions are met.
+Left Joint or Left Outer Joint- Select the left table fully and the right table data is fetched only if condition is met.
+Right Joint or Right Outer Joint- Select the right table fully and the left table data is fetched only if condition is met.
+Outer Joint - 
+
+String Functions
+-Length
+-Substring
+-Triming
+-Case changing
+
+TYPEOF
+ROUND
+DATE and TIME related functions
+
+SQL Aggrates
+-COUNT
+-AVG
+-MIN
+-MAX
+-SUM
+
+
+SELECT columnName, COUNT(columnName) 
+FROM tableName 
+WHERE logicalCondition 
+GROUPBY columnName 
+HAVING logicalCondition
+ORDERBY columnName
+
+SQL Transactions
+SQL Triggers
+SQL Views 
+SQL Subselects
+
+
+
+
+

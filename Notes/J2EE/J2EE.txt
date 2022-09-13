@@ -1,0 +1,128 @@
+Maven
+Html CSS JS
+Servlets
+JSP - Java Server Pages
+EJB - Enterprise Java Beans
+Java Annotations
+Spring Core
+Spring MVC
+Spring Boot - RestAPI
+
+
+Servlets
+=========
+Servlet - Class that extends HttpServlet class.
+Processes HttpRequest HttpResponse objects.
+
+Passing values to other servlets :-
+By RequestDispatcher class -------------------
+											  ----- Need to compare				
+By sendRedirect method of Response object. ---
+Cookies
+Sessions
+
+ServletConfig and ServletContext - Used in setting default values for Servlets. Specified in web.xml  
+ServletConfig - Specific to each Servlet in the project. Overrides  ServletContext.
+ServletContext - Commen to all the Servlets in the project. 
+
+Servlet Filters
+Class that extends ServletFilter class.
+Methods in ServletFilter Class:-
+	-init()
+	-doFilter()
+	-destroy()
+Filter chaining - Linking Filters
+FilterConfig - Configuring Filters
+
+
+Session Tracking Techniques
+-----------------------------
+Cookies
+URL Rewriteing
+Hidden Form Field
+HTTP Session
+
+JSP - Java Server Pages -> Create dynamic webpages
+=======================
+JSP is converted to Servlet automatically
+
+Tages used in JSP:-
+Directive <%@page import = "com.siva.demo"  %> -- Import package 
+Declaration <%! int n; %> -- Globally declared into the Servlet
+Scriptlet <%    %> -- Goes into service method of Servlet
+Expresstion<%=  n %> -- Prints the value into Browser. Alternative for out.println().
+
+Attributes used in Directive Tag:
+@page
+@include  -> Includes other JSPs into the current file.
+@taglib
+
+Implicite Objects:-  Don't need to instansiate.
+
+JSP Objects		  Servlet Objects
+------------------------------------
+request		 	- HttpRequest
+response	 	- HttpResponse
+pageContext  	- PageContext  --> Similar to ServletContext and ServletConfig. But, Scope is limited to the page.
+out(JspWriter) 	- PrintWriter
+session 		- HttpSession
+application 	- ServletContext
+config			- ServletConfig
+
+Model View Controller (MVC) 
+===========================
+
+Request is sent to the Servlet(Controller) and the servlet passes the POJO-Plain Old Java Object(Model) to the JSP file(View) and JSP is sent as response to the request sent.
+
+Service class and DAO _ Used to process Database codes.
+
+Controller
+View
+Model
+
+JSTL - JSP Standard Tag Library (Used in JSP)
+================================
+
+Add -> <% @taglib prefix="" uri="" %>
+Can use tags or Expresstion language.
+
+Tag types:-
+Core
+SQL
+Functional
+
+Example:-
+Expression language : "{$name}"
+Tag : <c:out value="{$name}" var=> <
+
+EJB - Enterprise Java Beans
+
+EJBs are nothing but java classes that are used to process Bussiness Logic.
+
+Types:
+Stateless
+Stateful
+Singleton
+
+Stateless
+A simple class is created, with the variables and the bussiness logic.
+Here the state of the bean is not saved.
+The class is annotated as @Stateless
+
+Stateful
+Here the state of the bean is saved.
+Where an inteface is created, and a class implementing the interface is created.
+The interface is annotated as @Remote
+The class is annotated as @Stateful
+Configure Initial Context in jspInit() method of JSP using the lookup() method.
+
+JMS - Java Message Services
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,318 @@
+Server side programming:
+========================
+	1)Java SE Api (Core Java APIs) --> Only for standalone applications
+	2)Common Gateway Interface 
+	3)ASP.NET, Node.js, PHP
+	4)Servlet
+	
+HTTP Request types
+==================
+
+GET - Gets information from the server
+	-To get or receive infomation from the server 
+	-It can be any form of data, pdf, audio, video, file, etc.,
+	-Data is sent in query format (Insecure)
+	
+POST - Process information on the server
+	-Perform db operations
+	-Query is hidden(secure)
+	
+PUT - Uploads infomation to the server
+DELETE - Deletes information in the server
+HEAD - Same as GET by returns only the Header 
+OPTION - 
+
+Difference between doGet and doPost
+GET
+===
+-Used by default
+-Invoked when
+	-Specifing url
+	-Clicking Hyperlink
+	-Submiting form
+-Used for getting data
+-No body is present
+-Passed as query string
+-Sensitive data should not be passed through post
+-Res
+
+POST
+====
+-Mentioned explicitly
+-Used for posting data-
+-Body is present
+-Sensitive data can be passed through post
+
+Servlets
+========
+- Is a java program that runs on a web container
+- Can capture request from the web browser and performs required operation and returns the output as response.
+- Servlets also acts as the middle man between the browser and the database.
+
+Lifecycle of a servlet 
+=======================
+1) Instantiate
+2) Initialize   -> init()
+3) Service		-> service()
+4) Destroy		-> destroy()
+
+Steps to follow in a servlet
+=============================
+1) Set content type
+2) Get printWriter 
+3) Generate HTML content
+
+
+
+Web Application Folder Structure
+================================
+WebApp (Application name)
+-index.html
+-home.jsp
+	WEB-INF
+	-web.xml
+	-classes
+	-lib
+Configration file for Servlets : web.xml
+	ServletContext object is used to access configrations of Servlets
+	
+
+Difference between RequestDispacher and sendRedirect
+
+ServletConfig
+=============
+-Passes the configrations details from deployment descriptor (web.xml) to the application
+-Scope is limited to the servlet for which it is defined
+-Ever servlet will have it's own ServletConfig
+-Can be done by init-param tag within servlet tag
+
+	Init Param	
+	==========
+	-It's like a key value pair
+	-Contains param-name and param-value tag under it
+	-Scope is limited to the servlet defined
+	-Can be set through web.xml and @WebServelet annotation
+web.xml
+<servlet>
+	<servlet-name>
+	<servlet-class>
+	<init-param>
+		<param-name></param-name>
+		<param-value></param-value>
+	</init-param>
+</servlet>
+
+Java side:
+ServletConfig config = getServletConfig();
+config.getInitParameter(param-name);
+
+
+
+Servlet Context
+===============
+-Used to store data
+-Scope is within the whole application and can be used by all servlets within the application
+-Servlets can access, set, delete data from the ServletContext 
+-Can be set though Java Annotations and web.xml
+
+
+InterServlet Communication
+==========================
+
+-RequestDispacher
+	
+	-Getting RequestDispacher
+		RequetDispacher rd = request.getRequestDispacher(uri);
+	-Including response of another Servlet or jsp
+		-Here response of end servlet is processed and retured back to the initial servlet and then it is sent back to the client.
+		rd.include();
+	-Forwarding response to another servlet or jsp
+		-Here response is finally processed by the end servlet and returned back to the client
+		rd.forward();
+
+-response.sendRedirect(url);		
+	-Redirects to webpage of different application
+	
+Initializing a Servlet
+========================
+	-Lazy Initialization 
+		-Default method of Initialization
+	-Pre Initialization
+		-Uses <load-on-startup> tag
+		-Priority is based on the number given in the tag
+	-Pre Initialization using Annotations (loadOnStartup)
+	-Pre Initialization using web.xml
+
+Servlet listeners: (To be revised)
+==================
+
+Listeners get executed at the start and end of the deployment process
+
+	-Configured using Annotation = @WebListener
+	-Configured using web.xml
+		<listener>
+		<listener-class>className</listener-class>
+		</listener>
+
+	Event Handeling in a web application
+		-Request
+		-Session
+		-Context
+
+Servlet Filters:
+================
+	-Filters are reserved for preprocessing and postprocessing of a request
+	-They are reusable across the application
+	-It can restict the request from reaching the servlet 
+	-Configured using web.xml and also using Annotation = @WebFilter
+	-Implementation is same as Servlet Listener
+	-It has a FilterChain parameter which is used to pass request and Response to any other filter if required.
+	-Filters are pre-initialized by default
+	
+
+
+ 
+Http Session:
+=============
+
+
+	-HttpSession session = request.getSession();
+		Session:
+		-Session is active till user closes the browser
+		 -Time between Login and Logout of the session
+		 -Track user interaction 
+		Session Tracking:
+		 -To maintain the state of the of the application despite HTTP is stateless
+		Session Ending:
+		 - By logging out 
+			session.invalidate();
+		 - By session expiry 
+			- java -> session.setMaxInactiveInterval(timeInInt)
+			-web.xml -> 
+			<session-config>
+				<session-timeOut> 5 </session-timeOut>
+			</session-config>
+
+HTTP Cookies:
+============
+Are name value paires
+
+	Cookie c = new Cookie("jsessionid","1234");
+	response.addCookie(c);
+	
+	Cookie c[] = request.getCookies();
+	for(Cookie cookie : c){
+		cookie.getName();
+		cookie.getValue();
+	}
+
+
+JSP - Java server Pages 
+
+JSP and Servlets are Java code that runs on server
+
+JSP runs on a JSP container.
+Life cycle of a servlet.
+
+.jsp file is converted into .java by the jsp container
+.java is compiled by java compiler to .class
+
+JSP directives:
+===============
+import
+errorpage
+iserrorpage
+language 
+contenttype
+session
+extends
+isElIgnored
+autoflash
+info
+pageencoding
+isthreadsafe
+buffer
+taglib 
+
+JSP Scripting Elements
+-Expressions
+	<%= %>
+	
+-Scriptless
+	Can add one to many lines of Code
+	<% 
+	
+	%>
+-Declaration
+	Declare methods in page
+	<%!
+	
+	%>
+	
+Built in Server objects or (Implecite Objects)
+	-request (HttpRequest)
+	-response (HttpResponse)
+	-out (PrintWriter)
+	-session (HttpSession)
+	-config (ServletConfig)
+	-application (ServletContext)
+	-exception
+	-pageContext
+	
+Session API
+- Enables each session for each user
+- 
+
+PageContext
+
+
+
+Cookies 
+- Text data exchange between browser and server
+- Max 20 cookies can be used for a tab of a browser
+
+Custom JSP tags or JSP Standard Actions
+	-Standard tag library for jsp
+	
+	
+JSTL (JSP Standard Tag Library) -> Created by oracle 
+
+JSTL Core
+
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix ="c" %>
+	for-each tag
+	Using object in forming table with for-each
+	c:out -> prints the value
+	c:set -> sets the value to a particualar variable
+	c:remove -> removes the already set variable
+	c:if 
+	c:choose -> similar to choose in java 
+	c:forEach 
+	
+	if tag
+	choose tag
+	
+JSTL Function
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix ="fn" %>
+	toUpperCase
+	toLowerCase
+	split
+	join
+	
+JSTL Formate
+<%@ taglib uri="http://java.sun.com/jsp/jstl/format" prefix ="fmt" %>
+	fmt:formatNumber
+	fmt:parseNumber
+	fmt:parseDate
+Custom Tags can also be created in jsp
+.tld is the extention
+
+JSP Expression language
+
+Syntax : ${objectType.objectValue}
+
+Expression language Inplicit objects
+
+	
+	
+	

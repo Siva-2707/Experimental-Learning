@@ -1,0 +1,125 @@
+Design Pattern - Introduced by Gang of Four
+https://github.com/etoitau/Design-Patterns
+
+
+
+Common architectural apporach
+
+Principles (Should be revised)
+==========
+Single Responsibility Principle 
+Open-Close Principle
+Lisvoc Substitution Principle
+Interface Segregation Principle
+Dependancy Inversion Principle
+
+
+1)Creational
+	-Deals with creation of objects
+	-Has Explicite and Implicite 
+	-Has single line creation and step-by-step creation of object 
+	
+		-Builder
+			Example (StringBuilder) -> CodeBuilder tool(MasterCraft)
+			Build an object by the user using related functions
+		-Factory
+			Returns an object based upon the values passed as requested by the user.
+				-Abstract Factory
+				-Factory Method
+		-Prototype
+			All about coping an object. 
+			(Shallow copy, Deep copy and cloning an object)
+			Prototype pattern is acheived by 
+				Deepcopy( with the help of copy constructor)
+				Cloneing( with implementing clonable interface to the class and overriding clone() method of tht object class)	
+				Serialization and Deserialization of an object( with using SerilizationUtil.roundtrip(ObjectToBeCopiedOrCloned) )
+		-Singleton
+			Only one instance is created for that class and used.
+			It is achecived by:
+				Making the constructor private
+				Creating a private static final instance within the class
+				Creating public getter for the instance.
+			Problems faced because of using Singleton Pattern:
+				When serializing the object the Singleton property is broken and a new copy of the instance is created
+					To overcome this issue:
+						To add protected Object readResolve(){
+						return the instance of the singleton;
+						}
+						
+			TYPES OF ACHEIVING SINGLETON:
+			-Basic Singleton
+			-Static Block Singleton
+			-Lazy Initialization Singleton and Thread safety
+			-Inner Static Class Singleton	
+			-Enum based Singleton (It's not serializable)
+			-Monostate (All the variables are made static.)
+			-Multiton (Restrict the number of Instance that is to be created)
+			-Singleton With Dependancy Injection
+			
+2)Structural 
+	-Deals with the structure of the class (class members)
+	
+		-Adapter
+			Getting the interface you want from the interface you have
+			As the name suggests, this pattern uses the existing implementation with the help of a adapter class.
+			
+		-Bridge
+			Connecting components together through abstraction
+			A mechanism that decouples an interface(hierarchy) from an implementation (hierarchy)
+			
+		-Composite
+			A mechanism that treats a singular object and the components of the collection of that object in uniform manner.
+			Eg. Object 		-> Ball 
+				Component	-> List<Ball>
+		
+		-Decorator
+			Helps in adding additional functionalities without changing the existing code. (Open closed principle)			
+				Can be done by extending the existing class and adding the feature to it. (Cannot be done for final class)
+				
+		-Facade (False appreance)
+			Helps in exposing several components through a single interface.
+			It helps in creating simple API's for complex API.
+		
+		-Flyweight 
+			A space optimization technique that lets us use less data by storing externally the data associated with similar objects
+		-Proxy
+			It is a replacement for the existing functionality
+			A proxy or a copy with different functionality without affecting the original version.
+3) Behavioural
+	-Chain of responsibility
+		Chain of responsibility pattern is used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them. Later, the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+	-Command
+	-Intrepreter
+	-Iterator
+	-Mediator
+	-Memento
+	-Null Object
+	-Observer
+	-State
+		Ablity to use different objects in place of one.
+		Ablity to add additional features to the program without affect the current functionality. (Open closed principle)
+		Acheived by using Polymorphisam
+	-Startegy
+	-Template Method
+	-Visitor
+	
+Creational Design Pattern
+=========================
+-Factory Method Pattern
+define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate
+
+-Abstract Factory Pattern
+define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes
+
+-Builder Pattern 
+construct a complex object from simple objects using step-by-step approach
+
+-Singleton Pattern
+define a class that has only one instance and provides a global point of access to it
+
+-Prototype Pattern
+cloning of an existing object instead of creating new one and can also be customized as per the requirement.
+
+ 
+
+

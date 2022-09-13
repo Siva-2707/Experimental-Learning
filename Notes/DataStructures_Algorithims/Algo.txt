@@ -7,13 +7,37 @@ Recursive
 Sorting
 	Elemenary Sorts
 		-Bubble Sort O(N^2)
+			Not used anywhere, just for understanding sorting.
 			Simplest and Least effecient
 		-Insersion Sort
-		
+			-Used for small datasets and nearly sorted dataset.
+			Quick in case of nearly sorted data.
 		-Selection Sort O(N^2)
+			Not used much.
 			Selecting the minimum or maximum element from the list and swaping it to the begining of the list
 	Complex Sorts
-		-Merge Sort 
+		-Merge Sort O(n log(N)) 
+			-Fast but uses O(N) space.
+			Follows Divide and Concure methodology.
 		-Quick Sort
+			-Fast and better space complexity.
+			-Popular sorting algo.
+		-Heap Sort
+			
+		-Radix and Counter Sort
+			Mostly used for Integer values.
+			Has less time complexity.
+
+Searching 
+	Linear 
+	Binary
+	Breath First Search
+		Helps in finding the shortest path to the node.
+		Occupies more memory compared to DFS.
+	Depth First Search
+		Occupies less memory
+		To check if a path exists or not.
+		Can take long time for large dataset.
+	
 	
 	

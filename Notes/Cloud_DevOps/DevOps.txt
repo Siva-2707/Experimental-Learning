@@ -1,0 +1,189 @@
+DevOps Process:
+1. Code
+2. Build 
+3. Test 
+4. Release
+5. Deploy
+6. Operate 
+7. Monitor
+8. 
+
+
+
+Version Control System - GIT
+Build Tool - Maven
+CI - Continous Integration - Jenkins, Travis CI, Bamboo, Buildbot
+Continous Delivery - Deployed into Test server for Functional testing
+Continous Deployment
+Configuration Management
+Continous Monitoring
+
+
+Jenkins- Written in JAVA - Early reference (Hudson) 
+
+Steps followed in Jenkins
+------------------------
+Compile and Build Code
+Runs scripts
+Starts integrated tests
+Monitor execution of tasks
+Stops build in case of failure
+Notify user about the status of Build
+Deploys in test env
+
+http://localhost:8080/
+Pass -f1dba616ddde434987c60e16cb254cd1 
+
+Testing
+========
+Tools - JUnit, Pytest, Selenium
+Automated and Manual Testing
+
+Automated Testing
+- Unit Test 		-> Tests the application without external dependencies (Fast execution)
+- Integrated Test	-> Tests the application with external dependencies	(Slow execution)
+- End-to-End Test	-> Test the Whole application(Tool - Selenium) 	(Very slow execution)
+
+Testing Frameworks
+- NUnit
+- MSTest
+- xUnit
+- reSharper
+-JUnit
+
+JUnit - Jave Framework for unit testing
+
+Annotations used:-
+@Test - specify it as a test case
+@Before -  Executed before every test
+@After - Executed after every test
+@BeforeClass - Executed before every class (And method should be of static)
+@AfterClass - Executed after every class (And method should be of static)
+
+assertEquals();
+
+JUnit Test suit - Used to run a set of JUnit tests
+
+Continous Deployment (CD)
+=========================
+Continous delivery is done for the client after a series of operations peromed. (Deployment is done manually)
+Continous Deployement is same as Continous Delivery, But Deployement is also automated in this case.
+
+Three things that results in CD
+1. Configuration Management
+2. Continous Integration
+3. Continous Testing
+
+
+
+
+Version Control System (GIT)
+ 
+git init
+git clone
+git remote add origin "url"
+git pull origin master
+git status
+git add 
+git commit -m "commit message"
+git commit -a -m "commit message" -> Commit all added files
+git log
+
+git branch branchName -> Creates a new branch with a given branch name
+git merge branchName -> The branch in the command will get merged into the currently checked out branch
+git checkout branchName -> Switch to the required branch
+
+git rebase branchName -> The tip of the brach in the command will get added to the currently checked out branch 
+
+git checkout 8_digit_commitID fileName -> To revert back to that version of the file
+
+
+
+
+
+Connecting using SSH
+ssh-keygen -> generate ssh key in local machine 
+add the key to Git hub account
+ssh -T git@github.com -> Authenticate it 
+
+
+Build Tool (Maven)
+POM (Project Object Model)
+
+
+Maven Build Lifecycle
+=====================
+Gererating a project
+Executing project
+Installing maven artifact into local machine
+Run the application
+
+validate 	-validate the project is correct and all necessary information is available
+compile  	-compile the source code of the project
+test 		-test the compiled source code using a suitable unit testing framework. These tests should not require the code be
+				packaged or deployed
+package  	-take the compiled code and package it in its distributable format, such as a JAR.
+verify  	-run any checks on results of integration tests to ensure quality criteria are met
+install  	-install the package into the local repository, for use as a dependency in other projects locally
+deploy 		-done in the build environment, copies the final package to the remote repository for sharing with other developers
+				and projects.
+
+Scopes for a the goals to execute
+================================
+test 
+compile
+provided 
+runtime
+system
+
+Maven Core Pugins
+=================
+JAR plugin
+Compiler plugin
+Surefire plugin
+
+
+To view superpom -> mvn help:effective-pom
+
+
+
+Installing in Ubunto
+
+java -version
+git --version
+
+
+
+sudo apt install java
+sudo apt install git
+sudo apt install maven
+
+
+Dockers
+Installing on Linux
+
+apt update && apt ubgrade 
+apt install docker.io
+
+Installig jenkins using docker 
+docker pull jenkins/jenkins:lts
+docker run -p 8080:8080 --name jenkinsContainer jenkins/jenkins:lts
+
+docker start jenkinsContainer
+
+docker stop jenkinsContainer
+
+Going inside a container
+docker exec -it <container name> /bin/bash to get a bash shell in the container.
+
+
+
+
+
+To be viewed
+
+How to install git
+How to install maven
+
+ 
+

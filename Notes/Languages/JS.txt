@@ -1,0 +1,24 @@
+JS String Methods 
+-length
+-slice()
+-substring()
+-substr()
+-replace()
+-toUpperCase()
+-toLowerCase()
+-concat()
+-trim()
+-padStart()
+-padEnd()
+-charAt()
+-charCodeAt() -> Returns ASCII Value 
+-split() -> Converting to Array
+
+String Search methods
+-indexOf()
+-lastIndexOf()
+-startsWith()
+-endsWith()
+-match() -- > Syntax -> string.match(regex)
+-includes() --> Similar to contains() in JAVA
+
