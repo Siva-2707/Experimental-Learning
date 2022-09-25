@@ -1,0 +1,37 @@
+1) Functional Interface
+    - A interface with only one abstract method is called a functional interface.
+    - @FunctionalInterface annotation is used to define a fuctional interface.
+
+2) Lambda Expression
+    - Lambda expression is used to access the functional interface.
+
+3) Method Reference
+    - It is used to refer a method of a functional interface.
+    - (::) operator is used to refer a method.
+4) Stream
+    - Can be used to filter, collect, print, and convert from one data structure to other etc.
+
+5  Default / Static Methods for Interfaces
+    - An interface can have a method defined in it. (Default/Static)
+    - If there are two interfaces with a same default method defined in it, then when a class implements the both     
+      interface, the class is forced to implement the default method's implementation.
+    - There is a class and an interface with same method defined in it, then it that case, when an another class extends         and implements these both, It will consider the method defined in the class and not the interface.
+    - When you try to override the Object class methods in the interface, it will throw an error.
+    
+6) Base64 Encoding and Decoding
+	- It uses the Base64 alphabet specified by Java in RFC 4648 and RFC 2045 for encoding and decoding operations.
+
+7) String Joiners
+	- Used to join string with a dilimeter and add prefixes and suffixes too.
+
+8) Optional Class
+	- Used to handel Null Pointer Exception
+	- Optional object can be created by three ways
+		-Optional.empty()
+			Returns an empty optional object.
+		-Optional.of(T data)
+			Throws a null pointer exception if the object passed is null.
+		-Optional.ofNullable(T data)
+			If the object is null, returns an empty optional object.
+	
+Remaining has to be included later

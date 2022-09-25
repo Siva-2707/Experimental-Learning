@@ -22,8 +22,10 @@ Dependancy Inversion Principle
 	
 		-Builder
 			Example (StringBuilder) -> CodeBuilder tool(MasterCraft)
+			Build an object with the necessary properties pre-initialized to it.
 			Build an object by the user using related functions
 		-Factory
+			It like a Factory that build and produces an object requested by the user.
 			Returns an object based upon the values passed as requested by the user.
 				-Abstract Factory
 				-Factory Method
@@ -89,6 +91,12 @@ Dependancy Inversion Principle
 3) Behavioural
 	-Chain of responsibility
 		Chain of responsibility pattern is used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them. Later, the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+		Eg: Node in a linked List.
+		Eg: Tree traversal
+		Command Query Separation:
+			The command is responsible for modifing the values and the query is responsible for just getting the values of the requried field.
+			This way we can seperate the behaviour of the object that we are working on. 
+		
 	-Command
 	-Intrepreter
 	-Iterator
