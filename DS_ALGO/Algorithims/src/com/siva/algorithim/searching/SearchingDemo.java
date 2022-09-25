@@ -7,19 +7,29 @@ public class SearchingDemo {
 
 	public static void main(String[] args) {
 		BinarySearchTree tree = new BinarySearchTree();
-		tree.insert(0);
-		tree.insert(1);
-		tree.insert(3);
-		tree.insert(4);
-		tree.insert(10);
-		tree.insert(2);
-		tree.insert(90);
+		tree.insert(7).insert(5).insert(1).insert(6).insert(2).insert(9).insert(8).insert(10);
+	
 		
+		//Breath first search testing
+		/*  
 		BreathFirstSearch bfs = new BreathFirstSearch(tree);
-//		boolean result1 = bfs.search(90);
-//		System.out.println(result1);
+		boolean result1 = bfs.search(90);
+		System.out.println(result1);
 		boolean result2 = bfs.searchRecursive(9, new Queue<BinaryTreeNode>(tree.rootNode));
 		System.out.println(result2);
+		
+		*/
+		
+		
+		//Depth first search testing.
+		 
+		DepthFirstSearch dfs = new DepthFirstSearch(tree);
+//		System.out.println(dfs.inOrder());
+//		System.out.println(dfs.preOrder());
+		System.out.println(dfs.postOrder());
+		
+		
+
 	}
 
 }

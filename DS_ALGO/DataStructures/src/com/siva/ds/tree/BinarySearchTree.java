@@ -17,12 +17,12 @@ public class BinarySearchTree {
 		rootNode = new BinaryTreeNode(data);
 	}
 	
-	public void insert(int data) {
+	public BinarySearchTree insert(int data) {
 		
 		//Checking if root node is null and seting the value for it.
 		if(rootNode == null) {
 			defineRoot(data);
-			return;
+			return this; 
 		}	
 		else {
 			BinaryTreeNode refNode = rootNode;
@@ -50,6 +50,7 @@ public class BinarySearchTree {
 				}
 			}
 		}
+		return this;
 	}
 	
 	public boolean lookup(int val) {

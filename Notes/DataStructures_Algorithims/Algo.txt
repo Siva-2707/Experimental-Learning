@@ -39,5 +39,30 @@ Searching
 		To check if a path exists or not.
 		Can take long time for large dataset.
 	
+	Quiz
+	===
+	//If you know a solution is not far from the root of the tree: --> BFS
+	//If the tree is very deep and solutions are rare, --> BFS (DFS will take long time. )
+	//If the tree is very wide: -->	DFS (BFS will need too much memory)
+	//If solutions are frequent but located deep in the tree --> DFS
+	//determining whether a path exists between two nodes --> DFS
+	//Finding the shortest path --> BFS
 	
+	
+	BreathFirstSearch Implementation:
+	We search through the tree from left to right in each level and go to the next level.
+	This is made possible by adding the the child nodes recursively till the last level and last node is reached.
+	
+	DepthFirstSearch Implementation:
+	InOrder - LeftNode -> ParentNode-> RightNode
+			  Returns a sorted list.
+	PreOrder - Parent Node -> LeftNode -> RightNode
+				Used if you want to recreate a binary tree.
+	PostOrder - LeftNode -> RightNode -> ParentNode
+	
+Dynamic Programming
+https://leetcode.com/problems/house-robber
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+https://leetcode.com/problems/climbing-stairs
+
 	
