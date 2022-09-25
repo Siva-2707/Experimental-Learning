@@ -14,6 +14,7 @@ Interface Segregation Principle
 Dependancy Inversion Principle
 
 
+
 1)Creational
 	-Deals with creation of objects
 	-Has Explicite and Implicite 
