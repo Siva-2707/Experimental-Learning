@@ -1,0 +1,26 @@
+
+
+
+
+Common terminologies used in Spring Framework.
+==============================================
+Plain Old Java Object (POJO)
+	It contains attributes and methods.
+	
+Java Beans (Commonly used in EJBs)
+	It contains attributes and the getter and setter for that attributes
+
+Spring Beans
+	POJOs configured in the application context.
+
+DTOs (Data Transfer Objects)
+	Moves from POJO to POJO based on the logic. 
+
+IOC (Inversion of Control)
+		It provides mechanism for Dependancy Injection
+		The framework takes care of the lifecycle of the dependancy.
+		ApplicationContext acts as an abstraction layer for all the process that is done by the Spring framework
+		In SpringBoot, ApplicationContext can also be AutoConfigured
+		
+
+	

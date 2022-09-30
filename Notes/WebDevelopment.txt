@@ -14,8 +14,44 @@ Redirection 	- 	(300-399)
 Client Error	- 	(400-499)
 Server Error	- 	(500-599)
 
-HTTP - Hyper Text Transfer Protocol
-HTTPS - Hyper Text Transfer Protocol Secure
-TCP - Transmission Control Protocol
-DHCP - Dynamic Host Configuration Protocol
-DNS - Domain Name System Protocol
+
+Different Networking Protocols
+==============================
+
+Hyper Text Transfer Protocol (HTTP)
+
+Hyper Text Transfer Protocol Secure (HTTPS)
+
+Transmission Control Protocol (TCP)
+
+Dynamic Host Configuration Protocol (DHCP)
+	When an computer connects to a network, it is assigned with a Dynamic IP address using UDP(User Datagram Protocol)
+
+Domain Name System Protocol (DNS)
+	This protocol returns the IP address of the domain which we are trying to connect to. 
+
+Internet Message Access Protocol (IMAP)
+	This protocol helps in managing the mailbox, like downloading the messages in the server, storing all the attachments, etc.,
+
+Simple Mail Transfer Protocol (SMTP)
+	This protocol allows you to send mails to other client, it is also used to receive mails from IMAP but it is not commonly used.
+	
+Post Office Protocol (POP)
+	It is the old protocol used to manage mails.
+	The main differece between IMAP and POP is that, the mails get deleted once it is downloaded to your local machine.
+	
+File Transfer Protocol (FTP)
+	This is the standard protocol to access, modify and delete files in the server.
+	For this to work, you need an FTP server and FTP client running in your local machine.
+
+Secure Shell Protocol (SSH)
+	This protocol is used commonly while trying to connect/ Manage Remote servers.
+	The data transferrd is encrypted and so only the sender and receiver will only be able to understand the data.
+
+SSH File Transfer Protocol (SFTP)
+	Files shared over FTP is insecure and is not encrypted.
+	SFTP helps to secure the files that are being transferred.
+	
+	
+	
+	
