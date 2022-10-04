@@ -1,7 +1,3 @@
-
-
-
-
 Common terminologies used in Spring Framework.
 ==============================================
 Plain Old Java Object (POJO)
@@ -18,7 +14,7 @@ DTOs (Data Transfer Objects)
 
 IOC (Inversion of Control)
 		It provides mechanism for Dependancy Injection
-		The framework takes care of the lifecycle of the dependancy.
+		The IOC container takes care of the lifecycle of the dependancy.
 		ApplicationContext acts as an abstraction layer for all the process that is done by the Spring framework
 		In SpringBoot, ApplicationContext can also be AutoConfigured
 		
