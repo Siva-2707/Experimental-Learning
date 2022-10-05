@@ -9,21 +9,24 @@ Commonly Used Abbrivations
 TLD - Top level domain
 
 
-HTTP Status Codes
 
-Information 	- 	(100-199)
-Success 		- 	(200-299)
-Redirection 	- 	(300-399)
-Client Error	- 	(400-499)
-Server Error	- 	(500-599)
 
 
 Different Networking Protocols
 ==============================
 
 Hyper Text Transfer Protocol (HTTP)
-
+	This is a protocol used to send request to the server and receive response from the server.
+	There are differnt methods available like (	GET, PUT, POST, DELETE, etc.,)
 Hyper Text Transfer Protocol Secure (HTTPS)
+	This is same as HTTP but more secure. This is because the request and response are encrypted end-to-end.
+	The below status codes indicates if there is any failure during the request or response cycle.
+	HTTP Status Codes
+	Information 	- 	(100-199)
+	Success 		- 	(200-299)
+	Redirection 	- 	(300-399)
+	Client Error	- 	(400-499)
+	Server Error	- 	(500-599)
 
 Transmission Control Protocol (TCP)
 
