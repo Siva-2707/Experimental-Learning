@@ -5,6 +5,9 @@ Virtual private hosting
 Dedicated hosting 
 Cloud hosting
 
+Commonly Used Abbrivations 
+TLD - Top level domain
+
 
 HTTP Status Codes
 
