@@ -1,3 +1,13 @@
+How does a Website run ?
+
+HTML + CSS + JS 
+HTML for the structure
+CSS for the style
+JS for the interaction 
+	Events
+	Event are the components that gets triggered for every action done in the browser.
+	These events can be handelled via JS
+
 Hosting
 
 Shared hosting 
@@ -6,7 +16,10 @@ Dedicated hosting
 Cloud hosting
 
 Commonly Used Abbrivations 
-TLD - Top level domain
+TLD - Top level domain (.com, .in, .net, .org, .edu, etc)
+URL - Uniform Resource Locator
+URI - Uniform Resource Identifier
+CDN - Content Delivery Network (Servers placed around the world for the people to access it easily without any delay)
 
 
 
