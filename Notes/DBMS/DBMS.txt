@@ -1,0 +1,170 @@
+Database Management System
+	- It is a interface for Database that are available in the market now.
+	
+Types of Databases:
+
+	-Centralized 
+		One access point.
+		Data is shared across.
+		Accessing time is slow since database size becomes very large.
+	-Distributed
+		Multiple access points
+		Data is distributed 
+	-Relational
+		A - Atomicity 	(All or nothing strategy)
+		C - Consistancy (Preserve the before and after data)
+		I - Isolation	(Concurrency)
+		D - Durability	(Data persitant)
+		
+	-NoSQL - Not Only SQL 
+		Key - Value database
+		Document - Oriented database
+		Graph database
+		Wide Column database
+	
+	-Cloud  
+	-Object Oriented
+	-Hierarchical 
+	-Network
+	-Personal
+	-Operation
+	-Enterprise
+
+Relational Database:
+
+Common Terminologies:
+	-Table/Relation
+	-Row/Record/Tuple
+	-Column/Attribute
+	-DataItem/Cell (One value of a record)
+	-Degree (No. of columns/attributes)
+	-Cardinality (No. of rows/records)
+	-Domain (Specifies the type of value, a columns/attributes can contain)
+	-Null Values(Where data is not present for a cell or record) (Default value can also be set)
+	
+	Data Integrity
+	==============
+		-Entity Integration
+			No duplicate rows in the table
+		-Domain Integrity
+			Restriction of data that can be entered for a particular attribute.
+		-Referential Integrity
+			Rows related to other table should not be deleted
+		-User-defined Integrity
+			DB should follow user defined rules.
+			
+Data Models:
+-Relational Model
+	(Tables and other stuffs)
+-Entity-Relationship Model
+	(Entities)
+-Object-based Model
+	(Extention of ER Model wtih OOPS concepts implemented)
+-Semistructured data Model
+	(XML - Can have different attribute sets) (Different from other three Models)
+	
+	
+Data model schema and instances:
+A schema contains schema objects like table, foreign key, primary key, views, columns, data types, stored procedure, etc.
+
+A data at a particular moment of time is called an instance.
+
+Database Languages:
+==================
+
+DDL - Data Definition Language (Affect the schema itself)
+	-Used to define DB structure or pattern
+	
+	Tasks considered as DDL
+	-Create -Alter -Drop -Truncate -Rename -Comment
+
+DML - Date Manipulation Language (Mostly affects the Data present in the schema)
+	-Used in manipulating the database
+	
+	Tasks considered as Manipulation
+	-Select -Insert -Update -Delete -Merge(UPSERT operation, insert or update ) -Call(Call procedures/javaSubprgrams) -ExplainingData -LockTable(Acheive Concurrency)
+
+DCL - Data Control Language
+	-It gives control over the Database operations performed
+	
+	A user can be given access to certain kinds of operations using GRANT keyword
+	A user can be restricted to use certain kinds of operations using REVOKE keyword
+	
+TCL - Transaction Control Language
+	Takes care of the Database transaction to whether save the current changes or to go to the previous version of the saved version.
+	
+	This can be achived using 
+	COMMIT 	 - Save changes 
+	ROLLBACK - Rollback to the previous commit.
+	
+
+Entity Relationship Model (ER Model)
+====================================
+
+Terminologies:
+-Entity
+	-Weak Entity
+-Attribute
+	- Key Attributes
+	- Composite Attributes
+	- Multivalued Attributes 
+	- Derived Attributes
+-Relation
+	- One to One 
+	- One to Many
+	- Many to One 
+	- Many to Many
+
+	ER Diagram:
+	-Entity:
+		Denoted by Rectangle 
+		These are the main entity.
+		Eg: Student, Manager, Bike, Car, etc.,
+		
+		-Weak Entity 
+			Denoted by Double Rectangle
+			These entities depending on an other entity.
+			Eg: Subjects for a Student, Cars for a Driver.
+			
+	-Attributes:
+		Denoted by an Eclipse
+		Describes the property of an Entity.
+		Eg : For Student entity (RollNumber, Name , Age etc.,) are the attributes.
+		
+		-Key Attribute
+			Denoted in a Eclipse with an Underline in it.
+			It is the Primary Key for the Entity.
+			Eg: RollNumber.
+			
+		-Composite Attribute
+			One Eclipse linked to Multiple Eclipses
+			An attribute have serveral Attributes related to it is called Composite Attribute'
+			Eg: Name attribute can have (FirstName, MiddleName, LastName) related to it.
+	
+		-Multivalued Attribute
+			Denoted by Doulbe Eclipse 
+			An attribute having multiple possible inputs
+			Eg: A student can have multiple phone numbers.
+		
+		-Derived Attributes
+			Denoted by Dashed Eclipse
+			An attribute the can be derived from someother attribute
+			Eg: Age -> From Date of Birth || Experence -> From Date_of_Joining
+	
+	-Relationship:
+		Describes the relationship between the entities.
+		
+		-OneToOne
+			One entity related to only one entity.
+			Eg: A Man married to Women
+		
+		-OneToMany
+			Eg: A programmer can build several Programs.
+			
+		-ManyToOne
+			Eg: Many Programmers can use a same tool(VSC).
+			
+		-ManyToMany
+			Eg: One Employee can work in many Projects 
+				And a project can have many Employees
+			
