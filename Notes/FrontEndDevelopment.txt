@@ -1,0 +1,16 @@
+
+User Interface tips:
+	Content:
+	-Know your visitors
+	-Focus on information
+	-Simple information that an user can understand. 
+	-Ads should not distract the users
+	-Simple - Consistent - Standard (Design) 
+	
+	
+	Navigations:
+	-Menu
+	-Search
+	-Links
+	-Fitt's Law ( the amount of time required for a person to move a pointer (e.g., mouse cursor) to a target area is a function of the distance to the target divided by the size of the target
+	
