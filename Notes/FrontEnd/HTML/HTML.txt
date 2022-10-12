@@ -1,0 +1,105 @@
+
+User Interface tips:
+	Content:
+	-Know your visitors
+	-Focus on information
+	-Simple information that an user can understand. 
+	-Ads should not distract the users
+	-Simple - Consistent - Standard (Design) 
+	
+	
+	Navigations:
+	-Menu
+	-Search
+	-Links
+	-Fitt's Law ( the amount of time required for a person to move a pointer (e.g., mouse cursor) to a target area is a function of the distance to the target divided by the size of the target
+	
+HTML
+
+<p> - Paragraph
+<h1> - <h6> -Headline (h1 being biggest and h6 being the smallest)
+<i> - Visual-only italics
+<em> -Emphasis italics
+
+<strong> - Indicates important, urgency and seriousness.
+<b> 	- Used for style (Used very rare. Mostly completed using CSS)
+
+<li> - Used to specify each list element.
+	List types:
+	===========
+	<ul> - Unordered list
+	<ol> - Ordered list
+	<dl> - Definition List (It is like a key value pair)
+			<dt> - Definition term
+			<dd> - Definition description
+
+<cite> 
+<q> - Quotes
+<blockquote> - Used to specify the block quotes
+
+<time> - Used to specify the time
+<code> - Used to specify that it is a code.
+
+Html Entities:
+==============
+&lt; - <
+&gt; - >
+&amp; - &
+&nbsp; - Non breaking space (When you dont want two words to break whenever the display size changes.
+
+<br>  - Line breaks
+<pre> - Preformated text
+
+
+Subscripts, superscripts and small texts:
+========================================
+<sub> - lower elements  H20
+<sup> - higger elements 5^3
+<small> - very less value items (Copyrights)
+
+
+HTML Attributes:
+================
+Global Attributes - Works on all HTML tags
+	class
+	id  -> Unique
+
+ARIA Roles: -> Enables disabled people to access our content.
+=========
+
+URLs 
+====
+Relative URL - Used in development env (Used to refer a resource from current location)
+			   Eg: ../css/example.css
+			   
+Absolute URL - Used for production (URL with protocol, domain name and the path where the resource is present)
+			   Eg: http://www.example.com/example/
+
+<a href="http://link.com/link">Click here </a>
+
+Images
+======
+<img> - Image tag, used to add images into the webpage
+	
+	Img tag attributes:
+		src - specify from where image should be fetched
+		alt - if image not availabe, alternative text for the image.
+		width 
+		height
+	Image formats
+		GIF (Low size and low quality)
+		SVG (Used for Logos, shapes etc,.)
+		JPG (Image can be compressed and resized and made website ready)
+		PNG 
+	
+	Responsive Images
+		We maintain different versions of the same photo.
+		And let browser decide which one to display.
+		
+		scrset - This attribute can be used with images to choose which image for which resolution of display.
+		
+		
+	<figure> and <figcaption> - Similar to Definition list, but this is not a list.  
+	It maps the Image with the content to be displayed.
+
+
