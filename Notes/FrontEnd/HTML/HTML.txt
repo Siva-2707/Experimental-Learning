@@ -63,6 +63,9 @@ HTML Attributes:
 Global Attributes - Works on all HTML tags
 	class
 	id  -> Unique
+	
+dir - direction of flow of content
+charset 
 
 ARIA Roles: -> Enables disabled people to access our content.
 =========
@@ -101,5 +104,66 @@ Images
 		
 	<figure> and <figcaption> - Similar to Definition list, but this is not a list.  
 	It maps the Image with the content to be displayed.
+	
+Media
+=====
+<audio> - 
+<source> - For multiple sources
+<video> 
+	Adaptive Bitrange Streaming (Constant change in video resolution depending upon the network speed)
+	<track> - This element is used to specify captions for the video.
+Embedding - Taking and putting others work into your webpage.
 
 
+Complete HTML
+=============
+DOCTYPE - Specifies the version of HTML
+<html lang="en-US" dir ="ltr"> Starting of HTML element with language and direction of flow of content
+	<head> The data that is need for the browser but not displayed is addded in Head element.
+		<meta> Specifies the Metadata of the website.
+		<title> Used to specify the title of the website.
+		<link> Used to link different other sources, like CSS , fonts, etc., 
+			rel - attribute is specified inside the link tag. It is used to specify the type of link.
+			href - attribute also specified inside the link tag. It is used to specify the address that it need to refer to fetch the content.
+		<script> - This element helps in adding the Javascript file to the website. Mostly it is addded in the end of the file for to get the page loaded fast.
+	</head>
+	<body>
+		<main> - To wrap the main content of the page. (only used once)
+		<header> - To specify the website header
+		<footer> - To specify the website footer
+		<article> - To specify the article
+		<section> - To specify the it is a section of a same thing or it is a new section of content.
+		<aside> - To specify that this content comes at the side. Like a picture, or a ad or some other content.
+	</body>
+</html>
+
+HTML Forms:
+==========
+	
+	<form action="/signup" method = "post">
+		<lable>Name
+		<input name = "name">
+		</lable> //Connecting lable with input
+		<lable for ="email"> Email <lable> //Connecting lable with input via for attribute.
+		<input id="email" name="email" type="text">
+		
+		<button>Sign Up</button>
+	<form>
+
+<form> - Specifies that it is a form.
+	action 
+	method
+<lable> - Displays the value on the screen
+	for - specifies the corresponding input for the lable.
+<input> - get the details.
+	name
+	type - can be text, email, submit, password, search, tel, date, color, file, accept etc.,
+	placeholder - specifies the placeholder in the input column
+	value - prepopulated date in the form
+	required - to make the attribute mandatory.
+	<textarea> - Text box
+		row - rows in text box
+		col - columns in text box
+		
+	
+	
