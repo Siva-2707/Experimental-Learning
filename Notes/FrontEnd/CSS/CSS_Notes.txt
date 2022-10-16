@@ -1,0 +1,30 @@
+CSS 
+
+CSS Values and Units - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+CSS Colours - https://colours.neilorangepeel.com/ 
+	rgb - red blue green
+	rgba 
+	hsl - hue shadeness lightness
+	hsla
+
+CSS Selectors
+
+Universal Selector
+* {
+
+}
+
+Element Selector
+h1 {
+
+}
+
+Class Selector 
+.className{
+
+}
+
+Id Selector
+#id{
+
+}

@@ -1,0 +1,15 @@
+*{
+    background-color: lightcoral;
+    color: whitesmoke;
+}
+h1,h2,h3,h4,h5,h6{
+    color: black;
+}
+img{
+    width: 300px;
+}
+.block{
+    border: 5px solid black;
+    padding: 1em;
+    margin: 1em;
+}
