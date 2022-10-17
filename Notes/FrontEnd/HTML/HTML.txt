@@ -123,7 +123,7 @@ DOCTYPE - Specifies the version of HTML
 		<meta> Specifies the Metadata of the website.
 		<title> Used to specify the title of the website.
 		<link> Used to link different other sources, like CSS , fonts, etc., 
-			rel - attribute is specified inside the link tag. It is used to specify the type of link.
+			rel - (Relationship) attribute is specified inside the link tag. It is used to specify the type of link.
 			href - attribute also specified inside the link tag. It is used to specify the address that it need to refer to fetch the content.
 		<script> - This element helps in adding the Javascript file to the website. Mostly it is addded in the end of the file for to get the page loaded fast.
 	</head>
@@ -157,13 +157,26 @@ HTML Forms:
 	for - specifies the corresponding input for the lable.
 <input> - get the details.
 	name
-	type - can be text, email, submit, password, search, tel, date, color, file, accept etc.,
+	type - can be text, email, submit, password, search, tel, date, color, file, accept, checkbox etc.,
+		tel = phone number
+		accept = type of file to accept
+		checkbox 
 	placeholder - specifies the placeholder in the input column
 	value - prepopulated date in the form
 	required - to make the attribute mandatory.
 	<textarea> - Text box
 		row - rows in text box
 		col - columns in text box
+	<fieldset>
+		<legend>
+
+HTML Tables:
+===========
+<table>
+<tr> - Table row 
+<th> - Table Head
+<td> - Table Data
+
 		
 	
 	
