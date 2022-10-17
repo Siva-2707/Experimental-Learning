@@ -1,15 +1,47 @@
-*{
-    background-color: lightcoral;
-    color: whitesmoke;
+/* 
+Colours used
+    #100720 - Black
+    #222831 - Black
+*/
+
+/* General*/
+body{
+    color: #100720;
+    background-color: #eaf6f6;
 }
-h1,h2,h3,h4,h5,h6{
-    color: black;
+header,footer{
+    background-color: #0881a3;
 }
-img{
-    width: 300px;
+a:hover{
+ text-decoration: none;   
 }
-.block{
-    border: 5px solid black;
-    padding: 1em;
-    margin: 1em;
+/* a:visited{
+    color: blueviolet;
+} */
+
+a{
+    color: #096f8c;
+    font-weight: bold;
 }
+/* Project */
+.project{
+    background-color: #fde9df;
+}
+.project p{
+
+}
+.project .btn{
+    color: #D3D3D3;
+    background-color: #100720;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Work Experience */
+.work-experience{
+    background-color: #faf6e9;
+}
+/* Education */
+
+/* Contacts */

@@ -8,7 +8,7 @@ CSS Colours - https://colours.neilorangepeel.com/
 	hsla
 
 CSS Selectors
-
+=============
 Universal Selector
 * {
 
@@ -28,3 +28,59 @@ Id Selector
 #id{
 
 }
+
+Decendant Selectors
+parentTag childTag{
+
+}
+
+Grouping Selectors
+h1,h2,h3{
+
+}
+
+Combining Selectors (The is used to select element with multiple classes)
+header.btn{ // Header with class btn
+
+}
+Psedo Selectors
+-link
+-active
+-hover
+-visited
+-focus
+
+a:visited{
+
+}
+
+Selectors Specificity
+	Order 
+	
+	-Universal (*)
+	-Type (p)
+	-Class (.example)
+	-Id (#example)
+	!Important - Overrides all the specifications.
+
+==========================================================================================================================================
+
+CSS Box Model
+=============
+
+Displaying Elements:
+	Elements can be displayed as:
+		Inline (Add nexts to each other and the display properties like height and width don't have effect)
+		Block (Comes in new line. Display properties have effect)
+		Inline-block (Gets added next to next and also have effect on Display properties)
+
+Box Model Properties
+	Coming from the middle:
+	-Content
+		-Width
+		-Height
+	-Padding
+	-Border
+	-Margin
+
+	
