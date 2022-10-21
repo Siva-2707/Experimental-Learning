@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+header,footer{
+    background-color: grey;
+    height: 40px;
+    /* padding: 20px; */
+}
+.content{
+    margin: auto;
+    width: 1000px;
+}
+.container{
+    padding: 10px;
+}
+.sidebar{
+    background-color: green;
+    height: 600px;
+    width: 200px;
+    float: left;
+    /* width:30%; */
+}
+main{
+    background-color: pink;
+    height: 600px;
+    width: 800px;
+    /* padding: 10px; */
+    /* margin-left: 16px; */
+    float:left;
+    /* width:60% ; */
+    
+}
+footer{
+    clear: both;
+}

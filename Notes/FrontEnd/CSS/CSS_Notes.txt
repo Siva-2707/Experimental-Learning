@@ -40,7 +40,7 @@ h1,h2,h3{
 }
 
 Combining Selectors (The is used to select element with multiple classes)
-header.btn{ // Header with class btn
+.box.btn{ // Header with class btn
 
 }
 Psedo Selectors
@@ -83,4 +83,112 @@ Box Model Properties
 	-Border
 	-Margin
 
+============================================================================================================================================
+
+Typography
+==========
+Script - For story content
+Decorative - Used for decorations (Headings, etc.,)
+Monospace - Commonly used for coding
+Serif - Most commonly used in web
+Sans-serif - Most commonly used and modern
+
+CSS used for fonts
+===================
+https://www.cssfontstack.com/
+Google Fonts
+Adobe Fonts
+
+font-family  
+	Generic fonts: serif, sans-serif, cursive, fantacy, monospace
+	Web popular fonts: Times New Roman, Arial
 	
+font-weight 
+	Used to increase the thickness.
+	100 being thinnest and 900 being thickest
+	normal, bold can also be used
+	noraml - 400 
+	bold - 700
+	Relative types like, lighter and bolder can also be used. It changes to 400 or 700 depending upon the current value.
+
+@font-face{  // Add downloaded fonts to the project
+	font-family : "My-Font";
+	src: url(relative/absoluteURL);
+	
+}
+Properties of font:
+-------------------
+font-style
+font-size
+font-weight
+font-family
+font-varient
+line-height
+text-decoration
+text-align
+
+
+Shorthand  - font: italic small-caps bold 24px/1.5 Arial,'Times New Roman';
+Longhand -
+font-style : italic; 
+font-varient: small-caps;
+font-weight: bold;
+font-size : 24px;
+line-height: 1.5;
+font-family: Arial, 'Times New Roman';
+
+Properties of Text Decoration:
+------------------------------
+Longhand:
+text-decoration-line: underline;
+text-decoration-color: red;
+text-decoration-style: solid;
+text-decoration-thickness: 
+Shorthand: text-decoration : underline red solid;
+
+================================================================================================================================================
+Floats (Need to be visited again)
+======
+
+float:
+overflow: auto/hidden
+
+box-sizing: // The size of the box/element remains as defined, eventhough padding/margin/border is added.
+
+Elements Positioning: (position attribute)
+=====================
+
+static
+relative - moves the element from the current position to the desired postion from the given postion.
+absolute - It keeps reference from the parent element. (And it is relative to the nearest positioned container)
+fixed - The element keeps the same position in the page, no matter how the page is scrolled.
+sticky - similar to fixed, but can specify a range when the element should get fixed.
+
+z-axis stacking:
+----------------
+Order:
+	-body
+	-blockItems
+	-inlineItems
+	-positionedItems
+	-z-index specified items
+
+The items that are below are displayed first. 
+And the order of display is followed by the order defined in html.
+
+z-index  - this can be used to display positioned items the way we want in the stack.
+
+==============================================================================================================================================
+
+Flexbox and Grid layouts:
+-------------------------
+Flexbox :
+	-Used for one dimention flow of elements
+	
+	Flexbox container: The main element
+	Flexbox elements: The sub-elements inside the flexbox container
+	Flexbox-direction(main-axis) : (default) horizontal (Can be changed to vertical also)
+	
+	
+Grid : 
+	-Used for 2-dimention flow of elements

@@ -4,17 +4,33 @@ Colours used
     #222831 - Black
 */
 
-/* General*/
+/************************************************************ General ************************************************************/
 body{
     color: #100720;
     background-color: #eaf6f6;
+    margin: 0;
+    font-family: 'Cutive Mono', monospace;
 }
+
 header,footer{
     background-color: #0881a3;
 }
+
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 45px;
+}
+h1,h2{
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
 a:hover{
  text-decoration: none;   
 }
+
 /* a:visited{
     color: blueviolet;
 } */
@@ -23,12 +39,30 @@ a{
     color: #096f8c;
     font-weight: bold;
 }
-/* Project */
+
+p{
+    font-size: 1.25rem;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 1.25;
+}
+
+footer a{
+    color: whitesmoke;
+}
+
+.content-wrap{
+    margin : 0 20%;
+    padding: 50px ;
+}
+
+.content-wrap h1, h2{
+    margin-top: 0 ;
+}
+
+/*********************************************************** Project *************************************************************/
 .project{
     background-color: #fde9df;
-}
-.project p{
-
 }
 .project .btn{
     color: #D3D3D3;
@@ -36,12 +70,13 @@ a{
     padding: 8px;
     border-radius: 4px;
     text-decoration: none;
+    display : inline-block;
 }
 
-/* Work Experience */
+/************************************************************ Work Experience ************************************************************/
 .work-experience{
     background-color: #faf6e9;
 }
-/* Education */
+/************************************************************ Education ************************************************************/
 
-/* Contacts */
+/************************************************************ Contacts ************************************************************/

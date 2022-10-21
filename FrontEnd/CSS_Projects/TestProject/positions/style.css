@@ -1,0 +1,49 @@
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    margin : auto;
+    width: 1000px;
+}
+header{
+    background: grey;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    width: 1000px;
+    position: fixed ;
+    z-index: 10;
+}
+.positions{
+    border:1px solid black;
+    position: relative;
+     /* It refers .positons class, if it's relaive
+                                    Else, it refers to the parent element(i.e) html container */     
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.relative{
+    background: red;
+    position: relative;
+    top: 40px;
+    
+}
+.absolute{
+    background: blue;
+    position: absolute;
+    top:5%;
+    left: 5%;
+}
+.fixed{
+    background: green;
+    position: fixed;
+    /* float: left; */
+}
+.sticky{
+    background: yellow;
+}

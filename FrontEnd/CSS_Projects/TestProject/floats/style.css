@@ -1,0 +1,12 @@
+body{
+    color: red;
+  }
+  img{
+    float: right;
+  /*   margin: 10px; */
+  }
+  .content p{
+    background-color: blue;
+    padding: 20px;
+    overflow: hidden;
+  }

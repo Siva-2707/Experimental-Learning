@@ -1,0 +1,9 @@
+header{
+    width: 250px;
+    height: 100px;
+}
+.flex-container{
+    display: flex;
+    border: solid black;
+    padding: 20px;
+}
