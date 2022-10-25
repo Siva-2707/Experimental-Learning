@@ -2,8 +2,19 @@ header{
     width: 250px;
     height: 100px;
 }
-.flex-container{
+body{
     display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 700px;
+    border: solid red;
+    /* justify-content: center;p */
+    align-items: center;
+}
+.flex-container{
+    margin: 10px;
+    height: 100px;
     border: solid black;
     padding: 20px;
+    flex: 0 1 250px ;
 }

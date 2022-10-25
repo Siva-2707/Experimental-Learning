@@ -1,0 +1,36 @@
+Introduction to JavaScript
+==========================
+JavaScript or Vanilla JavaScript is the core JavaScript language on which other languages are built.
+
+	JSX - A syntax extention of JavaScript created for React JavaScript framework
+
+	Different JavaScript Frameworks
+	===============================
+	Vanilla Script - Core JavaScript language
+	ECMAScript -  
+	ES2015
+	CoffeeScript
+	TypeScript
+	ES6
+	JSX
+	React 
+	Vue 
+	Angular 
+	Node.js
+	Babel
+	WebPack
+	Gulp
+	
+Loading Script file in a HTML
+-----------------------------
+	differ - JS gets downloaded parallely and gets executed at the last.
+	async - JS gets downloaded and gets executed 
+	
+	type = module 
+	JS modules can be expoted and imported and used according to the need. (This improves code reuseablilty and acheives modularity.)
+	
+Accessing Objects
+================
+	Dot Notation
+	Bracket Notation
+	

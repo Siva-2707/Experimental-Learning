@@ -180,7 +180,7 @@ z-index  - this can be used to display positioned items the way we want in the s
 
 ==============================================================================================================================================
 
-Flexbox and Grid layouts:
+Flexbox and Grid layouts: (To be revisited)
 -------------------------
 Flexbox :
 	-Used for one dimention flow of elements
@@ -188,7 +188,63 @@ Flexbox :
 	Flexbox container: The main element
 	Flexbox elements: The sub-elements inside the flexbox container
 	Flexbox-direction(main-axis) : (default) horizontal (Can be changed to vertical also)
+		flex-direction:	row || column || row-revese || column-reverse
+		flex-wrap: nowrap || wrap || wrap-reverse || 
 	
+	// FollowingCan be applied only to the flex-element and not the flex-container;
+		Short hand:
+		flex : grow shrink basis;
+		flex: 1 1 100px
+		Longhand 
+		flex-grow: 1 
+		flex-shrink: 1 
+		flex-basis: 100px;
+	
+	align-items 
+	justify-content
 	
 Grid : 
 	-Used for 2-dimention flow of elements
+	
+	Grid Tracks
+	Gutter
+	Explicit Grid
+	Implicit Grid
+	Grid row
+	Grid Column
+	
+==============================================================================================================================================
+	
+Advanced Selectors:
+===================
+
+Child Combinator (>)
+	Gets added to only the child element and not any nested element within the child element. (Note : In decendent selector, the nested elements will also be affected)
+	
+Sibiling Combinators( + , ~ )
+	Adjacent Sibiling Combinator (+)
+		The child element directly next to the parent element
+	General Sibiling Combinator (~)
+		The child elements the comes after the parent element will get affected. 
+
+Pseudo Selectors
+	:first-child
+	:last-child
+	:first-of-type
+	:last-of-type
+
+==============================================================================================================================================
+
+Responsive Web Design:
+----------------------
+
+Fluid Layout
+Fluid Image 
+Media Quries
+	@media
+	Types:
+		-All
+		-Print 
+		-Speech
+		-Screen
+		
