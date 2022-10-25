@@ -30,7 +30,58 @@ Loading Script file in a HTML
 	JS modules can be expoted and imported and used according to the need. (This improves code reuseablilty and acheives modularity.)
 	
 Accessing Objects
-================
+-----------------
 	Dot Notation
+	
 	Bracket Notation
+	
+Class
+----
+In JavaScript class can be created via two methods.
+	- Object Constructor (Old method)
+		This is the old way to create templates and use them as Objects util Class was introduced.
+		This does not have the features that Class offers.
+	- Class keyword (Most used)
+		Class supports OOPs Concepts
+
+Global Objects (Predefined - > Documentation available at MDN Web Docs)
+--------------
+
+
+Template Literals (Used to inject data into HTML from JavaScript)
+-----------------
+`` ->  Backtick symbol with ${} is used to inject data into HTML via JS
+
+=====================================================================================================================================================
+DOM (Document Object Model)
+============================
+document -> returns the current document 
+
+Elements: Accessing Elements
+-------------------------------
+	document.querySelector("cssElement"); -> Returns the particular element.
+	document.querySelectorAll("cssElement"); -> Returns a list of elements.
+	document.getElementsByClassName("className"); -> Returns the elements with the particular class name.
+	document.getElementById("className"); -> Returns the element ith the particular id.
+	
+Elements: Modifing Element's Classes and ID 
+--------------------------------------
+When you want to modify a particular element's class name, you can use the following method.
+
+Element.className(); -> Returns a single className for a element
+	document.querySelector -> to get the element
+	document.querySelector("element").className = "newClassName";
+
+	This will change the current element class name to the new class name.
+	Commenly used to close the window, or give some response for a button click, etc,.
+
+Element.classList(); -> Returns a list of Class names for the element 
+	classList.add("className") -> to add the class to the particular element
+	classList.remove("");
+	classList.toggle(""); -> Used to add or remove class. If the class is present, it gets removed. If the class is not present, it gets added.
+	classList.replace("classToBeReplaced", "replacementClass"); -> Used
+
+Attributes: 
+------------------------
+
 	
