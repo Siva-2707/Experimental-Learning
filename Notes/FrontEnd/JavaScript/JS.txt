@@ -83,5 +83,160 @@ Element.classList(); -> Returns a list of Class names for the element
 
 Attributes: 
 ------------------------
+Element.attributes -> Returns a nodeMap of attributes
+element.getAttribute("attributeName") -> Returns the particular attribute
+element.setAttribute("attributeName", "attributeContent")
+element.removeAttribute("attributeName")
+
+Style:
+------
+element.style -> Gives the style of the particular element
+element.style.color = 'red' -> to apply style
+
+Creating DOM Elements
+---------------------
+element.innerHTML = templateLiteralQuotedContent; -> This adds the templateLiteralQuotedContent into the current element (It will replace the current content)
+
+Document.createElement()
+
+ParentNode.append();
+ParentNode.prepend();
+Node.appendChild();
+
+==============================================================================================================================================
+JavaScript Objects
+------------------
+	var
+	- Scope : Global (Even when declared inside a block)
+	
+	let
+	- Scope : Block-level (Only limited to the current block)
+	
+	const 
+	- Scope : Block-level (Only limited to the current block)
+	  It cannot be assigned again once defined.
+
+DataTypes
+---------
+	typeof(variable) -> Returns the data type of the variable.
+
+Operators
+---------
+
+= 		- Assignment 
+== 		- Comparison (Compares only value)
+===		- Absolute Comparison (Compares value and the type of the value)
+>
+>=
+<
+<=
+!= 
+!== 	- Absolutly not equal
+--------------------------------------------------
++
+-
+/
+%
+*
+**		-Exponensation 2**3 => Return (2*2*2) = 8;
+--------------------------------------------------
+++
+--
+
+=====================================================================================================================================================
+
+Arrays (Refer MDN for more functions)
+======
+push() 		-> Add elements at last
+pop()  		-> Remove last element
+peek()
+join() 		-> Joins the array into a string (A delimiter is also optional)
+unshift() 	-> Add elements at first
+shift() 	-> Remove first element
+find() 		
+
+======================================================================================================================================================
+Functions and Methods
+=====================
 
 	
+A default value can be given to the function inputs: So that, they don't process null value and return exception/error.
+
+Function Declaration
+--------------------	
+	function add(a,b){
+		return a+b;
+	}
+	
+Function Expression (We use annonimous function here)
+-------------------
+	const multiply = function(a,b){ return a * b; };
+
+Immediatly Invoked Function Expression
+--------------------------------------
+
+	(
+		function(){
+			let a = 5;
+			let b = 6;
+			console.log(a+b);
+		}
+	)();
+
+	This function is executed immediatly when it is encountered.
+
+Arrow Functions (We use annonimous function here)
+---------------
+
+const divide = (a,b) => return a/b; 
+
+======================================================================================================================================================
+
+Use of this keyword in functions
+
+	A function within a Object ( Inside that function, this points to the current object)
+	A arrow function doesn't know the this variable. So, it points to the nearest object.
+
+	
+======================================================================================================================================================
+
+Callback Function
+-----------------
+Here in function parameter, along with the values, a function is also passed.
+And that function can be used/called within the function.
+
+Eg:
+	const add = (a,b) => a+b;
+	
+	const calculator = function(num1, num2, operation){
+		return operation(num1,num2);
+	}
+	
+	console.log(calculator(1,3,add));
+	
+	This will return 4.
+	
+===========================================================================================================================================================
+
+For Loop
+
+	1. Traditional For Loop
+	2. For of Loop
+	3. forEach method
+	4. For in Loop (For objects)
+	
+Functional methods
+
+	forEach
+	map
+	
+===========================================================================================================================================================
+
+Event Handeling
+---------------
+Refer MDN -> Event Reference
+
+Syntax:
+	element.addEventListener("listenFor", callBackMethod, [optionalOptions]);
+	
+	body.addEventListener("mouseover", body => body.sytle.background = "red"; , false);
