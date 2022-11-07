@@ -1,0 +1,9 @@
+@Bean
+@Required - Depricated (Since Constructor injection is used instead of that.)
+@Autowire
+@Component
+@Controller
+	@RequestMapping
+	@GetMapping
+	
+@Service

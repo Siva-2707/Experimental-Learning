@@ -18,5 +18,7 @@ IOC (Inversion of Control)
 		ApplicationContext acts as an abstraction layer for all the process that is done by the Spring framework
 		In SpringBoot, ApplicationContext can also be AutoConfigured
 		
+CommandLineRunner Interface
+	ApplicationRunner Interface
 
-	
+@Bean - To specify that the method returns a Bean that has to be managed by the Spring context.

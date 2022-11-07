@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PY Hotels | Rooms</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Room Number</th>
+            <th>Room Name</th>
+            <th>Description</th>
+        </tr>
+        <tr th:each="room:${rooms}">
+            <td th:text="${room.number}">Number</td>
+            <td th:text="${room.name}">Name</td>
+            <td th:text="${room.desc}">Desc</td>
+        </tr>
+    </table>
+</body>
+</html>

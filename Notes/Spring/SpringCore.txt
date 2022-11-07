@@ -1,0 +1,87 @@
+Spring Used as a Developer
+--------------------------
+- Dependency Injection
+- Enable to build applications from POJOs
+- Enable to apply enterprise services to POJOs
+
+Spring Modules
+==============
+-Test
+-Core Container
+-Data access or Integration
+-Web
+-Other
+
+Spring IOC Container and Beans
+==============================
+Inversion of Control (IOC) or DependancyInjection
+
+	org.springframework.bean
+		BeanFactory - Provides advanced configuration mechanism to handle any type of Object
+	org.springframework.context
+		ApplicationContext - It is a sub-interface of BeanFactory with Additional Featues
+	
+	ApplicationContext Represents the Spring IOC container
+	It is responsible for Instantiating, configuring and assembeling the beans.
+	The container gets the information of what object it should work by reading the configuration metadata.
+	The configuration metadata is represented in XML based / Annotation Based  / Java Based
+
+	Note:
+		Annotation injection is done before XML injection. 
+		So properties defined in XML configuration overrides all the Annotation approach.
+		
+	<context:annotation-config/> element implicitly registers the following post-processors:
+
+		ConfigurationClassPostProcessor
+		AutowiredAnnotationBeanPostProcessor
+		CommonAnnotationBeanPostProcessor
+		PersistenceAnnotationBeanPostProcessor
+		EventListenerMethodProcessor	
+	
+	@Required
+	---------
+	- 
+	
+	
+Dependancy Injection -> Acheive Loose coupling
+	Acheived by 
+		-Constructor injection
+		-Setter injection
+		-Fields
+
+Instansiation of Spring IOC container (Inversion of Control)
+
+	Acheived by below of the both.
+		-BeanFactory
+		-Application Context
+
+Bean - Classes that is managed by the Spring framework.
+
+Bean Configurations
+1. XML based config
+2. Java based config
+
+Application Context or BeanFactory implementation
+1- ClassPathXmlApplicationContext  -> Used to load xml config file
+2- AnnotationConfigApplicationContext -> Used to load java config files
+
+Constructor Injection: (uses constructor-arg tag)
+1- name,value attributes
+2- index,value attributes
+3- type,value attributes
+
+Setter Injection: (uses property tag)       
+
+
+Annotations:
+
+1) @Component
+2) @Autowired
+3) @ComponentScan
+4) @Primary
+5) 
+
+
+
+
+
