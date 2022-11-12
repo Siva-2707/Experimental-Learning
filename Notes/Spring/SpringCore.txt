@@ -4,13 +4,6 @@ Spring Used as a Developer
 - Enable to build applications from POJOs
 - Enable to apply enterprise services to POJOs
 
-Spring Modules
-==============
--Test
--Core Container
--Data access or Integration
--Web
--Other
 
 Spring IOC Container and Beans
 ==============================
@@ -37,51 +30,142 @@ Inversion of Control (IOC) or DependancyInjection
 		CommonAnnotationBeanPostProcessor
 		PersistenceAnnotationBeanPostProcessor
 		EventListenerMethodProcessor	
-	
-	@Required
-	---------
-	- 
-	
-	
-Dependancy Injection -> Acheive Loose coupling
-	Acheived by 
+		
+		
+		Dependancy Injection -> Acheive Loose coupling
+		Acheived by 
 		-Constructor injection
 		-Setter injection
 		-Fields
 
-Instansiation of Spring IOC container (Inversion of Control)
 
-	Acheived by below of the both.
-		-BeanFactory
-		-Application Context
+	Application Context or BeanFactory implementation
+	1- ClassPathXmlApplicationContext  -> Used to load xml config file
+	2- AnnotationConfigApplicationContext -> Used to load java config files
 
+	Constructor Injection: (uses constructor-arg tag)
+	1- name,value attributes
+	2- index,value attributes
+	3- type,value attributes
+
+	Setter Injection: (uses property tag)       
+
+
+
+Spring Expression Language
+==========================
+
+
+
+	
+	
+Spring Beans
+============
 Bean - Classes that is managed by the Spring framework.
 
-Bean Configurations
-1. XML based config
-2. Java based config
+	SingleTon Bean
+		By default all the Beans provided by Spring Container is Singleton.
+	
+	Prototype Bean
+		A new instance is created every time it is refered.
+		Initially definition is only stored in IOC container, during runtime corresonponding Dependancy is injected by the IOC container.
+		Once it looses the current scope, it is collected by the GC
+	
+	Session Bean
+		Only applied for Web enviorments.
+		One bean is instantiated per user session by the IOC container.
+		Only defenition is stored in IOC and it collected by GC when it looses reference or scope.
+		
+	Request Bean
+		Only applied for Web enviorments.
+		One bean is instantiated per user request by the IOC container.
+		Only defenition is stored in IOC and it collected by GC when the request is completed.
+		
+Bean Lifecycle
+==============
 
-Application Context or BeanFactory implementation
-1- ClassPathXmlApplicationContext  -> Used to load xml config file
-2- AnnotationConfigApplicationContext -> Used to load java config files
+Initialization -> Use -> Destruction
 
-Constructor Injection: (uses constructor-arg tag)
-1- name,value attributes
-2- index,value attributes
-3- type,value attributes
+Initialization phase
+--------------------
+	
+	Creation of ApplicationContext <---- BeanFactory initialization <---- Bean initialization and instantiation
+	
+	Bean Initialization Lifecycle
+	-----------------------------
+		-> Bean definition loaded 
+		-> Post-process bean definition 
+			-> Instantiate Bean -> Setters Called -> BeanPostProcesser(Pre-Init) -> Initialization -> BeanPostProcesser(Post-Init) 
+		-> Bean is ready to use.
+	
+	Load Bean definition 
+		Priority of Loading beans:
+		-Java Configuration 
+		-XML Configuration
+		-Component Scanning and Auto Configuration
+		
+	1) The Bean definitions are loaded into the BeanFactory from all the sources.
+	2) The BeanFactory contains only references where the Beans are present.
+	3) PreConstruct is called if specified.
+	4) Then all the beans are instantiated. 
+	5) After instansiation of all the beans, dependency injection occurs.
+		-Constructor injection occurs
+		-Setters injection occurs 
+		-Autowiring occurs
+		-JavaConfig beans are injected
+	6) All dependencies are injected and all beans are fully initialized.
+	7) PostConstruct is called if specified
+	8) Beans are fully configured and ready to use.
+		
+	
+Use Phase 
+---------
+	Context Aware Bean - ApplicationContextAware
+	
+	Here is where the Bean is actually used.
 
-Setter Injection: (uses property tag)       
+Destruction Phase
+-----------------
+We enter the Destruction phase when the Close method is called.
+
+	- Once Context is closed, it cannot be used again.
+	- Proxies and Beans are available.
+	- Beans can only be destroyed by the Garbage Collector.
+	
+
+Aspect Oriented Programming (AOP)
+---------------------------------
+	-AOP resolves cross cutting concerns.
+	-Used for Logging, Caching, Transaction Management, Security and etc,.
+	-They can be configured, enabled or disabled during runtime
+	
+	Pointcut - Specifies where exactly to apply advice, which allows separation of concerns and helps in modularizing business logic.
+	
+	Syntax:
+		designator("r p.c.m(arg)")
+		
+		desiganator - type of desiganator
+		r - return type
+		p - package
+		c - class
+		m - method
+		args - arguments passed to the method.
+		
+	Designator types
+	
+		execution - apply Aspect when executing method.
+		within - apply aspect within the specified type.
+		target - apply aspect for specific type
+		@annotation - apply aspect with certain annotation 
+		
+	
 
 
-Annotations:
 
-1) @Component
-2) @Autowired
-3) @ComponentScan
-4) @Primary
-5) 
+	
 
 
 
 
 
+ 

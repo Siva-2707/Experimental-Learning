@@ -1,9 +1,30 @@
 @Bean
 @Required - Depricated (Since Constructor injection is used instead of that.)
-@Autowire
+
 @Component
+	@Service
+	@Controller
+	
+	@Autowired
+	@Qualifier
+	@Value
+	
+	@ComponentScan
+	
+@PostConstruct -> To do some initialization work
+@PreDestroy -> For closing or storing some necessary data into DB before the object is destroyed.
+
 @Controller
 	@RequestMapping
 	@GetMapping
-	
+	@PutMapping
+	@PostMapping
 @Service
+
+
+
+@Configuration
+@PropertySource
+@Profile
+@Value
+
