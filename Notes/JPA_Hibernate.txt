@@ -1,22 +1,36 @@
-It is a framework that simplifies data access from the DB
-Data is represented in Java objects
-It is a ORM (Object Relational Mapping) tool
+Java Persistence API
+====================
 
-Mapping can be done by xml config or annotation config
-hibernate.cfg.xml
+JPA is a java specification for accessing, persisting and managing data between Java object and a relational database.
+
+JPA provides guidelines for a framework so that that can be implemented and become JPA compatible.
+
+Hibernate is one of the JPA provider
+There are lot of JPA provider.
+
+If you follow JPA you can switch to any of the JPA providers without code change.
+
+Hibernate
+=========
+	It is a framework that simplifies data access from the DB
+	Data is represented in Java objects
+	It is a ORM (Object Relational Mapping) tool
+
+	Mapping can be done by xml config or annotation config
+	hibernate.cfg.xml
 
 
 Why not tradtional JDBC ?
 
-Too many sql codes for a simple operation
-Db dependent
-Manually handeled associations of tables
+	Too many sql codes for a simple operation
+	Db dependent
+	Manually handeled associations of tables
 
 Why ORM? 
-Allows to use Java objects as a representation of Relational DB
-Mapping is done between POJO's and DB
-Configured through XML and JPA Annotations 
-Hides SQL and JDBC complex codes and queries and is handeled by the ORM framework
+	Allows to use Java objects as a representation of Relational DB
+	Mapping is done between POJO's and DB
+	Configured through XML and JPA Annotations 
+	Hides SQL and JDBC complex codes and queries and is handeled by the ORM framework
 
 
 Hibernate

@@ -28,3 +28,23 @@
 @Profile
 @Value
 
+
+
+Spring MVC 
+
+@RestController 
+ 
+@RequestMapping 
+@PostMapping
+@GetMapping
+@PutMapping 
+@PatchMapping
+@DeleteMapping
+
+
+@ResponseStatus - Default status 100 is sent. But can be overrided using this annotation.
+@ResponseBody
+@PathVariable
+
+
+
