@@ -1,0 +1,68 @@
+SDLC - Software Development Lifecycle
+
+Traditional Software development approach
+	
+	Waterfall - Step by step development process
+	---------
+	Phases in Waterfall model
+	 1) Requirement gathering 
+	 2) Analysis and Designing
+	 3) Development phase
+	 4) Test phase
+	 5) Deployment and Maintenance phase
+	
+	Disadvantages of Waterfall method
+	 1) Late delivery
+	 2) No modifications after the requirement phase has been passed.
+	 3) Since Deployment is done at last. Any issue faced then will cause the whole project to be a failure.
+	 
+	 Spiral Model - Iterative approach (Combination of Iterative and Waterfall approach)
+	 -------------
+	 
+	Phases in each Iteration
+	 1) Planning
+	 2) Risk Analysis
+	 3) Engineering
+	 4) Evaluation
+	
+	 Here a series of Iteration is occured till the final project is completed.
+	 
+    Rational Unified Process(RUP) 
+	-----------------------------
+	 - It is a software development process framework
+	 - It has large knowledge base.
+	 - Package of Artifacts, processes,
+	 
+Early Agile Software development approach.
+
+	DSDM (Dynamic System Development Method)
+	----------------------------------------
+	 - It is a framework which followes tight set of rules.
+	 
+	Stages involved:
+	 1) Pre - project stage.
+			Analysis, cost-estimation and commitments are made.
+	 2) Project life cycle
+			Iterative development
+	 3) Post - project stage.
+			Discussion after product is delivered. Product feedback and suggestions are done.
+
+	Feature Driven Development (FDD)
+	--------------------------------
+	 - Here a feature is developed iteratively.
+	 - It is lightweight
+	 Refer photo for Life cycle.
+	
+	Crystal Methods
+	---------------
+	
+Modern Agile Method
+--------------=-----
+
+
+	
+	 
+	 
+	
+	
+	

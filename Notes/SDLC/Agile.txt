@@ -105,9 +105,11 @@ Scrum Events
 		
 Artifacts
 
-Product backlogs
-Sprint backlogs
-Increment
+Product Backlog
+Sprint Backlog
+Product Increment
+
+
 
 
 		

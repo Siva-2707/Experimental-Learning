@@ -1,0 +1,24 @@
+
+Logging is tool for Monitoring, Accessing and Debugging an Application at Runtime.
+
+	Logging in Java
+	---------------
+		Logger   -> Captures events
+		Appender -> Records events
+		Layout   -> Represents the pyramid of logging levels
+	
+	SLF4J -> Acts as an interface for all these logging frameworks.
+	
+	Events levels:
+	-------------
+		-Errors
+		-Warnings
+		-Info
+		-Debug
+		-Trace
+	
+Logging can be acheived in Spring by configuring it.
+
+Configuration is done at resouce folder of the project.
+		
+	

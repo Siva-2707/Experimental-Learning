@@ -206,6 +206,7 @@ A class can only be public or default
 Scope and Visibility
 Final keyword
 =============
+	- Final variable cannot be reinitialized.
 	- Final class cannot be extended
 	- Final method cannot be overridden
 

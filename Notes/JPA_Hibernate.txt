@@ -62,6 +62,8 @@ Basic Annotations
 @JoinColumn -> Join column to a existing table from an other table  
 @JoinColumns 
 @MapsId 	-> Maps one key from one table to another. Used to add forign keys to a table.
+@Transient  -> This will not be included in the Database table. (Ex: Age can be calculted from DOB) Mostly used for Dynamic data.
+
 
 @Enumurated(EnumType.STRING) ->In order to add Enumurated type of data into the column. 
 If EnumType attribute is not specified, Then it will show the position of data associated with the enum.
@@ -83,6 +85,9 @@ Reationl Mapping Annotations
 @ManyToOne
 @ManyToMany
 
+	CascadeType
+		-ALL ->
+	targetEntity -> Specifies the related class for the relationship.
 
 
 Fetching type (For relations)
