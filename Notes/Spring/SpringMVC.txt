@@ -13,15 +13,26 @@ And then that is passed back to the client as a text/html page.
 DispatcerServlet
 
 Annotations used
-@Controller
-@RequestMapping
-@RequestMapping
-
-
 
 @Configuration
 @ComponentScan
 @Bean
+
+@Controller
+
+@RequestMapping
+@RequestMapping
+@GetMapping 
+@PostMapping
+
+@RequestParam - Get data from url
+@ModelAttribute - 
+
+View can be returned in as String or in form of ModelAndView
+
+
+
+
 
 
 Dependancies

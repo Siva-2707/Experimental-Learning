@@ -86,7 +86,10 @@ Reationl Mapping Annotations
 @ManyToMany
 
 	CascadeType
-		-ALL ->
+		PERSIT -> While saving, working object and all other objects nested within it are persisted.
+		REMOVE -> While deleting, working object and all other objects nested within it are removed.
+		
+		ALL -> Pesist the working object and all other objects nested within it.
 	targetEntity -> Specifies the related class for the relationship.
 
 
