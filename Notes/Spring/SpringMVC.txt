@@ -26,7 +26,11 @@ Annotations used
 @PostMapping
 
 @RequestParam - Get data from url
-@ModelAttribute - 
+@ModelAttribute - Get the model(Bean) that is getting passed from the front-end and mapping it to the bean in the back-end
+
+Binders - Mostly user for binding and converting data.
+@InitBinder
+
 
 View can be returned in as String or in form of ModelAndView
 
