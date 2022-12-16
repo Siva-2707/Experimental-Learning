@@ -10,7 +10,19 @@ Then the DispatcerServlet fetches the corresponding view with the model passed
 And then that is passed back to the client as a text/html page.
 
 
-DispatcerServlet
+Processing 	DispatcerServlet
+
+The WebApplicationContext is searched for and bound in the request as an attribute that the controller and other elements in the process can use. It is bound by default under the key DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE.
+
+The locale resolver is bound to the request to enable elements in the process to resolve the locale to use when processing the request (rendering the view, preparing data, and so on). If you do not need locale resolving, you do not need it.
+
+The theme resolver is bound to the request to let elements such as views determine which theme to use. If you do not use themes, you can ignore it.
+
+If you specify a multipart file resolver, the request is inspected for multiparts; if multiparts are found, the request is wrapped in a MultipartHttpServletRequest for further processing by other elements in the process. See Section 17.10, “Spring's multipart (file upload) support” for further information about multipart handling.
+
+An appropriate handler is searched for. If a handler is found, the execution chain associated with the handler (preprocessors, postprocessors, and controllers) is executed in order to prepare a model or rendering.
+
+If a model is returned, the view is rendered. If no model is returned, (may be due to a preprocessor or postprocessor intercepting the request, perhaps for security reasons), no view is rendered, because the request could already have been fulfilled.
 
 Annotations used
 
@@ -33,6 +45,9 @@ Binders - Mostly user for binding and converting data.
 
 
 View can be returned in as String or in form of ModelAndView
+
+
+
 
 
 

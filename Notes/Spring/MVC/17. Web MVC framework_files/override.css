@@ -1,0 +1,40 @@
+* {
+  color: #f0ead6;
+  background-color: black;
+}
+.sidebar {
+  border: solid 2px white;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f0ead6;
+}
+
+pre.programlisting,
+pre.screen {
+  color: #f0ead6;
+  background-color: black;
+}
+
+:not(pre) > code {
+  background-color: black;
+  border: solid 1px #f0ead6;
+}
+code {
+  color: #f0ead6;
+}
+
+.hl-tag,
+.hl-attribute,
+.hl-value,
+.hl-keyword,
+.hl-comment,
+.hl-annotation {
+  filter: brightness(1.5);
+}

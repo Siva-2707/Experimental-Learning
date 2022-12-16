@@ -1,0 +1,42 @@
+ctrl + p 			- Commmand pallet
+ctrl + shift + p	- VSC shortcuts and other operations
+ctrl + shift + o 	- Open current functions in the current file
+ctrl + shift + .	- Open current functions in the current file in a sub-window
+ctrl + t 			- Search or open file in the whole project
+ctrl + g 			- Go to a particular line
+ctlr + b			- Toggle side bar
+ctlr + x 			- Cut the current line
+alt + up/down 		- Move current line / selected lines up or down.
+alt + shift + up/down- Copy up or down the line / lines
+ctrl + l			- Select down the lines
+ctrl + / 			- Comment lines
+
+
+Selected word(multiple edits)
+ctrl + d			- Able to edit all occurances
+ctrl + d +d ..+d 	- Able to select the occurances throughout the file.
+alt + click 		- Multiple edits curser
+
+
+Terminal commands
+ctrl + ` 			- Open terminal
+ctrl + k			- Clear terminal
+ctrl + left/ right	- Move between words in terminal
+up/down		- Move between executed commands
+
+
+
+
+Extentions:
+
+Quokka 	
+Add jsdocs comments
+Better Comments
+
+Git Lense
+Remote Repositories
+Remote SSH
+Remote Container
+
+Right Click a text -> Find all references -> Replace all
+
