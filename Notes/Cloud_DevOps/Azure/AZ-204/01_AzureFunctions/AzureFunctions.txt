@@ -1,0 +1,17 @@
+Azure Functions
+===============
+Allows developers to write pieces of Code and the developer need not worry about the compute power.
+These are event driven functions that gets trigreed when the particular even occurs.
+
+	Components in a Azure function:
+	-Binders
+	-Triggers
+	-App 
+	
+Instance hosted in Consumption plan has memory limited to 1.5 GB and one CPU.
+Scale Controller - used to determine when to scale in and scale out resources.
+	It moniter the events and creates instances according to the need.
+	
+function.json - Is a config file that has to be provided to a function. 
+For compilable languages this config file is generated through Annotations.
+For Scripting language, this config file has to be added manually.

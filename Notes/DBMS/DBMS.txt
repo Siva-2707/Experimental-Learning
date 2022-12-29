@@ -106,14 +106,25 @@ Terminologies:
 	-Weak Entity
 -Attribute
 	- Key Attributes
-	- Composite Attributes
-	- Multivalued Attributes 
-	- Derived Attributes
+	- Single Attribute(Attributes that cannot be divided further Eg: Weight, Salary,etc..)
+	- Composite Attributes (Attributes that can be divided) (Eg: FirstName, LastName, MiddleName are composite attributes of Attribute Name) 
+	- Singlevalued Attribute(Eg: Age)
+	- Multivalued Attributes (Eg: Language, Skills, etc,. can have multiple values )
+	- Derived Attributes (Eg: Age derived from DOB)
+	- Stored Attributes (Eg: Date of Birth) From which other attribute can derive 
+	- Complex Attributes (Has multivalued and compossite attributes) (Eg: {CollegeDegree(College Name, Year, Degree, Field)}
+	- Null Value
+	-Entity Type - Similar to object (Table name)
+	-Entity Set - Simalar to collection of Objects (Table records)
+	-Value Set - Default Values given to choose (Range of values) Eg: (Age range, Caste, Religion, etc.,)
+	
 -Relation
 	- One to One 
 	- One to Many
 	- Many to One 
 	- Many to Many
+	
+
 
 	ER Diagram:
 	-Entity:

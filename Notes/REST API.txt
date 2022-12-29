@@ -1,6 +1,32 @@
 Rest API - Representational State Transfer
 
+RESTful Webservices
+-------------------
+RESTful web services are services that follow REST architecture.
+They provide means of accessing resources present at server required for the client via the web browser by means of request headers, request body, response body, status codes, etc.
+
+REST Resource
+-------------
+Every content in the REST architecture is a resource.
+They can be Text/HTML/XML/JSON/Image or any Dynamic data.
+The REST Server provides access to these resources whereas the REST client consumes (accesses and modifies) these resources. Every resource is identified globally by means of a URI
+
+URI - Uniform Resource Identifier
+---------------------------------
+Used for identifying each resource of the REST architecture
+<protocol>://<service-name>/<ResourceType>/<ResourceID>
+
+	URN - Uniform Resource Name identifies the resource by means of a name that is both unique and persistent
+	
+	
+Statelessness
+-------------
+Statelessness means that every HTTP request happens in complete isolation. When the client makes an HTTP request, it includes all information necessary for the server to fulfill the request.
+
+The server never relies on information from previous requests from the client. If any such information is important then the client will send that as part of the current request.	
+
 Object from Servlet can be transfered into JSON/XML data. 
+
 
 			HTTP METHODS
 C - Create -> POST

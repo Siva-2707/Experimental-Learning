@@ -1,0 +1,100 @@
+
+Azure App Service
+=================
+
+Inroduction
+----------
+-HTTP Based Service 
+-Built-in Auto Scalable
+-Contionus Integration and Deployment support.
+-Deployment Slots (Slots where you can deploy and maitain different verion of you application(Production,Dev,Test)and can switch configuration between slots)
+-App Service on Linux (Some languages are supported but others too can be hosted via containerizing and then by runing the container)
+
+	Command to check Languages and supported version that is Availbale on Linux 
+		az webapp list-runtimes --os-type linux
+
+	Limitaions of Linux Deployment
+	-It needs to be billed seperatly 
+	-You can't mix Windows and Linux apps in the same App Service plan.
+	-You could not mix Windows and Linux apps in the same resource group until, January-21 2021.
+
+
+Azure App Service Plans
+-----------------------
+All services (Web App, API App or Mobile App) runs on App Service Plans.
+ 
+Pricing Tiers: (This decides the price and features offered )
+-Shared Compute (Free, Shared)
+	-Resources are shared with other customers.
+	-Like one CPU can run application of different users
+	-And your application is allocated a certain amout of memory that it can consume.
+-Dedicated Compute (Basic, Standard, Premium, PremiumV2)
+	-App are run at dedicated Azure VMs
+	-Apps in the same App service plan share the same resource.
+	-Depending upon the Tier, your instance increases and is availabe for scale-out.
+	
+-Isolated 
+	-Apps are run at dedicated Azure VMs on Azure Virtual Network
+	-This provides Network Isolation and Resource Isolation.
+	-Provides maximum scalability.
+-Consumption
+	-This is available only for function apps, it can scale accordingly to the workload of the function apps.
+
+How Apps run and scale in Azure App Service.
+--------------------------------------------
+- In Shared compute, they don't scale.
+- For other tiers, 
+	- An app runs on a VM that is configured in the App service plan.
+	- If muliple apps are configured under a same plan, they then run on the same VM.
+	- If muliple deployments are deployed in different slots, they to run on the same VM.
+
+According to the plan, if it is configured to run on N number of VM then it will use only the N number of VMs.
+If AutoScaling is configured, then it will use the autoscaling settings that has been set in the App service plan.
+
+You can also change tiers depending upon the features required anytime.
+
+
+Deploy to App Service
+---------------------
+App deployments can be made 
+	-Automatic 
+		Contionus Deployment.
+		Acheived with the help of Azure DevOps or GitHub or BitBucket.
+	-Manual
+		Manually Deploy Code changes
+		Acheived via:
+		-Git (Upon pushing app gets deployed)
+		-CLI (az webapp up - command is used to deploy the apps )
+		-ZipDeploy 
+		-FTP/FTPS (App is directly deployed into the server via FTP)
+
+Built-in Authentication and Authorization in App-services:
+----------------------------------------------------------
+Azure App Service provides built-in authentication and authorization support, so you can sign in users and access data by writing minimal or no code in your web app, API, and mobile back end, and also Azure Functions.
+
+Endpoint for authentication
+
+	/.auth/login/<providerName> 
+
+Once the application is enabled for Authentication and Authorization,  its sign-in endpoint is available for user authentication and for validation of authentication tokens from the provider. You can provide your users with any number of these sign-in options.
+
+How authentication works:
+	-Authenticates users with the specified provider
+	-Validates, stores, and refreshes tokens
+	-Manages the authenticated session
+	-Injects identity information into request headers
+
+Flow of Authentication:
+
+Networking Features of App Services:
+------------------------------------
+Multi-tenant App Service networking features.
+
+
+
+Azure Functions
+===============
+Allows developers to write pieces of Code and the developer need not worry about the compute power.
+These are event driven functions that gets trigreed when the particular even occurs.
+
+	Components in a Azure function
