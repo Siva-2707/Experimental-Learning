@@ -139,6 +139,20 @@ Aspect Oriented Programming (AOP)
 	-Used for Logging, Caching, Transaction Management, Security and etc,.
 	-They can be configured, enabled or disabled during runtime
 	
+	JointPoint - It is any point in program, such as - Method Execution, Exception handelling or field access.
+	But Spring only supports Method Execution.
+	
+	@Advice - Advice are actions performed at a joint point.
+	@Before - Before joint point execution
+	@After - After joint point execution
+	@AfterReturning - It is executed after the method is invoked and before the value is returned. 
+	@Around - Executed before and after the join point.
+		proceed is used to invoke the method in-between.
+		
+	AfterThrowing - After Throwing an exception during a jointpoint execution
+	AfterFinally - Whether exception is occured or not, this will get executed.
+	Around 
+	
 	Pointcut - Specifies where exactly to apply advice, which allows separation of concerns and helps in modularizing business logic.
 	
 	Syntax:

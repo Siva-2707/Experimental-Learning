@@ -1,0 +1,87 @@
+Rest API - Representational State Transfer
+
+RESTful Webservices
+-------------------
+RESTful web services are services that follow REST architecture.
+They provide means of accessing resources present at server required for the client via the web browser by means of request headers, request body, response body, status codes, etc.
+
+REST Resource
+-------------
+Every content in the REST architecture is a resource.
+They can be Text/HTML/XML/JSON/Image or any Dynamic data.
+The REST Server provides access to these resources whereas the REST client consumes (accesses and modifies) these resources. Every resource is identified globally by means of a URI
+
+URI - Uniform Resource Identifier
+---------------------------------
+Used for identifying each resource of the REST architecture
+<protocol>://<service-name>/<ResourceType>/<ResourceID>
+
+	URN - Uniform Resource Name identifies the resource by means of a name that is both unique and persistent
+	
+	
+Statelessness
+-------------
+Statelessness means that every HTTP request happens in complete isolation. When the client makes an HTTP request, it includes all information necessary for the server to fulfill the request.
+
+The server never relies on information from previous requests from the client. If any such information is important then the client will send that as part of the current request.	
+
+Object from Servlet can be transfered into JSON/XML data. 
+
+
+			HTTP METHODS
+C - Create -> POST
+R - Read   -> GET
+U - Update -> PUT
+D - Delete -> DELETE
+
+Implemented using 
+1) Jersey
+2) Spring API
+
+Resources are the main for RestAPI (Content)
+URI is used ( /content/content1)
+
+Operations performed on the resources
+	-Create
+	-Update
+	-Read
+	-Delete
+
+HTTP Request Methods
+	-GET 	(Retrives resources)
+	-POST	(Creates new resources)
+	-PUT 	(Updates/ Replaces resources)
+	-PATCH	(Updates a part of a resources)
+	-DELETE	(Deletes a resources)
+Representation of resources:
+	-JSON
+	-XML
+	-Text/Video etc.,
+Server hosts the API 
+Used by Browser
+
+Annotation used
+
+@GET
+@POST
+@Path
+@Produces(MediaType.TYPE)
+@Consumes(MediaType.TYPE)
+
+Dependencies used
+
+Jersey -> provides xml conversion of java objects by default.
+jersey-media-moxy -> json conversion of java objects
+
+
+Annotations for Spring Boot RestAPI
+@RestController
+@RequestMapping
+@GetMapping
+
+
+
+
+
+
+

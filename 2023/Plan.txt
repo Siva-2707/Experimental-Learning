@@ -1,0 +1,55 @@
+
+
+Solve atleast one LeetCode problem every day. 
+
+Cover in and out of Spring 	 				(Backend)
+Azure Assosiate Developer Certification
+Mongo DB essentials
+MERN - Mongo Express React Node stack 
+
+Topics to be revised
+
+Design Pattern
+Java 8
+
+
+Covered Topics
+
+JAVA programming language (Core & Advanced)
+	J2EE
+		JDBC 	- Java Database Connectivity
+		Servlets
+		JSP  	- Java Server Pages
+		JSTL 	- JSP Standard Tag Library
+		EJB  	- Enterprise Java Beans
+		JMS  	- Java Messaging Services
+		JAX-RS	- Java API for RESTful Services
+		JPA 	- Java Persistance API
+	Hibernate
+	Spring
+		CORE 
+		MVC
+		REST
+		BOOT
+		AOP
+		
+DBMS
+REST API
+DS & ALGO
+SDLC
+Agile Practices
+GIT
+GITHUB
+Maven
+WinSCP
+Putty
+VSC 
+Eclipse
+
+
+Cloud & DevOps
+
+
+
+
+
