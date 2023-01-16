@@ -1,0 +1,6 @@
+What is docker ?
+Why docker ?
+What is a container ?
+What is the client server architecture in Docker.
+What is an docker image ?
+ 
