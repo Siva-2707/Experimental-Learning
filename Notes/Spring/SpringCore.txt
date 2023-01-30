@@ -173,6 +173,16 @@ Aspect Oriented Programming (AOP)
 		@annotation - apply aspect with certain annotation 
 		
 
+Spring JDBC Templates
+What is spring JDBC templates ?
+What are they used for ?
+what is the difference between JDBCTemplate and SimpleJdbcTemplate ?
+
+What is the difference between Hibernate and HibernateTemplate
+What is the use of JPATemplates or Spring Data JPATemplate ?
+
+What is SPEL (Spring Expression Language) 
+
 
 		
 	
