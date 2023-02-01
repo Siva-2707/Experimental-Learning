@@ -71,6 +71,24 @@ SSH File Transfer Protocol (SFTP)
 	Files shared over FTP is insecure and is not encrypted.
 	SFTP helps to secure the files that are being transferred.
 	
+Developer Tools
+Ctrl + Shift + I or F12 - To open developer tools
+
+Frameworks and Libraries
+
+-Frameworks are a structure where we can code in that standard and get the desired output.
+
+-Libraries are functions or tools that is ready to use. (Promotes code reusability)
+
+APIs - Application Programming Interface
+
+Browser APIs or Web API
+REST APIs
+	Accessed using the endpoint
+Sendor APIs
+
+
+	
 	
 	
 	

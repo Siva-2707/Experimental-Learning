@@ -5,3 +5,25 @@ Youtube : Code Karle
 
 
 System Design is the process of designing the architecture, components, and interfaces for a system so that it meets the end-user requirements.
+
+
+Scalability
+	-Horizontal Scaling (Adding more resources)
+		-Requires Load Balancer 
+	*	-Resilient
+		-Network between resources (Slow)
+		-Data inconsistancy
+	*	-Scales well 	
+	-Verical Scaling (Upgading to next level resource)
+		-Does not require a load balancer
+		-Single Point failure (If one machine failure thats all)
+	*	-Interprocessing (Fast)
+	*	-Data consistancy
+		-Hardware Limitation
+		
+Microservices 
+Distributed System
+Load Balancer
+Decoupling
+Logging and Metrics Calculation
+Extensible
