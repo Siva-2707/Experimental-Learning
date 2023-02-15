@@ -1,0 +1,35 @@
+
+Region
+AZ - Availability Zone
+Edge Locations
+
+
+Computing Services:
+
+EC2 (Elastic Cloud Compute) 
+Inferentiare(Inf1)
+Amazon Bracket
+
+Security Groups
+
+Connecting to EC2 instance:
+	EC2 Instance connect
+	SSH
+
+EBS (Elastic Block Storage)
+	-EBS Multi Attach
+	-Snapshots(Copies of EBS)
+AMI - (Amazon Machine Image) (Simalar to Docker)
+
+EC2 Image Builder
+
+EC2 Instance Store (Storage physically attached to EC2 instance)
+
+EFS - Elastic File System (File server accessible by multiple EC2 instances under different AZ)
+
+Amazon FSx (3rd party high-performance file systems accessible on AWS)
+	- FSx for Luster
+	- FSx for Windows File Server
+	- FSx for NetApp ONTAP
+	
+	
