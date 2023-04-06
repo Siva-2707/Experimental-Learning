@@ -185,6 +185,13 @@ Generics
 		K - Key
 		N - Number
 		V - Value
+	Wildcard - ?
+	Upperbounded wildcard
+		List<? extends Number> list
+	Unbounded wildcard
+		List<?> list
+	Lowerbouded wildcard
+		List<? super Integer> list
 	- AutoBoxing 
 	- UnBoxing
 	

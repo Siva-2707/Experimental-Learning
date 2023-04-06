@@ -1,10 +1,33 @@
 Resources:
 
 Educative: System Design 
+			Grokking the System Design Interview
+			
 Youtube : Code Karle
 
+Book : Designing data intensive applications
+
+https://github.com/donnemartin/system-design-primer
 
 System Design is the process of designing the architecture, components, and interfaces for a system so that it meets the end-user requirements.
+
+Topics:
+
+Scalability
+Performance
+Latency & Throughput
+Consistancy 
+Availability
+Partition Tolerance
+Cap Theorem
+Domain Name System(DNS)
+Content Delivery Network(CDN)
+Load Balancers and Reverser Proxy
+Micoservices
+Databases(SQL & NoSQL)
+	Indexes
+Caching
+Message Queues
 
 
 Scalability

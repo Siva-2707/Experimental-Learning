@@ -10,6 +10,8 @@
     - (::) operator is used to refer a method.
 4) Stream
     - Can be used to filter, collect, print, and convert from one data structure to other etc.
+		-allMatch() -> All the elements in the stream satiesfies the given condition.
+		-anyMatch() -> Any one of the element in the steam satiesfies the given condition.
 
 5  Default / Static Methods for Interfaces
     - An interface can have a method defined in it. (Default/Static)
