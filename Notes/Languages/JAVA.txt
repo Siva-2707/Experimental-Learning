@@ -96,7 +96,7 @@ The static method can not use non static data member or call non-static method d
 this and super cannot be used in static context.
 
 Static blocks get's executed during class initialization and happens only once.
-It will get executed before the Constuctor execution
+It will get executed before the Constuctor execution 
 
 This keyword
 ============
@@ -135,7 +135,7 @@ OOPS
 			Single
 			Multi level
 			Hierarchical
-		Java doesn't support multiple inheritance
+		Java doesn't support multiple inheritance for Classes but for Interfaces, it supports multiple inheritance
 	
  - Abstraction
 		Process is completly hidden, only the necessary process is shown
@@ -232,7 +232,7 @@ New state(Once the  thread is created)
 Runnable state (Once the thread is started)
 Running state (Once the run() method is executed)
 Waiting state (When it is not running ie, when it is waiting for other thread to complete or when it is blocked)
-Terinated stat (When thread is completed the task)
+Terminated stat (When thread is completed the task)
 
 	
 	-Ways of enabling Thread

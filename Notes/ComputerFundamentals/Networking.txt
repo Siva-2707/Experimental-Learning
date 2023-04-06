@@ -1,0 +1,11 @@
+OSI Model
+
+Open System Interconnection
+
+7 - Application (Connection to Applicaion	via HTTP/HTTPS protocol from the browser)
+6 - Presentation (Data is being encrypted or decrypted in this layer)
+5 - Session	(Maintains session and enables authentication)
+4 - Transport (Helps in trasmiting data between networking devices)
+3 - Network
+2 - Data Link
+1 - Physical
