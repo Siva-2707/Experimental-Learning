@@ -1,0 +1,20 @@
+Converting Decimal to Binary
+
+Binary Positive Numbers
+Binary Addition
+Binary Negative Numbers 
+	(Converting Positive to Negative)
+	-Invert all the bits and add one.
+
+Shifting 
+	- Right Shifting (Shift all bits one position to right) New bit will be zero.
+		In decimal convertion, the number will be divided by 2.
+	- Left Shifting (Shift all bits one position to left) New bit will be zero.
+		In decimal convertion, the number will be multiplied by 2.
+	
+	In logical shifting, negative bit is also shifted and new bit will be 0.
+	In arithmetic shifting, negative bit is also shifted but the new bit will maintain the same old negative bit.
+	
+	
+	
+	

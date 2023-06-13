@@ -1,0 +1,342 @@
+Java 
+
+Variables
+=========
+	- Primitive type
+		boolean (false    - 1 byte)
+		byte 	(0 	      - 1 byte)
+		char	('\u0000' - 2 bytes)
+		short	(0 		  - 2 bytes)
+		int 	(0 		  - 4 bytes)
+		long	(0L 	  - 8 bytes)
+		float 	(0.0f 	  - 4 bytes)
+		double  (0.0d 	  - 8 bytes)
+	- Reference type
+	
+Instance Variable
+=================
+		Variable created inside the class but outside the method is called Instance variable
+		
+New keyword
+===========
+	The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.
+
+Memory allocation (Heap and Stack memory)
+=========================================
+	The reference variables of an object gets stored in the Stack memory
+	The actual value of the object get stored in the Heap memory
+	When the object is used, it goes to the stack memory and then it points to the heap memory
+	
+Ways of creating Instance 
+=========================
+	1) new keyword
+	2) newInstance() method
+	3) clone() method
+	4) deserialization
+	5) factory method
+	
+Annonimous object 
+=================
+	Object without a name
+	Calculator c = new Calculator(); // Standard object
+	new Calculator(); // Annonimous object
+	
+Contructors
+===========
+Constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+When a class is inherited, if an instance is created for the subclass, first the constructor of the parent class gets executed
+	(i.e) Instance is created for parent class also.
+	Then the child class's constructor is executed.
+
+A constructor cannot have a return type.
+Constructor name is same as a class name 
+Default constructor is provided by compiler if not defined by the programmer
+	
+	1)No argument constructor
+	2)Parameterized constructor
+
+Overloading
+===========
+Having methods or constructors with same name but of different parameter list.
+
+Overriding
+==========
+If the subclass has the same method and same parameter list of the parent class, it is called overriding
+When the subclass's instance is used to call the method that is also present in the parent class, overriding happens
+
+We cannot override a method which is protected. We can access it but cannot override it.
+
+Copying instance 
+================
+1) Copy constructor
+	Overloaded constructor which can accept an Instance and copy it to the current instance
+	
+2)Shallow copy
+	Copies the first level of variable and insataces of a class.
+	Object within an Object is not copied in the shallow copy only the reference of the object is copied.
+3)Deep copy
+	Copies at most inner level layer of a class 
+	(i.e) Object within an Object is also copied in the deep copy.
+4)Cloning
+	By implementing the clonable interface and overridding the clone method of the super class(Object)
+5)Serialization
+	Here the object is converted into byte stream and stored in memory which can be used in other JVMs by deserializing it.
+	Acheived by implementing Serializable or the Externalizable inferace and 
+	
+Static keyword
+==============
+1) Variable 2) Method 3) Block
+
+A static variable/method is shared across all the instances of the class.
+A static variable/method can be accessed by it's class name without creating an instance for it.
+
+Rules for Static method
+The static method can not use non static data member or call non-static method directly.
+this and super cannot be used in static context.
+
+Static blocks get's executed during class initialization and happens only once.
+It will get executed before the Constuctor execution 
+
+This keyword
+============
+"this" actually fills the place of the current instance instantiating the class
+
+Super keyword
+=============
+super can be used to refer immediate parent class instance variable.
+super can be used to invoke immediate parent class method.
+super() can be used to invoke immediate parent class constructor.
+
+Instance initializer block
+==========================
+It is similar to static block, but is executed each time the class is instantiated
+The constructor block get executed after Instance initializer block only
+If there is a super class, the execution happens only after execution of parent constructor
+
+
+
+
+
+Operators
+Conditional Statements
+Looping statements
+Methods
+OOPS 
+ - Encapsulation
+		Does not allows user to directly access the member of the class
+		Helps in validating data before assigning it to them
+ - Inheritance 
+   ===========
+		Why inheritance in java 
+			For Method Overriding (so runtime polymorphism can be achieved).
+			For Code Reusability.
+		Types of inheritance in Java
+			Single
+			Multi level
+			Hierarchical
+		Java doesn't support multiple inheritance for Classes but for Interfaces, it supports multiple inheritance
+	
+ - Abstraction
+		Process is completly hidden, only the necessary process is shown
+		This is acheived by making the unnecessary methods as private
+ - Polymorphisam (Many Forms)
+		One object can take many forms
+		Acheived by Abstract class
+		
+ 
+
+ 
+Class and Objects
+=================
+	- Interface
+	- InnerClass
+		- DefaultInnerClass (Need the instance of the OuterClass to access it)
+		- StaticInnerClass (No need the instance of the OuterClass to access it)
+	- Abstract Class
+	- Annonimous Class
+ 
+Arrays and ArrayList
+Variable Argument
+
+Collection APIs
+	- List
+		- ArrayList (Good for searching and sorting)
+		- LinkedList (Good for manupulating the list) Inserting deleting elements
+		- Vector (It is syncronized) So thread safe
+	- Set (Duplicate elements are not allowed in Set)
+		- HashSet (Follows random order)
+		- LinkedHashSet		
+		- TreeSet (Follows insertion order)
+	- Queue
+		-PriorityQueue
+		-ArrayDequeue
+	- Map
+		- HashMap
+		- HashTable
+		- LinkedHashMap
+		- TreeMap
+
+Generics
+
+	Type Parameters
+		T - Type
+		E - Element
+		K - Key
+		N - Number
+		V - Value
+	Wildcard - ?
+	Upperbounded wildcard
+		List<? extends Number> list
+	Unbounded wildcard
+		List<?> list
+	Lowerbouded wildcard
+		List<? super Integer> list
+	- AutoBoxing 
+	- UnBoxing
+	
+Comparator class and Comparable Interface
+
+Java Packages
+
+Access Modifiers
+================
+- Public                   --> Available everywhere
+- Default (unmentioned)    --> Available only inside the package and not available even if the 
+	(Package protected) 			class is extended outside the package.
+- Protected				   --> Available inside the same package and the subclasses of even different package.
+- Private				   --> Available only inside the defined class
+
+A class can only be public or default
+
+
+Scope and Visibility
+Final keyword
+=============
+	- Final variable cannot be reinitialized.
+	- Final class cannot be extended
+	- Final method cannot be overridden
+
+Static keyword
+==============
+	- Only one instance is created and shared among all the instance.
+	- Static method cannot have a non-static member.
+	
+
+Functional Programming (Stream API) and Functional Interface
+	- Predicate
+Threds and Multithreads
+========================
+
+Thread is a lightweight subprocess that executes the code in sequence
+Every program contains atleast one thread. (Main thread)
+Available under java.lang.Thread
+
+Lifecycle of a thread		  ,-> Waiting-> Runnable
+	New -> Runnable -> Running --> Terinated
+
+New state(Once the  thread is created)
+Runnable state (Once the thread is started)
+Running state (Once the run() method is executed)
+Waiting state (When it is not running ie, when it is waiting for other thread to complete or when it is blocked)
+Terminated stat (When thread is completed the task)
+
+	
+	-Ways of enabling Thread
+		-Extending the thread class
+		-Implementing the runnable Interface
+		-Implementing the callable Interface (Returns a value)
+		
+	
+	-States of a thread 
+		- New 
+		- Active/Runnable 
+		- Blocked/Waiting
+		- Timed Waiting 
+		- Terminated/ Dead
+	
+	-Executor Service(API)
+	-Future Class
+	
+	-Concurrency
+		- syncronized keyword
+		- locks
+		- Automic classes -> java.util.concurrent.atomic (Thread safe class)
+		
+Syncronized keyword and Syncronized block
+=========================================
+syncronized keyword can be applied to a method so that only one thread is allowed to access that method.
+
+syncronized blocks are blocks locked for a single thread, 
+when the respective block execution is over by a single thread, then only next thread is allowed to enter the block.
+
+We need syncronization in Java when multiple threads are working on the same object
+
+Thread Pool
+===========
+Thread pool is where the Threads are maintained in a queue for execution.
+
+Methods used to handle a thread.
+================================
+
+
+Exceptional Handeling
+=====================
+
+Types of Exceptions
+	Checked Exception
+		The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
+	Unchecked Exception
+		The classes that inherit the RuntimeException are known as unchecked exceptions. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+	Errors
+		Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
+	
+	
+	
+	- Try Catch Finally
+	- Checked and Unchecked exceptions
+	- Exception Hierarchy
+
+Files Concept 
+=============
+	- Old method
+	- Functional programming
+	
+Logger
+
+Misselanious Concepts
+-Covarient Return type
+- Static imports
+- InnerClass
+- Enum
+	- Ordinal
+	- Constructors
+- Comparator class and Comparable Interface
+- GarbageCollector
+
+After Java 8
+- Modularity 
+- Predicate not method
+- Set/ Map/ List - copyOf method 
+- String API
+- Type Inferences
+- Switch Expressions
+- TextBlock
+- Records (Similar to Java Beans)
+
+
+Concepts to refresh
+
+Java APIs
+BigDecimal
+String
+Wrapper Class
+Java Dates
+Arrays 
+Diff btw Abstract Class and Interface
+Hashing
+Logger
+Predicate
+ 
+
+
