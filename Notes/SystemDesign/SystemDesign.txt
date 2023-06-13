@@ -1,7 +1,52 @@
 Resources:
 
 Educative: System Design 
+			Grokking the System Design Interview
+			
 Youtube : Code Karle
 
+Book : Designing data intensive applications
+
+https://github.com/donnemartin/system-design-primer
 
 System Design is the process of designing the architecture, components, and interfaces for a system so that it meets the end-user requirements.
+
+Topics:
+
+Scalability
+Performance
+Latency & Throughput
+Consistancy 
+Availability
+Partition Tolerance
+Cap Theorem
+Domain Name System(DNS)
+Content Delivery Network(CDN)
+Load Balancers and Reverser Proxy
+Micoservices
+Databases(SQL & NoSQL)
+	Indexes
+Caching
+Message Queues
+
+
+Scalability
+	-Horizontal Scaling (Adding more resources)
+		-Requires Load Balancer 
+	*	-Resilient
+		-Network between resources (Slow)
+		-Data inconsistancy
+	*	-Scales well 	
+	-Verical Scaling (Upgading to next level resource)
+		-Does not require a load balancer
+		-Single Point failure (If one machine failure thats all)
+	*	-Interprocessing (Fast)
+	*	-Data consistancy
+		-Hardware Limitation
+		
+Microservices 
+Distributed System
+Load Balancer
+Decoupling
+Logging and Metrics Calculation
+Extensible

@@ -63,6 +63,7 @@ Elements: Accessing Elements
 	document.querySelectorAll("cssElement"); -> Returns a list of elements.
 	document.getElementsByClassName("className"); -> Returns the elements with the particular class name.
 	document.getElementById("className"); -> Returns the element ith the particular id.
+	document.getElementByTagName("tagName") -> Returns the elements with the particular tag.
 	
 Elements: Modifing Element's Classes and ID 
 --------------------------------------
@@ -78,10 +79,18 @@ Element.className(); -> Returns a single className for a element
 Element.classList(); -> Returns a list of Class names for the element 
 	classList.add("className") -> to add the class to the particular element
 	classList.remove("");
+	classList.contains("className") -> Return boolean
 	classList.toggle(""); -> Used to add or remove class. If the class is present, it gets removed. If the class is not present, it gets added.
 	classList.replace("classToBeReplaced", "replacementClass"); -> Used
+	
+Adding Content to the element:
+------------------------------
+Element.innerText
+Element.innerHTML
+Element.textContent
 
-Attributes: 
+
+Attributes: (Id,Class, etc,.)
 ------------------------
 Element.attributes -> Returns a nodeMap of attributes
 element.getAttribute("attributeName") -> Returns the particular attribute

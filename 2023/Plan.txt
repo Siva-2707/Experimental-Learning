@@ -2,7 +2,7 @@
 
 Solve atleast one LeetCode problem every day. 
 
-Cover in and out of Spring 	 				(Backend)
+Cover in and out of Spring 	 (Backend)
 Azure Assosiate Developer Certification
 Mongo DB essentials
 MERN - Mongo Express React Node stack 
@@ -28,6 +28,8 @@ JAVA programming language (Core & Advanced)
 	Hibernate
 	Spring
 		CORE 
+		JDBC Templates
+		ORM
 		MVC
 		REST
 		BOOT
