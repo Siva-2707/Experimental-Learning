@@ -1,0 +1,9 @@
+
+
+show databases; -> List all databases in the server.
+use {databaseName};
+show tables; -> Lists all the tables in the current database.
+
+create database {databaseName};
+
+
