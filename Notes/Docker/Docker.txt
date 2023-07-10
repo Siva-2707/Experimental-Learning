@@ -3,4 +3,43 @@ Why docker ?
 What is a container ?
 What is the client server architecture in Docker.
 What is an docker image ?
+
+Docker Registry -> Similar to GitHub. Contains a lot of repository.
+Docker Repository -> Different versions of a Docker image is maintained.
+Docker Image -> A file which conatins all the necessary info (Dependencies, Libraries, Runtime, etc,.) for an App to run 
+Docker Container -> The running version of an Image. 
  
+ 
+docker run -m 512m --cpu-quota 50000 -p 5000:5000 -d --restart=always in28min/todo-rest-api-h2:1.0.0.RELEASE
+	-m 512m -> Allocates 512mb of ram to the container.
+	--cpu-quota 50000 -> Allocates 50% of the CPU to the container.
+	-p 5000:5000 -> -p{hostPort}:{containerPort}  Exposing container port to localhost port.
+	-d -> Detaching the application and run it in background.
+	--restart=always -> When the docker demon is restarted, the container starts automatically.
+	in28min/todo-rest-api-h2:1.0.0.RELEASE -> {repositoryName:imageVersionName}
+	
+docker logs containerId -> Show logs
+docker logs -f containerId -> Tailing the logs.
+docker container ls / docker ps -> Lists all running containers
+docker container ls -a / docker ps -a -> Lists all containers [All states - Running, stopped]
+docker container stop containerId -> Stops a running container
+
+docker images -> Lists all images available in local.
+docker tag {repositoryName}:{tagName } {repositoryName}:{newTagName} -> Create tag for existing images name.
+docker pull {repositoryName}:{tagName} -> Downloads the image to the local repository.
+docker search {repositoryName} -> To search for image in docker respository.
+docker image history imageId -> To view the history of the image [Image creation and updation and everything]
+docker image inspect imageId ->  To view all the config and other data related to that image.
+docker image remove imageId -> To delete the image from the local repository.
+
+docker container run {repositoryName}:{tagName} / docker run {repositoryName}:{tagName}  -> Create a new container out of an image and run it.
+docker container pause {containerId} -> Pause the running container with the state of the application maintained.
+docker container unpause {containerId}  -> Unpause the paused container.
+docker container stop {containerId} -> Stops the container compleatly. [Some time is give for the application to stop and the container is stopped]
+docker container kill {containerId} -> Force the container as it is. [No time is given and container is stopped immediatly]
+docker container prune -> Removes all the stopped containers.
+
+docker events -> Shows the logs and status of all the container.
+docker top {containerId} -> Show the details of that container.
+docker stats -> To see the metrics of all the running containers.
+docker system df -> To see overall useage of docker resources (Memory consumed by images, volumes, caches etc,.)
