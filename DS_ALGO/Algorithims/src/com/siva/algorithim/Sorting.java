@@ -1,6 +1,6 @@
 package com.siva.algorithim;
 
-public class Sorting  {
+public class Sorting {
 	int arr[];
 	int arrSize;
 
@@ -11,7 +11,7 @@ public class Sorting  {
 
 	public void bubbleSort() {
 
-		for (int i = arrSize - 1; i > 1; i--) {
+		for (int i = arr.length - 1; i > 0; i--) {
 			for (int j = 0; j < i; j++) {
 				if (arr[j] > arr[j + 1])
 					swap(j, j + 1);
@@ -41,7 +41,6 @@ public class Sorting  {
 				j--;
 			}
 			arr[j] = thePickedElement;
-			printSortedArray();
 		}
 		System.out.println("Exiting insersion sort");
 	}
@@ -52,11 +51,13 @@ public class Sorting  {
 		arr[i] = temp;
 	}
 
-	public void printSortedArray() {
+	@Override
+	public String toString() {
+		String str = "";
 		for (int i : arr) {
-			System.out.print(i + " ");
+			str += i + " ";
 		}
-		System.out.println();
+		return str;
 	}
 
 	public int[] getSortedArray() {
