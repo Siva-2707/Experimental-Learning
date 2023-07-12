@@ -1,0 +1,37 @@
+https://stackoverflow.com/questions/59182414/iops-vs-throughput-which-one-to-use-while-choosing-aws-ebs
+Let's try to explain what is Throughput and I/O.
+
+I/O is the number of accesses to the disk. Each time you need to read a file, you need "at least" to access once to the file. However the content is read in "chunks", each time you read a "chunk" a new I/O is requested. Imagine bitting a Chocolate bar, you need at least to access once to the chocolate bar, and you start bitting (I/O) until you end it. Each bite is a I/O. You need several I/Os to swallow the whole bar.
+
+IOPS is I/O per second. Speed. So basically how fast we can perform each bite in the chocolate bar. A IOPS EBS is a volume specialized in performing fast biting: Ñam-Ñam-Ñam vs Ñam------Ñam-----Ñam
+
+Throughput is the amount of info you read in each I/O. Following with the example, you can eat the whole Chocolate bar in two different ways, small bites (small throughput) or big bites(big throughput) it will depend on your mouth size. Througput EBS volume is specialized in performing big biting: Ñam vs Ñaaaaaaaam
+
+Is I/O and Throughput related? Sure. If you have to read a big file from EBS, and your througput is small (aka, your mouth is small so your bites are small) then you need to access (I/O) more frequently until the file is completely read. Ñam-Ñam-Ñam-Ñam
+
+On the other hand, if you have a big mouth (big throughput), then you will need less bites and less I/O. Ñaaaam---Ñaaaam
+
+So somehow they could balance each other, but....there are corner cases:
+
+a) Imagine you have a 1 really tiny tiny tiny small file (or chocolate nano-bar). --- In this case, even the smallest mouth is enough. With a big or a small mouth you are able to eat the whole nano-bar with just 1 bite.
+
+b) Imagine you have a bucket of zillions of tiny tiny small files ( or chocolate nano-bars) --- In this case, even the smallest mouth is enough to swallow each bar. Big or small throughput won't give you a better performance. However having an IOPS (I/O per second) will boost your performance. A Throughput EBS Volume will perform much much worse than an IOPS Volumen.
+
+c) Imagine you have a bucket of zillions of big files. --- So you need Throughput for big files and you need IOPS for multiple access. Then probably you should go towards a EBS General Purpose (it has bursting)
+
+With that you should be able to craft an answer, but for me:
+
+But what about frequent operations with high I/O size? --> EBS General Purpose. Here the "high" and "frequent" ask for a balanced volume.
+
+Not frequent operations with high I/O size? --> EBS Throughput. You need the biggest mouth possible.
+
+Not frequent operations with small I/O size?--> Warning! What is "small" size for you? If they are small for real, then I would probably go towards IOPS becase a big/small mouth (Throughput) will not make a big difference. And in case those "not frequent" becoming a "frequent" (more users?more complexity?) will benefit from the IOPS. Probably you can then also survive with a EBS General Purpose. However, second warning, what does "not frequent operations" do you mean those files are not frequently accessed?In such case, you should check for a Cold HDD
+
+As always, recommendations, are just recomendations...and the best (because you can get surprised about your sense of "small") is to test performance in cases where you have doubts.
+
+Use cases:
+
+Work loads -> usually General Purpose Volume
+Databases -> usually IOPS (small data but frequently retrieved)
+Big Data / Data warehouses -> usually Throughput ( big data files)
+Cold HDD -> Cold File Servers (lowest IOPS before moving to Magnetic)
