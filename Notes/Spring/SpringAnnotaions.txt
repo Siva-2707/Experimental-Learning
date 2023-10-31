@@ -1,50 +1,89 @@
-@Bean
+@SpringBootApplication
+	-Consist of annotations like 
+		@EnableAutoConfiguration - Automatically configures spring application based upon the dependencies present in the class path.
+		@ComponentScan - Specifies spring boot to scan for Beans in the specified (basePackage) or (basePackageClass)
+		@Configuration	- Define beans inside the class. And 
+		
+
+
 @Required - Depricated (Since Constructor injection is used instead of that.)
 
-@Component
-	@Service
-	@Controller
+@Bean - Bean creation handled by IOC container. (Method level)
+@Component - Bean creation handled by IOC container.(Class level)
+@Autowired - Checks the IOC container for beans and injects them.
+
+Stereotype Annotations - Used for different purpose. (But the functionality is same)
+----------------------
+@Component - Bean creation handled by IOC container.(Class level)
+@Service
+@Controller / @RestController
+@Repository
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Spring Core Annotations
+-----------------------
+@Primary - To tell IOC container, which is the default Bean to be instantiated when More than one Bean of that type is available.
+@Qualifier - To specify IOC container which Bean to instantiate, when more than one Bean defenitionis available.
+@Lazy - To create beans only when they are used somewhere.
+@Value - Load properties into Java class. 
+	@Value(${database.url})
+	String url;
+@ProperySource - Used to load custom properties defined in class path. 
+	@ProperSource("classpath:custom.properties)
+	-Class level annotation
+@ConfigurationProperty - Load properties into a Map / or to a DTO class.
+@Profile - On which profile, the bean should be loaded.
+@Scope - Provides the scope of the bean.
+	- singleton (default scope) (Only one instance is created and is shared across all beans)
+	- prototype (A new instance is created each time that bean is used)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+REST API Annotations
+--------------------
+@RestController - A steriotype annotation of @Component, which also contains @ResponseBody
+
+	@RestController contains @Controller @ResponseBody inside it.
+	@Controller is simply a bean defintion and used to specify it acts as a controller.
+	@ResponseBody is used to transform objects into JSON/ XML format and return it.
 	
-	@Autowired
-	@Qualifier
-	@Value
+@RequestMapping - Should explicitly provide the method type. Like (GET,POST,PUT,DELETE)
+		@RequestMapping(url="/save", method=RequestMethod.POST, consume="application/json", produces="application/json")
+		
+Inherited Mappings from RequestMapping. But has been tagged to it's corresponding methods.
+@GetMapping
+@PostMapping
+@PutMapping
+@DeleteMapping
+
+@RequestBody - Gets the incoming request and transforms and maps it into the specified object.
+@PathVariable - Gets the value from the url. (Throws 404 error when value is not specified)
+@RequestParam - Gets the value from url. (But need to pass, key value pair) (doesn't forces to enter value and doesn't throw error) 
+
+@Endpoint - Define custom actuator endpoints
+	@ReadOperation - Performs GET request
+	@WriteOperation - Performs POST request
+	@DeleteOperation - Performs DELETE request
+
+@ExceptionalHandler - Method level expectional handler
+@ControllerAdvice/ @RestControllerAdvice - Class level expectional handler
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Spring Data JPA Annotations
+---------------------------
+@Entity
+@Table
+@Column
+@Id
+@GeneratedValue
+@Transactional
+
+
 	
-	@ComponentScan
+	
 	
 @PostConstruct -> To do some initialization work
 @PreDestroy -> For closing or storing some necessary data into DB before the object is destroyed.
 
-@Controller
-	@RequestMapping
-	@GetMapping
-	@PutMapping
-	@PostMapping
-@Service
-
-
-
-@Configuration
-@PropertySource
-@Profile
-@Value
-
-
-
-Spring MVC 
-
-@RestController 
- 
-@RequestMapping 
-@PostMapping
-@GetMapping
-@PutMapping 
-@PatchMapping
-@DeleteMapping
-
-
 @ResponseStatus - Default status 100 is sent. But can be overrided using this annotation.
-@ResponseBody
-@PathVariable
+
 
 
 

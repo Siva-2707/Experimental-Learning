@@ -13,6 +13,20 @@ Variables
 		double  (0.0d 	  - 8 bytes)
 	- Reference type
 	
+Bitwise Operators
+=================
+	- & (bitwise AND) (Both should be true(1) to get true(1) or else it returns false(0))
+	- | (bitwise OR) (Any one/both can be true(1) to get true(1), if both is false(0) it returns false(0))
+	- ^ (bitwise XOR) (Both should be different to get true(1) or else it gives false(0))
+	- ~ (bitwise complement) (Inverts the bits)
+	
+Shift Operators
+===============
+
+	<< - Signed Left shift 
+	>> - Signed Right shift 
+	>>> - Unsigned Right shift 
+
 Instance Variable
 =================
 		Variable created inside the class but outside the method is called Instance variable
@@ -116,7 +130,11 @@ If there is a super class, the execution happens only after execution of parent 
 
 
 
-
+Order of execution of various blocks
+------------------------------------
+1) Static blocks and static variables initialization (Only once while class loading)
+2) Instance block (Every time, the object is instantiated)
+3) Constructor (Every time, the object is instantiated)
 
 Operators
 Conditional Statements
@@ -166,16 +184,18 @@ Collection APIs
 		- Vector (It is syncronized) So thread safe
 	- Set (Duplicate elements are not allowed in Set)
 		- HashSet (Follows random order)
-		- LinkedHashSet		
-		- TreeSet (Follows insertion order)
+		- LinkedHashSet	(Follows insersion order)
+		- TreeSet (Sorted implentation )
+		- CopyOnWriteArraySet(Syncronized)
 	- Queue
 		-PriorityQueue
 		-ArrayDequeue
 	- Map
-		- HashMap
-		- HashTable
-		- LinkedHashMap
-		- TreeMap
+		- HashMap (Random order)
+		- HashTable (Syncronized)
+		- LinkedHashMap (Follows insersion order)
+		- TreeMap (Sorter map implementation)
+		- ConcurrentHashMap(Serializable)
 
 Generics
 
@@ -254,6 +274,21 @@ Terminated stat (When thread is completed the task)
 		- Blocked/Waiting
 		- Timed Waiting 
 		- Terminated/ Dead
+		
+	-Types of thread
+		-User defined threads (Created by user and has to finish execution to exit JVM)
+		-Deamon Threads (created by JVM) (No rule for exiting JVM) 
+		
+	-Priority of Threads
+		-MIN_PRIORITY - 1
+		-NORM_PRIORITY - 5 (Default)
+		-MAX_PRIORITY - 10
+	
+	-join() method 
+		- Current thread in which the join method is called, will execute completly. And then only other threads are processed. Untill then other thread does to temporary waiting stage.
+	
+	-wait() method
+		
 	
 	-Executor Service(API)
 	-Future Class

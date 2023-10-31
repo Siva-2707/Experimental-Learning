@@ -249,3 +249,52 @@ Syntax:
 	element.addEventListener("listenFor", callBackMethod, [optionalOptions]);
 	
 	body.addEventListener("mouseover", body => body.sytle.background = "red"; , false);
+
+
+===========================================================================================================================================================
+	
+Constructor Function and Factory Functions to create Objects:
+-------------------------------------------------------------
+
+Construction Function
+---------------------
+
+	function Person(name){
+		this.name = name;
+		function walk(){
+			console.log('Walk');
+		}
+	}
+	
+	const person1 = new Person('Siva');
+	
+Factory Function
+---------------------
+
+	function createPerson(name){
+		return {
+			name,
+			walk: function(){
+			console.log('Walk');
+			}
+		};
+	}
+
+	const person2 = createPerson('Siva');
+
+===========================================================================================================================================================
+
+ES6 Features
+
+Let and Const 
+Destructuring {} , []	-> Object destructuring and Array destructuring
+Spread Operator  ... 	-> Can be used on objects and arrays as well
+Arrow Function => 		-> Used to define annonimous functions
+Array functions -> map, filter
+For of 			-> Iterate over Iterable collections [Arrays, Strings, Maps, NodeLists, and more]
+Map object 	-> new Map(); -> Enables to store key value pair.
+Set object  -> new Set(); -> Enables to avoid storing duplicate values.
+Class 		-> Template for JS objects
+Promises
+
+

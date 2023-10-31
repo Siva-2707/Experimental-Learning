@@ -1,0 +1,19 @@
+Code is written in Declarative Way
+
+React runs on Node.js [Runtime]
+React uses JSX - Javascript XML to render dynamic content.
+Each thing is divided into a component. 
+Value from parent component to child component can be passed using props.
+useState - A react hook is used to maintain state and re-render content when the state is changed.
+Lifting the state up -> Values from child component can be passed to parent component by, passing the reference alone to the child component where the implementation stays in the parent component.
+State and stateless components.
+
+Styling in React
+----------------
+Setting styles inline.
+Setting styles inline dynamically using template litrals.
+Until now CSS defined in .css files are globally scoped.
+CSS components .
+Styled components and Media queries.
+CSS Modules. 
+

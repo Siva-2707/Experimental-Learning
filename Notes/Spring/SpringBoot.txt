@@ -1,0 +1,9 @@
+Swagger Documentation
+=====================
+	Dependencies to be added
+		- springfox-swagger2
+		- springfox-swagger-ui
+	Add a configuration class
+		Add @EnableSwagger2 and @Component
+		
+	
